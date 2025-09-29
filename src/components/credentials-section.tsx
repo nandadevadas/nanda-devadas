@@ -1,0 +1,37 @@
+import { credentials } from '@/lib/data';
+import { Card, CardContent } from '@/components/ui/card';
+import { CheckCircle2 } from 'lucide-react';
+
+export default function CredentialsSection() {
+  return (
+    <section id="credentials" className="w-full py-12 md:py-24 lg:py-32 bg-background">
+      <div className="container px-4 md:px-6">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+          <div className="space-y-2">
+            <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl">
+              Credentials & Training
+            </h2>
+            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              A summary of my qualifications, professional development, and teaching status.
+            </p>
+          </div>
+        </div>
+        <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 sm:grid-cols-2 md:gap-12">
+          {credentials.map((category) => (
+            <div key={category.title} className="grid gap-4">
+              <h3 className="text-xl font-bold font-headline">{category.title}</h3>
+              <ul className="grid gap-3">
+                {category.items.map((item, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                    <span className="text-muted-foreground">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

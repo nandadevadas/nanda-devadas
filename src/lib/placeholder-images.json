@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "nanda-portrait",
+      "description": "A professional and friendly portrait of Nanda Dev.",
+      "imageUrl": "https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0ZWFjaGVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzU5MDM0MTc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "teacher portrait"
+    },
+    {
+      "id": "portfolio-1",
+      "description": "Student work showing a diagram of human systems.",
+      "imageUrl": "https://images.unsplash.com/photo-1758685845902-acd5db1b532b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzY2llbmNlJTIwZGlhZ3JhbXxlbnwwfHx8fDE3NTkxMTIxOTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "science diagram"
+    },
+    {
+      "id": "portfolio-2",
+      "description": "Students engaged in a field study near a local pond.",
+      "imageUrl": "https://images.unsplash.com/photo-1517457210348-703079e57d4b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdHVkZW50cyUyMG91dGRvb3JzfGVufDB8fHx8MTc1OTExMjE5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "students outdoors"
+    },
+    {
+      "id": "portfolio-3",
+      "description": "A close-up view of a cell under a microscope.",
+      "imageUrl": "https://images.unsplash.com/photo-1618250607237-17f7f854a243?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtaWNyb3Njb3BlJTIwdmlld3xlbnwwfHx8fDE3NTkxMTIxOTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "microscope view"
+    },
+    {
+      "id": "portfolio-4",
+      "description": "A Punnett square diagram for a genetics lesson.",
+      "imageUrl": "https://images.unsplash.com/photo-1644173308443-830f712f6789?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnZW5ldGljcyUyMGNoYXJ0fGVufDB8fHx8MTc1OTA1NjAwMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "genetics chart"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Avatar for a department head.",
+      "imageUrl": "https://images.unsplash.com/photo-1652471943570-f3590a4e52ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NTkxMTIxOTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional headshot"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Avatar for a vice principal.",
+      "imageUrl": "https://images.unsplash.com/photo-1601655781320-205e34c94eb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxlZHVjYXRvciUyMHBvcnRyYWl0fGVufDB8fHx8MTc1OTA2NjgzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "educator portrait"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Avatar for a parent.",
+      "imageUrl": "https://images.unsplash.com/photo-1693048235558-c8a346a570cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwYXJlbnQlMjBwcm9maWxlfGVufDB8fHx8MTc1OTExMjE5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "parent profile"
+    }
+  ]
 }
