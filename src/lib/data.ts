@@ -26,7 +26,7 @@ export const about = {
 };
 
 export const quickFacts = [
-  { text: "2+ years teaching Grade 9–10 Biology/Science (Cambridge IGCSE).", icon: Briefcase },
+  { text: "2 years teaching Grade 10 Biology/ Grade 3&4 Science (Cambridge IGCSE)", icon: Briefcase },
   { text: "Strengths: inquiry design, visible thinking, differentiated supports.", icon: Trophy },
   { text: "Based in Scarborough, ON — open to GTA roles.", icon: Target },
 ];
