@@ -31,7 +31,7 @@ const timelineData = [
   },
   {
     title: "Toward Ontario Classrooms",
-    institution: "Present On Track: OCT- Licensure",
+    institution: "On Track: OCT- Licensure",
     duration: "",
     status: "In progress",
     inProgress: true,
