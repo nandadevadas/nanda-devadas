@@ -38,7 +38,7 @@ export const philosophy = [
     icon: BookOpen,
   },
   {
-    title: "My Role - The Facilitator",
+    title: "The Facilitator - My Role",
     description: "I believe my role isn’t to dictate but to be a positive catalyst, removing barriers, lighting the path, and beginning every unit with a clear real-world why so no student wonders why they’re learning this.  I design, not deliver, learning, using phenomenon-driven inquiry and differentiated methods so every learner has a way in and a supported path to success.  With clear expectations, timely feedback, and multiple chances to improve, we treat mastery as iterative, and I model curiosity and humility by evolving my practice based on evidence and students’ needs.",
     icon: Target,
   },
