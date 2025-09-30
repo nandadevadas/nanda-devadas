@@ -22,7 +22,7 @@ export const navLinks = [
 ];
 
 export const about = {
-  paragraph: "I help young people see science as a way of thinking. With Cambridge IGCSE experience and current practice aligned to Ontario expectations, I design phenomenon-driven units, model metacognition, and build safe, respectful classrooms where every learner has a way in and a supported path to success.",
+  paragraph: "I’m Nanda—science teacher and steady coach for mixed-readiness classes. I design lessons that start with a real-world spark, then guide students to test ideas, talk like scientists, and reflect on growth. My classroom runs on clarity, care, and routines that make thinking visible.",
 };
 
 export const quickFacts = [
