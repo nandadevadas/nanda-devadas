@@ -84,20 +84,22 @@
 /* General container for the timeline */
 .timeline-container {
   display: flex; /* Makes the items line up in a row */
-  flex-wrap: wrap; /* Allows items to wrap to a new line on small screens */
-  justify-content: space-around; /* Adds space between and around the items */
-  padding: 20px;
-  max-width: 1200px; 
-  margin: 0 auto; 
+  flex-wrap: nowrap; /* Prevents wrapping */
+  justify-content: space-between; /* Distributes items evenly */
+  padding: 20px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center; /* Vertically align items */
+  height: 100%;
 }
 
 /* Individual timeline item */
 .timeline-item {
-  position: relative; 
-  flex: 1; /* Allows the item to grow/shrink slightly */
-  min-width: 280px; /* 👈 THE KEY FIX: Ensures each box is at least 280 pixels wide */
-  max-width: 300px; 
-  padding: 20px;
-  margin: 0 15px 40px 15px; /* Adds space around each box */
-  /* Other styling like background color, shadow, etc. goes here... */
+  position: relative;
+  flex: 1; /* Each item takes up equal space */
+  min-width: 200px; /* Adjust as needed, but gives a base width */
+  max-width: 220px; /* Prevents items from becoming too large */
+  padding: 0 10px; /* Horizontal padding */
+  margin: 0;
+  height: 100%; /* Ensure items fill the container height */
 }
