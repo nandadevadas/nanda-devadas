@@ -43,7 +43,7 @@ export const philosophy = [
     icon: Target,
   },
   {
-    title: "Beliefs",
+    title: "The Learners",
     description: "I believe every learner is unique, and the classroom remains a safe, respectful community where equity, inclusion, and student voice are foundational, with shared responsibility for everyone’s success. Students act as CEOs of their learning, setting goals, monitoring progress, seeking help when needed, and celebrating milestones. Daily practice centers on integrity, kindness, and stewardship while cultivating metacognition: making thinking visible, reflecting with honesty, and transferring ideas to new contexts.",
     icon: Users,
   },
