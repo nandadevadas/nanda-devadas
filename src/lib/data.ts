@@ -16,7 +16,6 @@ export const navLinks = [
   { href: "#philosophy", label: "Philosophy", id: "philosophy" },
   { href: "#work", label: "Work", id: "work" },
   { href: "#testimonials", label: "Testimonials", id: "testimonials" },
-  { href: "#timeline-road-so-far", label: "Timeline", id: "timeline-road-so-far"},
   { href: "#credentials", label: "Credentials", id: "credentials" },
   { href: "#contact", label: "Contact", id: "contact" },
 ];

@@ -4,7 +4,6 @@ import AboutSection from '@/components/about-section';
 import PhilosophySection from '@/components/philosophy-section';
 import PortfolioSection from '@/components/portfolio-section';
 import TestimonialsSection from '@/components/testimonials-section';
-import TimelineSection from '@/components/timeline-section';
 import CredentialsSection from '@/components/credentials-section';
 import ContactSection from '@/components/contact-section';
 import Footer from '@/components/footer';
@@ -19,7 +18,6 @@ export default function Home() {
         <PhilosophySection />
         <PortfolioSection />
         <TestimonialsSection />
-        <TimelineSection />
         <CredentialsSection />
         <ContactSection />
       </main>
