@@ -20,7 +20,7 @@ export default function PhilosophySection() {
         </div>
         <div className="mx-auto grid max-w-5xl items-stretch gap-6 py-12 md:grid-cols-3 md:gap-8">
           {philosophy.map((item) => (
-            <Card key={item.title} className="flex flex-col hover:shadow-lg transition-shadow duration-300">
+            <Card key={item.title} className="flex flex-col hover:shadow-lg transition-shadow duration-300 text-left">
               <CardHeader className="flex flex-row items-center gap-4">
                 <item.icon className="w-8 h-8 text-primary" />
                 <CardTitle className="font-headline text-2xl">{item.title}</CardTitle>
