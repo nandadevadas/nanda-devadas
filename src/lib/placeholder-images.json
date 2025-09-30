@@ -3,7 +3,7 @@
     {
       "id": "nanda-portrait",
       "description": "A professional and friendly portrait of Nanda Dev.",
-      "imageUrl": "https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0ZWFjaGVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzU5MDM0MTc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://storage.googleapis.com/aifirebase/scenarios/155-nanda-dev-portfolio/nanda-hero.jpeg",
       "imageHint": "teacher portrait"
     },
     {
