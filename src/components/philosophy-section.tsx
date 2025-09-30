@@ -8,12 +8,14 @@ export default function PhilosophySection() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-4">
             <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl">My Living Teaching Philosophy- My Why & My How</h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              I don't believe in a rigid, "one-size-fits-all" teaching manual. My philosophy is a living thing. It breathes, changes, and grows every time I learn something new, reflect on a class, or see a student light up with understanding.
-            </p>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              The educational experience I strive to create is grounded in three essential, interlocking pillars: The Learning Environment, The Facilitator, and The Leaners.
-            </p>
+            <div className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed space-y-0">
+                <p>
+                I don't believe in a rigid, "one-size-fits-all" teaching manual. My philosophy is a living thing. It breathes, changes, and grows every time I learn something new, reflect on a class, or see a student light up with understanding.
+                </p>
+                <p>
+                The educational experience I strive to create is grounded in three essential, interlocking pillars: <b>The Learning Environment</b>, <b>The Facilitator</b>, and <b>The Leaners</b>.
+                </p>
+            </div>
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl items-stretch gap-6 py-12 md:grid-cols-3 md:gap-8">
