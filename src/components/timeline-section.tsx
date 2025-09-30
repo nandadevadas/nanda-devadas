@@ -26,7 +26,7 @@ const timelineData = [
     title: "Cambridge IGCSE Biology & Science Teacher",
     institution: "AIMEE International School",
     duration: "2023–April 2025",
-    status: "Cambridge IGCSE Biology & Science Teacher",
+    status: "",
     inProgress: false, 
   },
   {
