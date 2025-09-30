@@ -16,6 +16,7 @@ export const navLinks = [
   { href: "#philosophy", label: "Philosophy", id: "philosophy" },
   { href: "#work", label: "Work", id: "work" },
   { href: "#testimonials", label: "Testimonials", id: "testimonials" },
+  { href: "#timeline-road-so-far", label: "Timeline", id: "timeline-road-so-far"},
   { href: "#credentials", label: "Credentials", id: "credentials" },
   { href: "#contact", label: "Contact", id: "contact" },
 ];
@@ -111,6 +112,39 @@ export const portfolioItems = [
     order: 4
   }
 ];
+
+export type TimelineMilestone = typeof timelineMilestones[0];
+export const timelineMilestones = [
+  {
+    type: 'degree',
+    title: 'B.Sc. Biotechnology',
+    institution: 'University of Calicut — Kerala, India',
+    date: '2015–2018',
+    details: 'First Class, Distinction',
+  },
+  {
+    type: 'degree',
+    title: 'M.Sc. Biotechnology',
+    institution: 'Mahatma Gandhi University — Kerala, India',
+    date: '2018–2020',
+    details: 'First Rank, Distinction',
+  },
+  {
+    type: 'degree',
+    title: 'Bachelor of Education (B.Ed.)',
+    institution: 'University of Calicut — Kerala, India',
+    date: '2020–2022',
+    details: 'First Class, Distinction',
+  },
+  {
+    type: 'role',
+    title: 'IGCSE Biology & Science Teacher',
+    institution: 'AIMEE International School',
+    date: '2023–2025',
+    details: '',
+  },
+];
+
 
 export const testimonials = [
     {

@@ -24,6 +24,12 @@
     --input: 220 13% 91%;
     --ring: 111 10% 47%;
     --radius: 12px;
+
+    /* Timeline Colors */
+    --timeline-text: #0E0E0E;
+    --timeline-accent-dark: #2F3E27;
+    --timeline-accent: #3C4B32;
+    --timeline-muted: #6B6F6A;
   }
  
   .dark {
@@ -47,6 +53,12 @@
     --input: 215 28% 25%;
     --ring: 111 10% 57%;
     --radius: 12px;
+
+    /* Timeline Colors */
+    --timeline-text: #FFFFFF;
+    --timeline-accent-dark: #A8B8A2;
+    --timeline-accent: #8FA389;
+    --timeline-muted: #888C87;
   }
 }
 
@@ -60,4 +72,11 @@
   html {
     scroll-padding-top: 6rem;
   }
+}
+
+@layer utilities {
+    .bg-dotted-stem {
+      background-image: linear-gradient(to bottom, var(--timeline-muted) 50%, transparent 50%);
+      background-size: 1.5px 8px;
+    }
 }

@@ -20,6 +20,14 @@ export default {
         body: ['Inter', 'sans-serif'],
         headline: ['Playfair Display', 'serif'],
         code: ['monospace'],
+        'timeline-heading': ['"League Spartan"', 'system-ui', 'Arial', 'Helvetica', 'sans-serif'],
+        'timeline-body': ['Poppins', 'sans-serif'],
+        'timeline-body-semibold': ['Poppins', 'sans-serif'],
+      },
+      fontWeight: {
+        'timeline-body': '400',
+        'timeline-body-semibold': '600',
+        'timeline-heading': '700',
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -55,6 +63,10 @@ export default {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
+        'timeline-text': 'var(--timeline-text)',
+        'timeline-accent-dark': 'var(--timeline-accent-dark)',
+        'timeline-accent': 'var(--timeline-accent)',
+        'timeline-muted': 'var(--timeline-muted)',
         chart: {
           '1': 'hsl(var(--chart-1))',
           '2': 'hsl(var(--chart-2))',
