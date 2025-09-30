@@ -12,6 +12,7 @@ export const siteInfo = {
 };
 
 export const navLinks = [
+  { href: "#timeline", label: "Timeline", id: "timeline" },
   { href: "#about", label: "About", id: "about" },
   { href: "#philosophy", label: "Philosophy", id: "philosophy" },
   { href: "#work", label: "Work", id: "work" },
