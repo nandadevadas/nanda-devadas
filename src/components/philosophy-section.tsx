@@ -1,5 +1,10 @@
 import { philosophy } from '@/lib/data';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 
 export default function PhilosophySection() {
   return (
@@ -18,18 +23,22 @@ export default function PhilosophySection() {
             </div>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl items-stretch gap-6 py-12 md:grid-cols-3 md:gap-8">
-          {philosophy.map((item) => (
-            <Card key={item.title} className="flex flex-col hover:shadow-lg transition-shadow duration-300 text-left">
-              <CardHeader className="flex flex-row items-center gap-4">
-                <item.icon className="w-8 h-8 text-primary" />
-                <CardTitle className="font-headline text-2xl">{item.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">{item.description}</p>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="mx-auto grid max-w-4xl items-stretch gap-6 py-12">
+          <Accordion type="single" collapsible className="w-full">
+            {philosophy.map((item, index) => (
+              <AccordionItem key={item.title} value={`item-${index + 1}`}>
+                <AccordionTrigger className="text-2xl font-headline hover:no-underline">
+                   <div className="flex items-center gap-4">
+                      <item.icon className="w-8 h-8 text-primary" />
+                      {item.title}
+                    </div>
+                </AccordionTrigger>
+                <AccordionContent className="text-base text-muted-foreground text-left pl-16">
+                  {item.description}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </div>
     </section>
