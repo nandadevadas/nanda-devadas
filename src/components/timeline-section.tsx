@@ -33,7 +33,7 @@ const timelineData = [
     title: "Toward Ontario Classrooms",
     institution: "On Track: OCT- Licensure",
     duration: "",
-    status: "In progress",
+    status: "",
     inProgress: true,
   },
 ];
