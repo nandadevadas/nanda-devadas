@@ -1,4 +1,4 @@
-import { BookOpen, Target, Users, Briefcase, GraduationCap, Trophy, Award } from 'lucide-react';
+import { BookOpen, Target, Users, Briefcase, GraduationCap, Trophy, Award, CheckCircle2 } from 'lucide-react';
 
 export const siteInfo = {
   name: "Nanda Dev",
@@ -44,7 +44,7 @@ export const philosophy = [
   },
   {
     title: "Beliefs",
-    description: "Every learner is unique. We build a respectful community where equity, inclusion, and student voice are foundational. Students act as CEOs of their learning—setting goals, monitoring progress, seeking help, and celebrating milestones. Daily practice centers on integrity, kindness, and stewardship while cultivating metacognition.",
+    description: "I believe every learner is unique, and the classroom remains a safe, respectful community where equity, inclusion, and student voice are foundational, with shared responsibility for everyone’s success. Students act as CEOs of their learning, setting goals, monitoring progress, seeking help when needed, and celebrating milestones. Daily practice centers on integrity, kindness, and stewardship while cultivating metacognition: making thinking visible, reflecting with honesty, and transferring ideas to new contexts.",
     icon: Users,
   },
 ];
@@ -176,7 +176,6 @@ export const testimonials = [
 export const credentials = [
     {
         title: "Education",
-        icon: GraduationCap,
         items: [
             "Bachelor of Education (B.Ed.), Science Specialization",
             "Bachelor of Science (B.Sc.), Biology Major"
@@ -184,7 +183,6 @@ export const credentials = [
     },
     {
         title: "Experience",
-        icon: Briefcase,
         items: [
             "Cambridge IGCSE Biology/Science Teacher",
             "Transition to Ontario Curriculum (SNC1W, SBI2D)"
@@ -192,7 +190,6 @@ export const credentials = [
     },
     {
         title: "Professional Training",
-        icon: Award,
         items: [
             "Assessment for Learning Strategies",
             "Universal Design for Learning (UDL) Principles",
@@ -202,7 +199,6 @@ export const credentials = [
     },
     {
         title: "Status",
-        icon: Trophy,
         items: [
             "Ontario Certified Teacher (OCT) application in progress."
         ]

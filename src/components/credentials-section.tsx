@@ -1,6 +1,13 @@
 import { credentials } from '@/lib/data';
 import { Card, CardContent } from '@/components/ui/card';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, GraduationCap, Briefcase, Award, Trophy } from 'lucide-react';
+
+const iconMap = {
+  Education: GraduationCap,
+  Experience: Briefcase,
+  "Professional Training": Award,
+  Status: Trophy
+}
 
 export default function CredentialsSection() {
   return (
@@ -17,10 +24,15 @@ export default function CredentialsSection() {
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 sm:grid-cols-2 md:gap-12">
-          {credentials.map((category) => (
+          {credentials.map((category) => {
+            const Icon = iconMap[category.title as keyof typeof iconMap] || CheckCircle2;
+            return (
             <div key={category.title} className="grid gap-4">
-              <h3 className="text-xl font-bold font-headline">{category.title}</h3>
-              <ul className="grid gap-3">
+              <h3 className="flex items-center gap-3 text-xl font-bold font-headline">
+                <Icon className="h-6 w-6 text-primary" />
+                {category.title}
+              </h3>
+              <ul className="grid gap-3 pl-9">
                 {category.items.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
@@ -29,7 +41,7 @@ export default function CredentialsSection() {
                 ))}
               </ul>
             </div>
-          ))}
+          )})}
         </div>
       </div>
     </section>
