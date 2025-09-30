@@ -16,9 +16,20 @@ export default function AboutSection() {
              <h3 className="text-2xl font-headline tracking-tighter sm:text-3xl">Professional Snapshot</h3>
             {quickFacts.map((fact, index) => (
               <Card key={index} className="bg-card">
-                <CardContent className="p-4 flex items-center gap-4">
-                  <fact.icon className="w-6 h-6 text-primary" />
-                  <p className="text-base text-card-foreground">{fact.text}</p>
+                <CardContent className="p-4 flex items-start gap-4">
+                  <fact.icon className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                  <div>
+                    {Array.isArray(fact.text) ? (
+                      <>
+                        <p className="text-base text-card-foreground font-semibold mb-2">Strengths:</p>
+                        <ul className="list-disc pl-5 space-y-1 text-base text-card-foreground">
+                          {fact.text.map((item, i) => <li key={i}>{item}</li>)}
+                        </ul>
+                      </>
+                    ) : (
+                      <p className="text-base text-card-foreground pt-1">{fact.text}</p>
+                    )}
+                  </div>
                 </CardContent>
               </Card>
             ))}

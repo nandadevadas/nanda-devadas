@@ -25,9 +25,17 @@ export const about = {
   paragraph: "I’m Nanda—science teacher and steady coach for mixed-readiness classes. I design lessons that start with a real-world spark, then guide students to test ideas, talk like scientists, and reflect on growth. My classroom runs on clarity, care, and routines that make thinking visible.",
 };
 
-export const quickFacts = [
+export const quickFacts: ({ text: string; icon: any; } | { text: string[]; icon: any; })[] = [
   { text: "2 years teaching Grade 10 Biology/ Grade 3&4 Science (Cambridge IGCSE)", icon: Briefcase },
-  { text: "Strengths : Inquiry based lesson, Phenomenon Driven instruction , Differentiated Instruction and 5E model lesson plan", icon: Trophy },
+  { 
+    text: [
+      "Inquiry-based lesson design",
+      "Phenomenon-Driven instruction",
+      "Differentiated Instruction",
+      "5E model lesson planning"
+    ], 
+    icon: Trophy 
+  },
   { text: "Based in Scarborough, ON — open to GTA roles.", icon: Target },
 ];
 
