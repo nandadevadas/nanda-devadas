@@ -2,7 +2,7 @@ import { BookOpen, Target, Users, Briefcase, GraduationCap, Trophy, Award } from
 
 export const siteInfo = {
   name: "Nanda Dev",
-  role: "Secondary Biology Teacher | IGCSE & Ontario-aligned Science Educator",
+  role: "High School Biology Teacher & Elementary Science Educator | B.Ed., M.Sc. Biotech, B.Sc. Biotech",
   heroTagline: "I design inquiry-rich lessons that make science visible, purposeful, and joyful.",
   resumeUrl: "/Nanda-Dev-Resume.pdf",
   email: "hello@nanda.dev",
