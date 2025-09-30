@@ -33,9 +33,9 @@ export const quickFacts = [
 
 export const philosophy = [
   {
-    title: "Beliefs",
-    description: "Every learner is unique. We build a respectful community where equity, inclusion, and student voice are foundational. Students act as CEOs of their learning—setting goals, monitoring progress, seeking help, and celebrating milestones. Daily practice centers on integrity, kindness, and stewardship while cultivating metacognition.",
-    icon: Users,
+    title: "Learning Environment",
+    description: "We explore the why before the what. In a safe space for critique, revision, and second chances, authentic tasks grow problem-solvers and confident learners, nurture civic responsibility, and develop empathy, resilience, and collaboration alongside academic skill.",
+    icon: BookOpen,
   },
   {
     title: "My Role",
@@ -43,9 +43,9 @@ export const philosophy = [
     icon: Target,
   },
   {
-    title: "Learning Environment",
-    description: "We explore the why before the what. In a safe space for critique, revision, and second chances, authentic tasks grow problem-solvers and confident learners, nurture civic responsibility, and develop empathy, resilience, and collaboration alongside academic skill.",
-    icon: BookOpen,
+    title: "Beliefs",
+    description: "Every learner is unique. We build a respectful community where equity, inclusion, and student voice are foundational. Students act as CEOs of their learning—setting goals, monitoring progress, seeking help, and celebrating milestones. Daily practice centers on integrity, kindness, and stewardship while cultivating metacognition.",
+    icon: Users,
   },
 ];
 
