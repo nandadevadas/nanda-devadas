@@ -27,8 +27,7 @@ export default function HeroSection() {
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button asChild size="lg">
                 <Link href="#contact">
-                  Request an Interview
-                  <ArrowDown className="ml-2 h-4 w-4" />
+                  Request an Interview <ArrowDown className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
