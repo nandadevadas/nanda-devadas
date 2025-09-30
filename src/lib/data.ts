@@ -25,8 +25,8 @@ export const about = {
   paragraph: "I’m Nanda—science teacher and steady coach for mixed-readiness classes. I design lessons that start with a real-world spark, then guide students to test ideas, talk like scientists, and reflect on growth. My classroom runs on clarity, care, and routines that make thinking visible.",
 };
 
-export const quickFacts: ({ text: string; icon: any; } | { text: string[]; icon: any; })[] = [
-  { text: "2 years teaching Grade 10 Biology/ Grade 3&4 Science (Cambridge IGCSE)", icon: Briefcase },
+export const quickFacts: ({ text: string | string[]; icon: any; })[] = [
+  { text: "2+ years teaching experience: Grade 10 Biology (Cambridge IGCSE) and Grades 3 & 4 Science.", icon: Briefcase },
   { 
     text: [
       "Inquiry-based lesson design",
@@ -114,7 +114,7 @@ export const portfolioItems = [
     tags: ["IGCSE", "Genetics", "Ethics"],
     artifacts: [
         { type: "pdf", url: "#", label: "Problem Set" },
-        { type: "pdf", url: "#", label: "Newsletter Example" }
+        { type="pdf", url: "#", label: "Newsletter Example" }
     ],
     published: true,
     order: 4
