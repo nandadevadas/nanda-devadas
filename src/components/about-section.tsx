@@ -7,7 +7,7 @@ export default function AboutSection() {
       <div className="container px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="space-y-4">
-            <h2 className="text-3xl font-headline tracking-tighter sm:text-4xl md:text-5xl">About Nanda</h2>
+            <h2 className="text-3xl font-headline tracking-tighter sm:text-4xl md:text-5xl">Know Nanda</h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               {about.paragraph}
             </p>
