@@ -80,3 +80,13 @@
       background-size: 1.5px 8px;
     }
 }
+
+/* General container for the timeline */
+.timeline-container {
+  display: flex; /* Makes the items line up in a row */
+  flex-wrap: wrap; /* Allows items to wrap to a new line on small screens */
+  justify-content: space-around; /* Adds space between and around the items */
+  padding: 20px;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
