@@ -34,7 +34,7 @@ export const quickFacts = [
 export const philosophy = [
   {
     title: "Learning Environment",
-    description: "We explore the why before the what. In a safe space for critique, revision, and second chances, authentic tasks grow problem-solvers and confident learners, nurture civic responsibility, and develop empathy, resilience, and collaboration alongside academic skill.",
+    description: "I believe the learning environment should spark curiosity and purpose -leading students to explore the why before the what- in a safe, respectful space where healthy critique, revision, and second chances are the norm. Through real tasks and authentic phenomena, it grows problem-solvers and confident learners, nurtures civic responsibility so knowledge serves the community, and develops empathy, resilience, and collaboration alongside academic skill.",
     icon: BookOpen,
   },
   {
