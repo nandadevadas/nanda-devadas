@@ -13,7 +13,7 @@ const WaveSvg = () => (
     >
       <path
         d="M0 50 Q 137.5 10, 275 50 T 550 50 T 825 50 T 1100 50"
-        stroke="var(--accent-green-dark)"
+        stroke="var(--timeline-accent-dark)"
         fill="none"
         strokeWidth="6"
         strokeLinecap="round"
@@ -27,7 +27,7 @@ export default function TimelineSection() {
             <div className="container max-w-[1100px] px-7 md:px-10 lg:px-16">
                 <div className="text-center mb-8">
                     <h2 className="font-timeline-heading text-3xl md:text-4xl lg:text-[42px] leading-tight -tracking-tight text-timeline-text">
-                        My Road So Far: From Foundations to Future Goals
+                        My Road So Far: From Foundations to Future
                     </h2>
                 </div>
 
@@ -38,9 +38,7 @@ export default function TimelineSection() {
                         {timelineMilestones.map((milestone, index) => {
                             const isAbove = milestone.type === 'degree';
                             return (
-                                <div key={index} className={cn("group relative flex flex-col items-center timeline-item", isAbove ? "justify-end" : "justify-start", {
-                                    'w-1/5': index < 4,
-                                })}>
+                                <div key={index} className={cn("group relative flex flex-col items-center timeline-item", isAbove ? "justify-end" : "justify-start")}>
                                     <div className={cn("flex flex-col items-center", isAbove ? "absolute bottom-[calc(50%+36px)]" : "absolute top-[calc(50%+36px)]")}>
                                         <div className="text-center w-max max-w-[200px]">
                                             {milestone.type === 'degree' && (
