@@ -34,11 +34,11 @@ export default function TimelineSection() {
                 {/* Desktop Timeline */}
                 <div className="hidden md:block relative h-64 mt-8">
                     <WaveSvg />
-                    <div className="relative z-10 flex justify-between items-center h-full">
+                    <div className="relative z-10 timeline-container">
                         {timelineMilestones.map((milestone, index) => {
                             const isAbove = milestone.type === 'degree';
                             return (
-                                <div key={index} className={cn("group relative flex flex-col items-center", isAbove ? "justify-end" : "justify-start", {
+                                <div key={index} className={cn("group relative flex flex-col items-center timeline-item", isAbove ? "justify-end" : "justify-start", {
                                     'w-1/5': index < 4,
                                 })}>
                                     <div className={cn("flex flex-col items-center", isAbove ? "absolute bottom-[calc(50%+36px)]" : "absolute top-[calc(50%+36px)]")}>
