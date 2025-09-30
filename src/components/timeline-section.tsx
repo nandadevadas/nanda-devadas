@@ -3,19 +3,19 @@ import React from 'react';
 const timelineData = [
   {
     title: "B.Sc. Biotechnology",
-    details: "University of Calicut – Kerala, India",
+    details: "University of Calicut",
     duration: "2015-2018 • First Class, Distinction",
     inProgress: false,
   },
   {
     title: "M.Sc. Biotechnology",
-    details: "Mahatma Gandhi University – Kerala, India",
+    details: "Mahatma Gandhi University",
     duration: "2018-2020 • First Rank, Distinction",
     inProgress: false,
   },
   {
     title: "Bachelor of Education (B.Ed.)",
-    details: "University of Calicut – Kerala, India",
+    details: "University of Calicut",
     duration: "2020-2022 • First Class, Distinction",
     inProgress: false,
   },
