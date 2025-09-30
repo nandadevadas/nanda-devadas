@@ -1,4 +1,5 @@
 import React from 'react';
+import { GraduationCap, Briefcase } from 'lucide-react';
 
 const timelineData = [
   {
@@ -7,6 +8,7 @@ const timelineData = [
     duration: "2015–2018",
     status: "First Class, Distinction",
     inProgress: false,
+    icon: GraduationCap,
   },
   {
     title: "M.Sc. Biotechnology",
@@ -14,6 +16,7 @@ const timelineData = [
     duration: "2018–2020",
     status: "First Rank, Distinction",
     inProgress: false,
+    icon: GraduationCap,
   },
   {
     title: "Bachelor of Education (B.Ed.)",
@@ -21,6 +24,7 @@ const timelineData = [
     duration: "2020–2022",
     status: "First Class, Distinction",
     inProgress: false,
+    icon: GraduationCap,
   },
   {
     title: "Cambridge IGCSE Biology & Science Teacher",
@@ -28,6 +32,7 @@ const timelineData = [
     duration: "2023–April 2025",
     status: "",
     inProgress: false, 
+    icon: Briefcase,
   },
   {
     title: "Toward Ontario Classrooms",
@@ -35,6 +40,7 @@ const timelineData = [
     duration: "",
     status: "",
     inProgress: true,
+    icon: Briefcase,
   },
 ];
 
@@ -50,6 +56,9 @@ export default function TimelineSection() {
         <div className="timeline-container">
           {timelineData.map((item, index) => (
             <div key={index} className="timeline-item">
+              <div className="mb-4 text-primary">
+                <item.icon className="h-8 w-8 mx-auto" />
+              </div>
               <h3 className="text-xl font-bold font-headline mb-2">{item.title}</h3>
               <p className="text-muted-foreground mb-1">{item.institution}</p>
               <p className="text-sm text-muted-foreground">{item.duration}</p>
