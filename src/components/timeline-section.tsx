@@ -36,7 +36,7 @@ export default function TimelineSection() {
                     <WaveSvg />
                     <div className="relative z-10 timeline-container">
                         {timelineMilestones.map((milestone, index) => {
-                            const isAbove = milestone.type === 'degree';
+                            const isAbove = index % 2 === 0;
                             return (
                                 <div key={index} className={cn("group relative flex flex-col items-center timeline-item", isAbove ? "justify-end" : "justify-start")}>
                                     <div className={cn("flex flex-col items-center", isAbove ? "absolute bottom-[calc(50%+36px)]" : "absolute top-[calc(50%+36px)]")}>
@@ -54,7 +54,7 @@ export default function TimelineSection() {
                                 </div>
                             )
                         })}
-                         <div className="group absolute right-0 top-1/2 -translate-y-1/2">
+                         <div className="group absolute right-0 top-1/2 -translate-y-1/2 -mr-4">
                             <div className="relative flex items-center justify-center w-[84px] h-[84px] bg-timeline-accent-dark rounded-full text-white">
                                 <Target className="absolute top-1 right-1 h-4 w-4" />
                                 <div className="text-center">
@@ -69,11 +69,10 @@ export default function TimelineSection() {
                 {/* Mobile Timeline */}
                 <div className="md:hidden mt-12">
                   <div className="relative pl-8">
-                    <div className="absolute left-4 top-0 h-full w-0.5 bg-timeline-accent-dark" />
+                    <div className="absolute left-4 top-0 h-full w-[1.5px] bg-timeline-accent-dark" />
                     {timelineMilestones.map((milestone, index) => (
                       <div key={index} className="relative mb-8 last:mb-0">
-                        <div className="absolute -left-2.5 top-1.5 w-3 h-3 rounded-full bg-timeline-accent-dark" />
-                         <div className="absolute left-0 top-2.5 w-5 h-0.5 bg-muted" />
+                        <div className="absolute -left-[5px] top-1.5 w-3 h-3 rounded-full bg-timeline-accent-dark border-2 border-card" />
                         <div className="pl-4">
                            {milestone.type === 'degree' && (
                                 <GraduationCap className="mb-2 h-6 w-6 text-timeline-accent-dark" aria-hidden="true" />
@@ -84,11 +83,10 @@ export default function TimelineSection() {
                         </div>
                       </div>
                     ))}
-                     <div className="relative">
-                        <div className="absolute -left-2.5 top-1.5 w-3 h-3 rounded-full bg-timeline-accent-dark" />
-                         <div className="absolute left-0 top-2.5 w-5 h-0.5 bg-muted" />
+                     <div className="relative pt-8">
+                        <div className="absolute -left-[5px] top-9 w-3 h-3 rounded-full bg-timeline-accent-dark border-2 border-card" />
                         <div className="pl-4 flex items-center gap-4">
-                            <div className="relative flex items-center justify-center w-16 h-16 bg-timeline-accent-dark rounded-full text-white">
+                            <div className="relative flex items-center justify-center w-16 h-16 bg-timeline-accent-dark rounded-full text-white flex-shrink-0">
                                 <Target className="absolute top-1 right-1 h-3 w-3" />
                                 <div className="text-center">
                                     <p className="font-timeline-body-semibold text-xs uppercase tracking-wider">OCT</p>
