@@ -90,3 +90,14 @@
   max-width: 1200px; 
   margin: 0 auto; 
 }
+
+/* Individual timeline item */
+.timeline-item {
+  position: relative; 
+  flex: 1; /* Allows the item to grow/shrink slightly */
+  min-width: 280px; /* 👈 THE KEY FIX: Ensures each box is at least 280 pixels wide */
+  max-width: 300px; 
+  padding: 20px;
+  margin: 0 15px 40px 15px; /* Adds space around each box */
+  /* Other styling like background color, shadow, etc. goes here... */
+}
