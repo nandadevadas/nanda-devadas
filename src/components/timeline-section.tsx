@@ -3,26 +3,37 @@ import React from 'react';
 const timelineData = [
   {
     title: "B.Sc. Biotechnology",
-    details: "University of Calicut",
-    duration: "2015-2018 • First Class, Distinction",
+    institution: "University of Calicut",
+    duration: "2015–2018",
+    status: "First Class, Distinction",
     inProgress: false,
   },
   {
     title: "M.Sc. Biotechnology",
-    details: "Mahatma Gandhi University",
-    duration: "2018-2020 • First Rank, Distinction",
+    institution: "Mahatma Gandhi University",
+    duration: "2018–2020",
+    status: "First Rank, Distinction",
     inProgress: false,
   },
   {
     title: "Bachelor of Education (B.Ed.)",
-    details: "University of Calicut",
-    duration: "2020-2022 • First Class, Distinction",
+    institution: "University of Calicut",
+    duration: "2020–2022",
+    status: "First Class, Distinction",
     inProgress: false,
   },
   {
     title: "IGCSE Biology & Science Teacher",
-    details: "AIMEE International School",
-    duration: "2023-2025",
+    institution: "AIMEE International School",
+    duration: "2023–April 2025",
+    status: "Cambridge IGCSE Biology & Science Teacher",
+    inProgress: false, 
+  },
+  {
+    title: "Toward Ontario Classrooms",
+    institution: "Present On Track: OCT- Licensure",
+    duration: "",
+    status: "In progress",
     inProgress: true,
   },
 ];
@@ -40,9 +51,10 @@ export default function TimelineSection() {
           {timelineData.map((item, index) => (
             <div key={index} className="timeline-item">
               <h3 className="text-xl font-bold font-headline mb-2">{item.title}</h3>
-              <p className="text-muted-foreground mb-1">{item.details}</p>
+              <p className="text-muted-foreground mb-1">{item.institution}</p>
+              <p className="text-sm text-muted-foreground">{item.duration}</p>
               <p className="text-sm text-muted-foreground">
-                {item.duration}
+                {item.status}
                 {item.inProgress && (
                   <span className="ml-2 inline-block px-2 py-1 text-xs font-semibold text-primary-foreground bg-primary rounded-full">
                     In progress
