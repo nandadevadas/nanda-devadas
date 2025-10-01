@@ -22,7 +22,7 @@ export default function AboutSection() {
                     {fact.id === 'strengths' && Array.isArray(fact.text) ? (
                       <>
                         <h4 className="font-semibold text-card-foreground mb-2">Strengths</h4>
-                        <ul className="space-y-2">
+                        <ul className="space-y-2 list-disc list-inside">
                           {fact.text.map((point, i) => (
                             <li key={i} className="text-base text-card-foreground">{point}</li>
                           ))}
