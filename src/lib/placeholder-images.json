@@ -26,9 +26,9 @@
     },
     {
       "id": "portfolio-4",
-      "description": "A Punnett square diagram for a genetics lesson.",
-      "imageUrl": "https://images.unsplash.com/photo-1644173308443-830f712f6789?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnZW5ldGljcyUyMGNoYXJ0fGVufDB8fHx8MTc1OTA1NjAwMnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "genetics chart"
+      "description": "A sprayer applying pesticide to a field, representing pest control.",
+      "imageUrl": "https://images.unsplash.com/photo-1593999094742-4f5280054b23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZXN0aWNpZGVzfGVufDB8fHx8MTc1OTM0NDIwOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pesticide sprayer"
     },
     {
       "id": "portfolio-5",
