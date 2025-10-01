@@ -81,7 +81,7 @@ export const portfolioItems = [
     title: "From ‘Peep into Poop’ to Nephrologists",
     course: "IGCSE Biology",
     grade: "10",
-    drivingQuestion: "How can our class improve a local habitat?",
+    drivingQuestion: "How does your body turn 180 liters of fluid into just 1.5 liters of urine?",
     whatStudentsDid: "Field data collection, species counts, improvement proposal.",
     assessment: "Group presentation + reflection (metacognition stem).",
     tags: ["Inquiry-based lesson design", "5E model lesson planning"],
