@@ -93,7 +93,7 @@ export const portfolioItems = [
     order: 2
   },
   {
-    title: "Steaming Stories: Tales from the Idli Plate",
+    title: "Steaming Stories: Tales from the Idli Plate 🍚🔥📝",
     course: "Cambridge Primary Science",
     grade: "4",
     drivingQuestion: "What story can a single cell tell?",
