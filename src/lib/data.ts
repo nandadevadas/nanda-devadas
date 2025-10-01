@@ -32,7 +32,7 @@ export type QuickFact = {
 };
 
 export const quickFacts: QuickFact[] = [
-  { id: 'experience', text: "2 years teaching experience: Grade 10 Biology (Cambridge IGCSE) and Grades 3 & 4 Science.", icon: Briefcase },
+  { id: 'experience', text: "2 years teaching experience: Grade 10 Biology (Cambridge IGCSE) and Grades 3 & 4 (Cambridge Primary Science).", icon: Briefcase },
   { id: 'strengths', text: [
     "Inquiry-based lesson design",
     "Phenomenon-Driven instruction",
