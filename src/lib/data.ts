@@ -79,7 +79,7 @@ export const portfolioItems = [
   },
   {
     title: "From ‘Peep into Poop’ to Nephrologists",
-    course: "IGCSE BIOLOGY",
+    course: "IGCSE Biology",
     grade: "10",
     drivingQuestion: "How can our class improve a local habitat?",
     whatStudentsDid: "Field data collection, species counts, improvement proposal.",
