@@ -44,6 +44,7 @@ export default function HeroSection() {
                 width={500}
                 height={500}
                 className="rounded-xl object-cover shadow-lg aspect-square"
+                priority
               />
             )}
              <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-[500px] max-h-[500px] bg-accent/30 rounded-full blur-3xl"></div>

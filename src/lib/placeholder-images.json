@@ -3,7 +3,7 @@
     {
       "id": "nanda-portrait",
       "description": "A professional and friendly portrait of Nanda Dev.",
-      "imageUrl": "https://storage.googleapis.com/aifirebase/scenarios/155-nanda-dev-portfolio/nanda-hero.jpeg",
+      "imageUrl": "/nanda-hero.jpeg",
       "imageHint": "teacher portrait"
     },
     {
