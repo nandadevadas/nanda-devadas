@@ -42,7 +42,7 @@ export default function PortfolioSection() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl">Evidence on the Table - What learning looked like and why it worked</h2>
+            <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl">Evidence of Practice</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Explore a selection of unit plans, assessments, and student work from my classroom.
             </p>
