@@ -1,3 +1,4 @@
+
 import { BookOpen, Target, Users, Briefcase, GraduationCap, Trophy, Award, CheckCircle2 } from 'lucide-react';
 
 export const siteInfo = {
@@ -96,7 +97,7 @@ export const portfolioItems = [
     title: "Steaming Stories: Tales from the Idli Plate 🍚🔥📝",
     course: "Cambridge Primary Science",
     grade: "4",
-    drivingQuestion: "What story can a single cell tell?",
+    drivingQuestion: "Ever wondered what your lunch thinks as it travels through your body?” 🍏🤔",
     whatStudentsDid: "Microscopic imaging + annotated gallery; peer feedback rounds.",
     assessment: "Rubric focusing on observation → inference.",
     tags: ["IGCSE", "Inquiry-based lesson design"],
