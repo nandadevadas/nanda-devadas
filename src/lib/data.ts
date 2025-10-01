@@ -126,7 +126,7 @@ export const portfolioItems = [
   },
   {
     title: "🔬 Forensic Files Unveiled at Aimee! 🕵️‍♂️",
-    course: "STEM",
+    course: "STEM Project",
     grade: "4",
     drivingQuestion: "“What makes every living organism as unique as a zebra’s stripes?” 🦓",
     whatStudentsDid: "Students designed and conducted experiments with bean seeds, manipulating variables like light, water, and soil. They documented growth daily in journals.",
