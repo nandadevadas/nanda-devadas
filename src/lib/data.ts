@@ -143,7 +143,7 @@ export const portfolioItems = [
     title: "Modeling Meiosis 🧬",
     course: "IGCSE Biology",
     grade: "10",
-    drivingQuestion: "How does a single cell create the genetic diversity needed for a whole population?",
+    drivingQuestion: "“How early should we start teaching road safety?”",
     whatStudentsDid: "Used pipe cleaners, beads, and paper cutouts to model the stages of meiosis, focusing on crossing over and independent assortment.",
     assessment: "Students created a stop-motion video or a narrated slideshow explaining their model, assessed with a rubric on accuracy and clarity.",
     tags: ["Differentiated Instruction", "5E model lesson planning"],
