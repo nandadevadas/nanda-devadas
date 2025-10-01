@@ -122,6 +122,36 @@ export const portfolioItems = [
     ],
     published: true,
     order: 4
+  },
+  {
+    title: "The Great Bean Race 🌱",
+    course: "Cambridge Primary Science",
+    grade: "3",
+    drivingQuestion: "What do seeds need to grow into healthy plants?",
+    whatStudentsDid: "Students designed and conducted experiments with bean seeds, manipulating variables like light, water, and soil. They documented growth daily in journals.",
+    assessment: "Lab journal with observations, data, and a concluding CER (Claim, Evidence, Reasoning) statement.",
+    tags: ["Inquiry-based lesson design", "5E model lesson planning"],
+    artifacts: [
+        { type: "image", url: "#", label: "Student Journal" },
+        { type: "pdf", url: "#", label: "Experiment Guide" }
+    ],
+    published: true,
+    order: 5
+  },
+  {
+    title: "Modeling Meiosis 🧬",
+    course: "IGCSE Biology",
+    grade: "10",
+    drivingQuestion: "How does a single cell create the genetic diversity needed for a whole population?",
+    whatStudentsDid: "Used pipe cleaners, beads, and paper cutouts to model the stages of meiosis, focusing on crossing over and independent assortment.",
+    assessment: "Students created a stop-motion video or a narrated slideshow explaining their model, assessed with a rubric on accuracy and clarity.",
+    tags: ["Differentiated Instruction", "5E model lesson planning"],
+    artifacts: [
+        { type: "image", url: "#", label: "Student Model" },
+        { type: "pdf", url: "#", label: "Assessment Rubric" }
+    ],
+    published: true,
+    order: 6
   }
 ];
 
