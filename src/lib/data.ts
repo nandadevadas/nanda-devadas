@@ -67,7 +67,7 @@ export const portfolioItems = [
     title: "🎬 Genetics, Inquiry, and a Touch of Hollywood Drama 🧬",
     course: "IGCSE Biology",
     grade: "10",
-    drivingQuestion: "How does the body keep balance under stress?",
+    drivingQuestion: "Can you use blood types to crack a century-old Hollywood case?",
     whatStudentsDid: "Modeled feedback loops; labs on heart rate recovery.",
     assessment: "CER write-up + lab report with success criteria.",
     tags: ["Inquiry-based lesson design", "Phenomenon-Driven instruction"],
