@@ -19,7 +19,15 @@ export default function AboutSection() {
                 <CardContent className="p-4 flex items-start gap-4">
                   <fact.icon className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <p className="text-base text-card-foreground pt-1">{fact.text}</p>
+                    {Array.isArray(fact.text) ? (
+                      <ul className="space-y-1">
+                        {fact.text.map((point, i) => (
+                          <li key={i} className="text-base text-card-foreground pt-1">{point}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="text-base text-card-foreground pt-1">{fact.text}</p>
+                    )}
                   </div>
                 </CardContent>
               </Card>
