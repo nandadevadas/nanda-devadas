@@ -63,8 +63,8 @@ export const philosophy = [
 export type PortfolioItem = typeof portfolioItems[0];
 export const portfolioItems = [
   {
-    title: "Human Systems & Homeostasis",
-    course: "SBI2D",
+    title: "🎬 Genetics, Inquiry, and a Touch of Hollywood Drama! 🧬",
+    course: "IGCSE Biology",
     grade: "10",
     drivingQuestion: "How does the body keep balance under stress?",
     whatStudentsDid: "Modeled feedback loops; labs on heart rate recovery.",
