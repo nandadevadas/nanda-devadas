@@ -125,10 +125,10 @@ export const portfolioItems = [
     order: 4
   },
   {
-    title: "The Great Bean Race 🌱",
-    course: "Cambridge Primary Science",
-    grade: "3",
-    drivingQuestion: "What do seeds need to grow into healthy plants?",
+    title: "🔬 Forensic Files Unveiled at Aimee! 🕵️‍♂️",
+    course: "STEM",
+    grade: "4",
+    drivingQuestion: "“What makes every living organism as unique as a zebra’s stripes?” 🦓",
     whatStudentsDid: "Students designed and conducted experiments with bean seeds, manipulating variables like light, water, and soil. They documented growth daily in journals.",
     assessment: "Lab journal with observations, data, and a concluding CER (Claim, Evidence, Reasoning) statement.",
     tags: ["Inquiry-based lesson design", "5E model lesson planning"],
