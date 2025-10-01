@@ -69,7 +69,7 @@ export const portfolioItems = [
     drivingQuestion: "How does the body keep balance under stress?",
     whatStudentsDid: "Modeled feedback loops; labs on heart rate recovery.",
     assessment: "CER write-up + lab report with success criteria.",
-    tags: ["Ontario", "Biology", "Assessment", "Lab"],
+    tags: ["Inquiry-based lesson design", "Phenomenon-Driven instruction"],
     artifacts: [
       { type: "image", url: "#", label: "Student Lab Setup" },
       { type: "pdf", url: "#", label: "Rubric" }
@@ -84,7 +84,7 @@ export const portfolioItems = [
     drivingQuestion: "How can our class improve a local habitat?",
     whatStudentsDid: "Field data collection, species counts, improvement proposal.",
     assessment: "Group presentation + reflection (metacognition stem).",
-    tags: ["Ontario", "Science", "Project-Based"],
+    tags: ["Inquiry-based lesson design", "5E model lesson planning"],
     artifacts: [
       { type: "image", url: "#", label: "Field Data Sheet" },
       { type: "pdf", url: "#", label: "Project Outline" }
@@ -99,7 +99,7 @@ export const portfolioItems = [
     drivingQuestion: "What story can a single cell tell?",
     whatStudentsDid: "Microscopic imaging + annotated gallery; peer feedback rounds.",
     assessment: "Rubric focusing on observation → inference.",
-    tags: ["IGCSE", "Biology", "Lab", "Peer Feedback"],
+    tags: ["IGCSE", "Inquiry-based lesson design"],
     artifacts: [
         { type: "image", url: "#", label: "Annotated Image" },
         { type: "pdf", url: "#", label: "Assessment Rubric" }
@@ -114,7 +114,7 @@ export const portfolioItems = [
     drivingQuestion: "How do traits move through a community?",
     whatStudentsDid: "Punnett simulations; ethics discussion; newsletter for families.",
     assessment: "Problem set + short editorial with sources.",
-    tags: ["IGCSE", "Genetics", "Ethics"],
+    tags: ["IGCSE", "Differentiated Instruction"],
     artifacts: [
         { type: "pdf", url: "#", label: "Problem Set" },
         { type: "pdf", url: "#", label: "Newsletter Example" }

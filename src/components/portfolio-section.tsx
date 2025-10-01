@@ -11,11 +11,13 @@ import PortfolioModal from './portfolio-modal';
 import type { PortfolioItem } from "@/lib/data";
 
 export default function PortfolioSection() {
-  const allTags = useMemo(() => {
-    const tags = new Set<string>();
-    portfolioItems.forEach(item => item.tags.forEach(tag => tags.add(tag)));
-    return Array.from(tags);
-  }, []);
+  const allTags = [
+    "Inquiry-based lesson design",
+    "Phenomenon-Driven instruction",
+    "Differentiated Instruction",
+    "5E model lesson planning",
+    "IGCSE"
+  ];
 
   const [activeFilters, setActiveFilters] = useState<string[]>([]);
   const [selectedItem, setSelectedItem] = useState<PortfolioItem | null>(null);
@@ -43,7 +45,7 @@ export default function PortfolioSection() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl">Evidence of Practice</h2>
-            <p className="text-muted-foreground">
+            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Explore what learning looked like and why it worked in my classroom & here is “A quick view of what I bring to your school.”
             </p>
           </div>
