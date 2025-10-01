@@ -1,7 +1,7 @@
 import React from 'react';
 import { GraduationCap, Briefcase } from 'lucide-react';
 
-const timelineData = [
+const educationData = [
   {
     title: "B.Sc. Biotechnology",
     institution: "University of Calicut",
@@ -26,6 +26,9 @@ const timelineData = [
     inProgress: false,
     icon: GraduationCap,
   },
+];
+
+const experienceData = [
   {
     title: "Cambridge IGCSE Biology & Science Teacher",
     institution: "AIMEE International School",
@@ -44,6 +47,27 @@ const timelineData = [
   },
 ];
 
+
+const TimelineCard = ({ item }: { item: typeof educationData[0] | typeof experienceData[0] }) => (
+    <div className="timeline-item">
+        <div className="mb-4 text-primary">
+        <item.icon className="h-8 w-8 mx-auto" />
+        </div>
+        <h3 className="text-xl font-bold font-headline mb-2">{item.title}</h3>
+        <p className="text-muted-foreground mb-1">{item.institution}</p>
+        <p className="text-sm text-muted-foreground">{item.duration}</p>
+        <p className="text-sm text-muted-foreground">
+        {item.status}
+        {item.inProgress && (
+            <span className="ml-2 inline-block px-2 py-1 text-xs font-semibold text-primary-foreground bg-primary rounded-full">
+            In progress
+            </span>
+        )}
+        </p>
+    </div>
+);
+
+
 export default function TimelineSection() {
   return (
     <section id="timeline" className="w-full py-12 md:py-24 bg-background">
@@ -54,24 +78,16 @@ export default function TimelineSection() {
           </h2>
         </div>
         <div className="timeline-container">
-          {timelineData.map((item, index) => (
-            <div key={index} className="timeline-item">
-              <div className="mb-4 text-primary">
-                <item.icon className="h-8 w-8 mx-auto" />
-              </div>
-              <h3 className="text-xl font-bold font-headline mb-2">{item.title}</h3>
-              <p className="text-muted-foreground mb-1">{item.institution}</p>
-              <p className="text-sm text-muted-foreground">{item.duration}</p>
-              <p className="text-sm text-muted-foreground">
-                {item.status}
-                {item.inProgress && (
-                  <span className="ml-2 inline-block px-2 py-1 text-xs font-semibold text-primary-foreground bg-primary rounded-full">
-                    In progress
-                  </span>
-                )}
-              </p>
+            <div className="timeline-row">
+                {educationData.map((item, index) => (
+                    <TimelineCard key={index} item={item} />
+                ))}
             </div>
-          ))}
+            <div className="timeline-row">
+                 {experienceData.map((item, index) => (
+                    <TimelineCard key={index} item={item} />
+                ))}
+            </div>
         </div>
       </div>
     </section>
