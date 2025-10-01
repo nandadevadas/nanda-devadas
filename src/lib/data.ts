@@ -93,9 +93,9 @@ export const portfolioItems = [
     order: 2
   },
   {
-    title: "Cells & Microscopy Sprint",
-    course: "IGCSE",
-    grade: "10",
+    title: "Steaming Stories: Tales from the Idli Plate",
+    course: "Cambridge Primary Science",
+    grade: "4",
     drivingQuestion: "What story can a single cell tell?",
     whatStudentsDid: "Microscopic imaging + annotated gallery; peer feedback rounds.",
     assessment: "Rubric focusing on observation → inference.",
