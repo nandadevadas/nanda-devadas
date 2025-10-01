@@ -78,7 +78,7 @@ export const portfolioItems = [
     order: 1
   },
   {
-    title: "Ecosystems & Local Action",
+    title: "From ‘Peep into Poop’ to Nephrologists",
     course: "SNC1W",
     grade: "9",
     drivingQuestion: "How can our class improve a local habitat?",
