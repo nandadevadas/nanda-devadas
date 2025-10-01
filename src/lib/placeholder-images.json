@@ -20,9 +20,9 @@
     },
     {
       "id": "portfolio-3",
-      "description": "A close-up view of a cell under a microscope.",
-      "imageUrl": "https://images.unsplash.com/photo-1618250607237-17f7f854a243?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtaWNyb3Njb3BlJTIwdmlld3xlbnwwfHx8fDE3NTkxMTIxOTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "microscope view"
+      "description": "A diagram of the human digestive system.",
+      "imageUrl": "https://images.unsplash.com/photo-1606100191834-510a71146316?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkaWdlc3RpdmUlMjBzeXN0ZW18ZW58MHx8fHwxNzU5MzQ1NDQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "digestive system"
     },
     {
       "id": "portfolio-4",
