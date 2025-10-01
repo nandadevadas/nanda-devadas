@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "nanda-portrait",
-      "description": "A professional and friendly portrait of Nanda Dev.",
-      "imageUrl": "/nanda-hero.jpeg",
-      "imageHint": "teacher portrait"
+      "description": "A professional and friendly portrait of Nanda Dev, teaching in a classroom.",
+      "imageUrl": "https://storage.googleapis.com/aifirebase-11-dev-images/studio/e47453f6-4903-4b62-921c-a11181c03798.jpeg",
+      "imageHint": "teacher classroom"
     },
     {
       "id": "portfolio-1",
