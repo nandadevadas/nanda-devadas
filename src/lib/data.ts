@@ -1,4 +1,5 @@
 
+
 import { BookOpen, Target, Users, Briefcase, GraduationCap, Trophy, Award, CheckCircle2 } from 'lucide-react';
 
 export const siteInfo = {
@@ -109,10 +110,10 @@ export const portfolioItems = [
     order: 3
   },
   {
-    title: "IGCSE Genetics Mini-Project",
-    course: "IGCSE",
-    grade: "10",
-    drivingQuestion: "How do traits move through a community?",
+    title: "🌍🌿 Bridging classroom lessons with real-world issues!",
+    course: "STEM Project",
+    grade: "4",
+    drivingQuestion: "What if young scientists could fight pests and protect pollinators?” 🐝🌿",
     whatStudentsDid: "Punnett simulations; ethics discussion; newsletter for families.",
     assessment: "Problem set + short editorial with sources.",
     tags: ["IGCSE", "Differentiated Instruction"],
