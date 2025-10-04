@@ -9,15 +9,22 @@ import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import PortfolioModal from './portfolio-modal';
 import type { PortfolioItem } from "@/lib/data";
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { Info } from 'lucide-react';
+
+const tagDefinitions = {
+  "Inquiry-based lesson design": "Learning is driven by student questions and exploration, where students actively construct their own knowledge rather than passively receiving facts.",
+  "Phenomenon-Driven instruction": "Lessons start with a real-world observable event (a science puzzle) that students work collaboratively to explain, making the science relevant and memorable.",
+  "Differentiated Instruction": "Teaching is responsive to the needs of every learner by adjusting the content, process, or product so all students can achieve the same learning goal.",
+  "5E model lesson planning": "A structured framework that guides students through five phases of learning—Engage, Explore, Explain, Elaborate, and Evaluate—to build deep conceptual understanding.",
+  "IGCSE": "A globally recognized curriculum and examination system focused on developing knowledge, practical skills, and critical thinking essential for success in higher education."
+};
+
+type Tag = keyof typeof tagDefinitions;
+
 
 export default function PortfolioSection() {
-  const allTags = [
-    "Inquiry-based lesson design",
-    "Phenomenon-Driven instruction",
-    "Differentiated Instruction",
-    "5E model lesson planning",
-    "IGCSE"
-  ];
+  const allTags = Object.keys(tagDefinitions) as Tag[];
 
   const [activeFilters, setActiveFilters] = useState<string[]>([]);
   const [selectedItem, setSelectedItem] = useState<PortfolioItem | null>(null);
@@ -49,18 +56,26 @@ export default function PortfolioSection() {
               Explore what learning looked like and why it worked in my classroom & here is “A quick view of what I bring to your school.”
             </p>
           </div>
-          <div className="flex flex-wrap justify-center gap-2 py-6">
+          <div className="flex flex-wrap justify-center gap-2 py-6 items-center">
             {allTags.map(tag => (
-              <Badge
-                key={tag}
-                variant={activeFilters.includes(tag) ? 'default' : 'secondary'}
-                onClick={() => toggleFilter(tag)}
-                className="cursor-pointer"
-                role="button"
-                aria-pressed={activeFilters.includes(tag)}
-              >
-                {tag}
-              </Badge>
+              <Popover key={tag}>
+                <PopoverTrigger asChild>
+                  <Badge
+                    variant={activeFilters.includes(tag) ? 'default' : 'secondary'}
+                    onClick={() => toggleFilter(tag)}
+                    className="cursor-pointer flex items-center gap-1"
+                    role="button"
+                    aria-pressed={activeFilters.includes(tag)}
+                  >
+                    {tag}
+                    <Info className="h-3 w-3 opacity-70" />
+                  </Badge>
+                </PopoverTrigger>
+                <PopoverContent className="w-80 text-sm text-left">
+                    <h4 className="font-bold mb-2">{tag}</h4>
+                    <p className="text-muted-foreground">{tagDefinitions[tag]}</p>
+                </PopoverContent>
+              </Popover>
             ))}
           </div>
         </div>
