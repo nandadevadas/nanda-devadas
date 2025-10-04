@@ -77,7 +77,7 @@ export default function CredentialsSection() {
                           const SubIcon = subCategoryIconMap[item.title as keyof typeof subCategoryIconMap] || CheckCircle2;
                           return (
                             <div key={index}>
-                              <h4 className="font-semibold text-primary mb-2 flex items-center gap-2 font-headline">
+                              <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2 font-headline">
                                 <SubIcon className="h-5 w-5 text-primary" />
                                 {item.title}
                               </h4>
