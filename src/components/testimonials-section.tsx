@@ -1,43 +1,20 @@
+
 "use client";
 
-import React, { useState } from 'react';
-import Image from 'next/image';
+import React from 'react';
 import { testimonials } from '@/lib/data';
 import { Card, CardContent } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { summarizeTestimonial } from '@/ai/flows/summarize-testimonials';
-import { Button } from './ui/button';
-import { Sparkles, Loader2 } from 'lucide-react';
-import { Badge } from './ui/badge';
 
 interface TestimonialCardProps {
   testimonial: typeof testimonials[0];
 }
 
 function TestimonialCard({ testimonial }: TestimonialCardProps) {
-  const [summary, setSummary] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState('');
-
   const avatar = PlaceHolderImages.find(p => p.id === `testimonial-${testimonial.order}`);
   const authorInitial = testimonial.author.charAt(0);
-
-  const handleSummarize = async () => {
-    setIsLoading(true);
-    setError('');
-    setSummary('');
-    try {
-      const result = await summarizeTestimonial({ testimonial: testimonial.quote });
-      setSummary(result.summary);
-    } catch (e) {
-      console.error(e);
-      setError('Could not generate summary.');
-    } finally {
-      setIsLoading(false);
-    }
-  };
 
   return (
     <Card className="h-full flex flex-col justify-between p-6">
@@ -45,13 +22,6 @@ function TestimonialCard({ testimonial }: TestimonialCardProps) {
         <blockquote className="text-lg font-semibold leading-snug">
           “{testimonial.quote}”
         </blockquote>
-        {summary && (
-          <div className="mt-4 p-3 bg-primary/10 rounded-lg">
-             <p className="text-sm text-primary-dark font-medium"><Sparkles className="inline-block w-4 h-4 mr-2 text-primary"/>AI Summary:</p>
-            <p className="text-sm text-foreground">{summary}</p>
-          </div>
-        )}
-        {error && <p className="mt-4 text-sm text-destructive">{error}</p>}
       </CardContent>
       <div className="mt-6">
         <div className="flex justify-between items-center">
@@ -65,16 +35,6 @@ function TestimonialCard({ testimonial }: TestimonialCardProps) {
               <p className="text-sm text-muted-foreground">{testimonial.affiliation}</p>
             </div>
           </div>
-          <Button size="sm" variant="outline" onClick={handleSummarize} disabled={isLoading}>
-            {isLoading ? (
-              <Loader2 className="h-4 w-4 animate-spin" />
-            ) : (
-              <>
-                <Sparkles className="mr-2 h-4 w-4" />
-                Summarize
-              </>
-            )}
-          </Button>
         </div>
       </div>
     </Card>

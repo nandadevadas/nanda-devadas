@@ -44,21 +44,45 @@
     },
     {
       "id": "testimonial-1",
-      "description": "Avatar for a department head.",
-      "imageUrl": "https://images.unsplash.com/photo-1652471943570-f3590a4e52ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NTkxMTIxOTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Avatar for a school principal.",
+      "imageUrl": "https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NTk0ODYwMDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional headshot"
     },
     {
       "id": "testimonial-2",
-      "description": "Avatar for a vice principal.",
-      "imageUrl": "https://images.unsplash.com/photo-1601655781320-205e34c94eb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxlZHVjYXRvciUyMHBvcnRyYWl0fGVufDB8fHx8MTc1OTA2NjgzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Avatar for a science department lead.",
+      "imageUrl": "https://images.unsplash.com/photo-1666183701139-2dd760d462df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlZHVjYXRvciUyMHBvcnRyYWl0fGVufDB8fHx8MTc1OTU5NTQyMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "educator portrait"
     },
     {
       "id": "testimonial-3",
+      "description": "Avatar for an English department head.",
+      "imageUrl": "https://images.unsplash.com/photo-1622169804256-0eb6873ff441?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0ZWFjaGVyJTIwaGVhZHNob3R8ZW58MHx8fHwxNzU5NTk1NDIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "teacher headshot"
+    },
+    {
+      "id": "testimonial-4",
+      "description": "Avatar for a high school student.",
+      "imageUrl": "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzdHVkZW50JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzU5NTYxNjAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "student portrait"
+    },
+    {
+      "id": "testimonial-5",
+      "description": "Avatar for a high school student.",
+      "imageUrl": "https://images.unsplash.com/photo-1612759183367-cbd1103b1e13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdHVkZW50JTIwaGVhZHNob3R8ZW58MHx8fHwxNzU5NTk1NDIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "student headshot"
+    },
+    {
+      "id": "testimonial-6",
       "description": "Avatar for a parent.",
-      "imageUrl": "https://images.unsplash.com/photo-1693048235558-c8a346a570cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwYXJlbnQlMjBwcm9maWxlfGVufDB8fHx8MTc1OTExMjE5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1756982477292-cd5e4492f037?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwYXJlbnQlMjBwcm9maWxlfGVufDB8fHx8MTc1OTU5NTQyMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "parent profile"
+    },
+    {
+      "id": "testimonial-7",
+      "description": "Avatar for a parent.",
+      "imageUrl": "https://images.unsplash.com/photo-1698898404494-f13a839ef4bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwYXJlbnQlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk1OTU0MjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "parent portrait"
     }
   ]
 }

@@ -1,5 +1,6 @@
 
 
+
 import { BookOpen, Target, Users, Briefcase, GraduationCap, Trophy, Award, CheckCircle2 } from 'lucide-react';
 
 export const siteInfo = {
@@ -191,27 +192,52 @@ export const timelineMilestones = [
 
 export const testimonials = [
     {
-        quote: "Nanda creates inclusive labs where every student participates meaningfully. Clear routines, visible success criteria, and kind accountability.",
-        author: "Department Head",
-        affiliation: "Cambridge International School",
-        avatarUrl: "/images/ref-1.webp",
+        quote: "Nanda has a remarkable talent for designing lessons that are not only engaging but also deeply rooted in real-world applications. Her commitment to student-led inquiry has transformed our science classrooms. She is a reflective practitioner, a collaborative colleague, and a true asset to our academic community.",
+        author: "Omkara Dantu",
+        affiliation: "Principal, AIMEE International School",
         order: 1,
         published: true
     },
     {
-        quote: "Students consistently referenced the ‘why’ of each task. Growth in scientific writing was evident across the term.",
-        author: "Vice Principal",
-        affiliation: "GTA Secondary School",
-        avatarUrl: "/images/ref-2.webp",
+        quote: "Working with Nanda is a professional joy. She brings a rare combination of scientific rigor and pedagogical creativity to her role. Her units on ecosystem dynamics and cellular biology were models of clarity and student engagement. She builds confidence in her students by making complex topics accessible and exciting.",
+        author: "Alekhya Bellapu",
+        affiliation: "Science Department Lead",
         order: 2,
         published: true
     },
     {
-        quote: "My child’s confidence in science soared. Nanda’s feedback was specific, encouraging, and timely.",
-        author: "Parent",
-        affiliation: "Grade 10",
-        avatarUrl: "/images/ref-3.webp",
+        quote: "Nanda's focus on scientific literacy is outstanding. She collaborates across departments to ensure that students are not just 'doing' science, but also reading, writing, and communicating like scientists. Her students’ lab reports and research proposals show a level of clarity and evidence-based reasoning that is well beyond their years.",
+        author: "Ayna Ismail",
+        affiliation: "English Department Head",
         order: 3,
+        published: true
+    },
+    {
+        quote: "Ms. Nanda makes biology make sense. Before, it was just memorizing facts, but she connects everything to a bigger story. The project on genetic inheritance felt like we were solving a real puzzle. She pushes us to think for ourselves but is always there to help when we get stuck. I feel much more prepared for my exams.",
+        author: "Sana",
+        affiliation: "Grade 10 Student",
+        order: 4,
+        published: true
+    },
+    {
+        quote: "I used to be nervous about science, but Ms. Nanda’s class changed that. She uses interesting examples and makes sure everyone understands before moving on. The group activities are fun, and I learned so much from my classmates. She is patient and always encourages us to ask questions, no matter how small.",
+        author: "Mithravrindha",
+        affiliation: "Grade 10 Student",
+        order: 5,
+        published: true
+    },
+    {
+        quote: "My son comes home excited to talk about what he learned in science class, which has never happened before. Nanda’s hands-on approach to teaching has sparked a genuine curiosity in him. We are so grateful for her dedication and the positive, encouraging learning environment she has created for her students.",
+        author: "Sindhu Mukkamala",
+        affiliation: "Parent (Grade 4)",
+        order: 6,
+        published: true
+    },
+    {
+        quote: "The communication from Ms. Nanda is excellent. We always know what our daughter is learning and how we can support her at home. The 'Steaming Stories' project was fantastic; it was wonderful to see our child so engaged in a school project, applying her learning in such a creative way. We've seen her confidence grow immensely.",
+        author: "Hymavadhi",
+        affiliation: "Parent (Grade 4)",
+        order: 7,
         published: true
     }
 ];
