@@ -1,12 +1,14 @@
-import { credentials, CredentialCategory } from '@/lib/data';
+"use client";
+
+import { credentials } from '@/lib/data';
 import { Card, CardContent } from '@/components/ui/card';
-import { CheckCircle2, GraduationCap, Briefcase, Award, Users, FlaskConical } from 'lucide-react';
+import { CheckCircle2, GraduationCap, Briefcase, Award, Users, FlaskConical, LifeBuoy } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-const iconMap = {
+const categoryIconMap = {
   Education: GraduationCap,
   Experience: Briefcase,
-  "Professional Development": Award,
+  "Professional Development": LifeBuoy,
 }
 
 const subCategoryIconMap = {
@@ -21,6 +23,9 @@ function isSubCategory(item: any): item is { title: string; items: string[] } {
 }
 
 export default function CredentialsSection() {
+  const educationAndExperience = credentials.filter(c => c.title === 'Education' || c.title === 'Experience');
+  const professionalDevelopment = credentials.find(c => c.title === 'Professional Development');
+
   return (
     <section id="credentials" className="w-full py-12 md:py-24 lg:py-32 bg-background">
       <div className="container px-4 md:px-6">
@@ -34,49 +39,65 @@ export default function CredentialsSection() {
             </p>
           </div>
         </div>
-        <div className="mx-auto max-w-5xl py-12 sm:columns-2 sm:gap-12">
-          {credentials.map((category) => {
-            const Icon = iconMap[category.title as keyof typeof iconMap] || CheckCircle2;
-            const isProfessionalDevelopment = category.title === "Professional Development";
-            
-            return (
-              <div key={category.title} className={cn("grid gap-4 mb-8 credential-category", isProfessionalDevelopment && "sm:col-span-1")}>
-                <h3 className="flex items-center gap-3 text-xl font-bold font-headline">
-                  <Icon className="h-6 w-6 text-primary" />
-                  {category.title}
-                </h3>
-                <div className="grid gap-6 pl-9">
-                  {(category.items as any[]).map((item, index) => {
-                    if (isSubCategory(item)) {
-                      const SubIcon = subCategoryIconMap[item.title as keyof typeof subCategoryIconMap] || CheckCircle2;
-                      return (
-                        <div key={index}>
-                          <h4 className="font-semibold text-card-foreground mb-2 flex items-center gap-2">
-                            <SubIcon className="h-5 w-5 text-primary/80" />
-                            {item.title}
-                          </h4>
-                          <ul className="grid gap-3 pl-7">
-                            {item.items.map((subItem, subIndex) => (
-                              <li key={subIndex} className="flex items-start gap-3">
-                                <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
-                                <span className="text-muted-foreground">{subItem}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      );
-                    }
-                    return (
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-x-12 gap-y-8 py-12 md:grid-cols-5">
+          {/* Left Column */}
+          <div className="space-y-8 md:col-span-2">
+            {educationAndExperience.map((category) => {
+              const Icon = categoryIconMap[category.title as keyof typeof categoryIconMap] || CheckCircle2;
+              return (
+                <div key={category.title}>
+                  <h3 className="flex items-center gap-3 text-xl font-bold font-headline mb-4">
+                    <Icon className="h-6 w-6 text-primary" />
+                    {category.title}
+                  </h3>
+                  <div className="grid gap-4 pl-9">
+                    {(category.items as string[]).map((item, index) => (
                       <div key={index} className="flex items-start gap-3">
                         <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
                         <span className="text-muted-foreground">{item}</span>
                       </div>
-                    );
-                  })}
+                    ))}
+                  </div>
                 </div>
+              );
+            })}
+          </div>
+
+          {/* Right Column */}
+          <div className="md:col-span-3">
+            {professionalDevelopment && (
+               <div>
+                  <h3 className="flex items-center gap-3 text-xl font-bold font-headline mb-4">
+                    <LifeBuoy className="h-6 w-6 text-accent-foreground" />
+                    {professionalDevelopment.title}
+                  </h3>
+                  <div className="grid gap-6 pl-9">
+                  {(professionalDevelopment.items as any[]).map((item, index) => {
+                      if (isSubCategory(item)) {
+                          const SubIcon = subCategoryIconMap[item.title as keyof typeof subCategoryIconMap] || CheckCircle2;
+                          return (
+                            <div key={index}>
+                              <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2 font-headline">
+                                <SubIcon className="h-5 w-5 text-accent" />
+                                {item.title}
+                              </h4>
+                              <ul className="grid gap-3 pl-7">
+                                {item.items.map((subItem, subIndex) => (
+                                  <li key={subIndex} className="flex items-start gap-3">
+                                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-accent" />
+                                    <span className="text-muted-foreground">{subItem}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          );
+                      }
+                      return null; // Should not happen with the current data structure
+                  })}
+                  </div>
               </div>
-            );
-          })}
+            )}
+          </div>
         </div>
       </div>
     </section>
