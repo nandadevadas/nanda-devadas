@@ -2,6 +2,7 @@
 
 
 
+
 import { BookOpen, Target, Users, Briefcase, GraduationCap, Trophy, Award, CheckCircle2 } from 'lucide-react';
 
 export const siteInfo = {
@@ -214,7 +215,7 @@ export const testimonials = [
         published: true
     },
     {
-        quote: "Ms. Nanda makes biology make sense. Before, it was just memorizing facts, but she connects everything to a bigger story. The project on genetic inheritance felt like we were solving a real puzzle. She pushes us to think for ourselves but is always there to help when we get stuck. I feel much more prepared for my exams.",
+        quote: "Nanda mam was a biology teacher, it's the subject with an enormous amount of realistic theories and information and she was the right teacher for me to make it in a smoother way, she has made each and every concept so clear for the whole class and gave us practical knowledge. No matter how hard the topic is, she is the excellent teacher to detangle the difficulty and give a nice representation of the respective topic",
         author: "Sana",
         affiliation: "Grade 10 Student",
         order: 4,
