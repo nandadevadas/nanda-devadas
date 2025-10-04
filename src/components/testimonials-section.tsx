@@ -70,7 +70,7 @@ export default function TestimonialsSection() {
           <div className="space-y-2">
             <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl flex items-center gap-3 justify-center">
               <MessagesSquare className="h-8 w-8 text-primary" />
-              TESTIMONIALS ON MY PRACTICE
+              Testimonials on my Practice
             </h2>
             <p className="max-w-[900px] text-primary md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-bold">
               In Their Words - Feedback from Students, Parents and Colleagues who have seen my practice firsthand.
