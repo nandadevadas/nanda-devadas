@@ -1,5 +1,5 @@
 
-import { BookOpen, Target, Users, Briefcase, GraduationCap, Trophy, Award, CheckCircle2 } from 'lucide-react';
+import { BookOpen, Target, Users, Briefcase, GraduationCap, Trophy, Award, CheckCircle2, FlaskConical, LifeBuoy } from 'lucide-react';
 
 export const siteInfo = {
   name: "Nanda Dev",
@@ -13,8 +13,8 @@ export const siteInfo = {
 };
 
 export const navLinks = [
-  { href: "#timeline", label: "Timeline", id: "timeline" },
   { href: "#about", label: "About", id: "about" },
+  { href: "#timeline", label: "Timeline", id: "timeline" },
   { href: "#philosophy", label: "Philosophy", id: "philosophy" },
   { href: "#work", label: "Work", id: "work" },
   { href: "#testimonials", label: "Testimonials", id: "testimonials" },
