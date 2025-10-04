@@ -90,7 +90,7 @@ export default function TestimonialsSection() {
           <div className="space-y-2">
             <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl">What Others Are Saying</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              In Their Words - Students, Parents, and colleagues speak. Feedback from colleagues and community members who have seen my practice firsthand.
+              In Their Words - Feedback from Students, Parents and Colleagues who have seen my practice firsthand.
             </p>
           </div>
         </div>
