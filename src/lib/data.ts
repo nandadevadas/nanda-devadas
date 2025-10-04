@@ -3,6 +3,7 @@
 
 
 
+
 import { BookOpen, Target, Users, Briefcase, GraduationCap, Trophy, Award, CheckCircle2 } from 'lucide-react';
 
 export const siteInfo = {
@@ -229,7 +230,7 @@ export const testimonials = [
         published: true
     },
     {
-        quote: "My son comes home excited to talk about what he learned in science class, which has never happened before. Nanda’s hands-on approach to teaching has sparked a genuine curiosity in him. We are so grateful for her dedication and the positive, encouraging learning environment she has created for her students.",
+        quote: "Nanda maam, She is the Science teacher for my son Arjun in grade 3 and 4 , she made learning both exciting and meaningful with clear explanations, hands-on activities, she inspire curiosity in every child. Complex concepts are taught in a simple, easy-to-understand way. She used to help students in making projects where students can understand concepts easily. Her patience, dedication, and passion for science have created a love for the subject in young learners. We are truly grateful for the positive impact she has on the students’ academic growth and confidence. Thank you Nanda maam 😍",
         author: "Sindhu Mukkamala",
         affiliation: "Parent (Grade 4)",
         order: 6,
