@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 import { BookOpen, Target, Users, Briefcase, GraduationCap, Trophy, Award, CheckCircle2 } from 'lucide-react';
 
 export const siteInfo = {
@@ -277,7 +266,7 @@ export const credentials: CredentialCategory[] = [
         ]
     },
     {
-        title: "Professional Training",
+        title: "Professional Development",
         items: [
             {
                 title: "Certifications",

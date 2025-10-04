@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 const iconMap = {
   Education: GraduationCap,
   Experience: Briefcase,
-  "Professional Training": Award,
+  "Professional Development": Award,
 }
 
 // Helper to check if an item is a sub-category
@@ -31,7 +31,7 @@ export default function CredentialsSection() {
         <div className="mx-auto max-w-5xl py-12 sm:columns-2 sm:gap-12">
           {credentials.map((category) => {
             const Icon = iconMap[category.title as keyof typeof iconMap] || CheckCircle2;
-            const isProfessionalTraining = category.title === "Professional Training";
+            const isProfessionalTraining = category.title === "Professional Development";
             
             return (
               <div key={category.title} className={cn("grid gap-4 mb-8 credential-category", isProfessionalTraining && "sm:col-span-1")}>
