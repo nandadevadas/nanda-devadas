@@ -27,13 +27,13 @@ export default function AboutSection() {
                     {fact.id === 'strengths' && Array.isArray(fact.text) ? (
                       <>
                         <h4 className="font-semibold text-card-foreground mb-2">Strengths</h4>
-                        <div className="flex flex-wrap gap-2">
+                        <div className="flex flex-col gap-2 items-start">
                           {strengths?.map((strength) => (
                             <Popover key={strength}>
                               <PopoverTrigger asChild>
                                 <Badge
                                   variant='secondary'
-                                  className="cursor-pointer flex items-center gap-1"
+                                  className="cursor-pointer flex items-center gap-1 text-left"
                                   role="button"
                                 >
                                   {strength}
