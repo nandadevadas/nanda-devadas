@@ -219,7 +219,7 @@ export const testimonials = [
     },
     {
         quote: "Dear Nanda Ma'am,  Thank you so much for being an exceptional teacher and guiding star in my child's (Jaya Nandhan) educational,social and emotional journey. Beyond lessons and textbooks, you have nurtured curiosity, confidence and a love for learning in a way that only a passionate teacher can. Your kindness, patience, and inspiration have touched not just my child's education but also his outlook towards knowledge and growth. I will remain deeply grateful. Your lessons are my child's world. Once again thank you so much ma'am for helping my child become a better person and excel in education , especially in Science.  With Warm Regards, Y Hymavathi",
-        author: "Hymavadhi",
+        author: "Hymavathi",
         affiliation: "Parent (Grade 4)",
         order: 7,
         published: true
@@ -254,9 +254,9 @@ export const credentials: CredentialCategory[] = [
     {
         title: "Education",
         items: [
-            "Master of Science (M.Sc.), Biotechnology (First Rank, Distinction)",
-            "Bachelor of Education (B.Ed.) (First Class, Distinction)",
-            "Bachelor of Science (B.Sc.), Biotechnology (First Class, Distinction)"
+            "Bachelor of Education (B.Ed.)",
+            "Master of Science Biotechnology (M.Sc.)",
+            "Bachelor of Science Biotechnology (B.Sc.)"
         ]
     },
     {
