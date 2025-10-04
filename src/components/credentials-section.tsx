@@ -1,12 +1,16 @@
-import { credentials } from '@/lib/data';
+import { credentials, CredentialCategory } from '@/lib/data';
 import { Card, CardContent } from '@/components/ui/card';
-import { CheckCircle2, GraduationCap, Briefcase, Award, Trophy } from 'lucide-react';
+import { CheckCircle2, GraduationCap, Briefcase, Award } from 'lucide-react';
 
 const iconMap = {
   Education: GraduationCap,
   Experience: Briefcase,
   "Professional Training": Award,
-  Status: Trophy
+}
+
+// Helper to check if an item is a sub-category
+function isSubCategory(item: any): item is { title: string; items: string[] } {
+    return typeof item === 'object' && item !== null && 'title' in item && Array.isArray(item.items);
 }
 
 export default function CredentialsSection() {
@@ -27,21 +31,39 @@ export default function CredentialsSection() {
           {credentials.map((category) => {
             const Icon = iconMap[category.title as keyof typeof iconMap] || CheckCircle2;
             return (
-            <div key={category.title} className="grid gap-4">
-              <h3 className="flex items-center gap-3 text-xl font-bold font-headline">
-                <Icon className="h-6 w-6 text-primary" />
-                {category.title}
-              </h3>
-              <ul className="grid gap-3 pl-9">
-                {category.items.map((item, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
-                    <span className="text-muted-foreground">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )})}
+              <div key={category.title} className="grid gap-4">
+                <h3 className="flex items-center gap-3 text-xl font-bold font-headline">
+                  <Icon className="h-6 w-6 text-primary" />
+                  {category.title}
+                </h3>
+                <div className="grid gap-4 pl-9">
+                  {(category.items as any[]).map((item, index) => {
+                    if (isSubCategory(item)) {
+                      return (
+                        <div key={index}>
+                          <h4 className="font-semibold text-card-foreground mb-2">{item.title}</h4>
+                          <ul className="grid gap-3">
+                            {item.items.map((subItem, subIndex) => (
+                              <li key={subIndex} className="flex items-start gap-3">
+                                <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                                <span className="text-muted-foreground">{subItem}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      );
+                    }
+                    return (
+                      <div key={index} className="flex items-start gap-3">
+                        <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                        <span className="text-muted-foreground">{item}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

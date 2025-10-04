@@ -8,6 +8,7 @@
 
 
 
+
 import { BookOpen, Target, Users, Briefcase, GraduationCap, Trophy, Award, CheckCircle2 } from 'lucide-react';
 
 export const siteInfo = {
@@ -249,7 +250,17 @@ export const testimonials = [
     }
 ];
 
-export const credentials = [
+type ProfessionalTrainingSubCategory = {
+    title: string;
+    items: string[];
+};
+
+export type CredentialCategory = {
+    title: string;
+    items: string[] | ProfessionalTrainingSubCategory[];
+};
+
+export const credentials: CredentialCategory[] = [
     {
         title: "Education",
         items: [
@@ -268,8 +279,30 @@ export const credentials = [
     {
         title: "Professional Training",
         items: [
-            "Certified STEM Educator (Chitti, 2025)",
-            "Artificial Intelligence Tools for Innovative Practices (Chitti, 2025)"
+            {
+                title: "Certifications",
+                items: [
+                    "Certified STEM Educator (Chitti, 2025)",
+                    "Artificial Intelligence Tools for Innovative Educational Practices (Chitti, 2025)",
+                    "KTET Category 3 (2022)",
+                    "SET Biotechnology (2022)"
+                ]
+            },
+            {
+                title: "Workshops",
+                items: [
+                    "Orientation Program for Effective Use of Cambridge Learning Resources"
+                ]
+            },
+            {
+                title: "Specialized Training",
+                items: [
+                    "DNA Fingerprinting",
+                    "CRISPR Genetic Modification",
+                    "PCR-based Molecular Techniques",
+                    "Phytochemistry"
+                ]
+            }
         ]
     }
-]
+];
