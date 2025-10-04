@@ -5,6 +5,7 @@
 
 
 
+
 import { BookOpen, Target, Users, Briefcase, GraduationCap, Trophy, Award, CheckCircle2 } from 'lucide-react';
 
 export const siteInfo = {
@@ -217,20 +218,6 @@ export const testimonials = [
         published: true
     },
     {
-        quote: "Nanda mam was a biology teacher, it's the subject with an enormous amount of realistic theories and information and she was the right teacher for me to make it in a smoother way, she has made each and every concept so clear for the whole class and gave us practical knowledge. No matter how hard the topic is, she is the excellent teacher to detangle the difficulty and give a nice representation of the respective topic",
-        author: "Sana",
-        affiliation: "Grade 10 Student",
-        order: 4,
-        published: true
-    },
-    {
-        quote: "I used to be nervous about science, but Ms. Nanda’s class changed that. She uses interesting examples and makes sure everyone understands before moving on. The group activities are fun, and I learned so much from my classmates. She is patient and always encourages us to ask questions, no matter how small.",
-        author: "Mithravrindha",
-        affiliation: "Grade 10 Student",
-        order: 5,
-        published: true
-    },
-    {
         quote: "Nanda maam, She is the Science teacher for my son Arjun in grade 3 and 4 , she made learning both exciting and meaningful with clear explanations, hands-on activities, she inspire curiosity in every child. Complex concepts are taught in a simple, easy-to-understand way. She used to help students in making projects where students can understand concepts easily. Her patience, dedication, and passion for science have created a love for the subject in young learners. We are truly grateful for the positive impact she has on the students’ academic growth and confidence. Thank you Nanda maam 😍",
         author: "Sindhu Mukkamala",
         affiliation: "Parent (Grade 4)",
@@ -242,6 +229,20 @@ export const testimonials = [
         author: "Hymavadhi",
         affiliation: "Parent (Grade 4)",
         order: 7,
+        published: true
+    },
+    {
+        quote: "Nanda mam was a biology teacher, it's the subject with an enormous amount of realistic theories and information and she was the right teacher for me to make it in a smoother way, she has made each and every concept so clear for the whole class and gave us practical knowledge. No matter how hard the topic is, she is the excellent teacher to detangle the difficulty and give a nice representation of the respective topic",
+        author: "Sana",
+        affiliation: "Grade 10 Student",
+        order: 4,
+        published: true
+    },
+    {
+        quote: "I used to be nervous about science, but Ms. Nanda’s class changed that. She uses interesting examples and makes sure everyone understands before moving on. The group activities are fun, and I learned so much from my classmates. She is patient and always encourages us to ask questions, no matter how small.",
+        author: "Mithravrindha",
+        affiliation: "Grade 10 Student",
+        order: 5,
         published: true
     }
 ];

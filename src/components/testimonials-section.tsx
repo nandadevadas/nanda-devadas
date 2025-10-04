@@ -1,29 +1,49 @@
 
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import { testimonials } from '@/lib/data';
 import { Card, CardContent } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Quote } from 'lucide-react';
+import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
 
 interface TestimonialCardProps {
   testimonial: typeof testimonials[0];
 }
 
 function TestimonialCard({ testimonial }: TestimonialCardProps) {
+  const [isExpanded, setIsExpanded] = useState(false);
   const avatar = PlaceHolderImages.find(p => p.id === `testimonial-${testimonial.order}`);
   const authorInitial = testimonial.author.charAt(0);
 
+  const isLongQuote = testimonial.quote.length > 250; // Threshold for showing "Read More"
+
   return (
-    <Card className="h-full flex flex-col justify-between p-6">
-      <CardContent className="p-0 flex-grow">
-        <blockquote className="text-lg font-semibold leading-snug">
+    <Card className="h-full flex flex-col p-6 relative overflow-hidden">
+      <Quote className="absolute top-4 left-4 h-12 w-12 text-primary/10 -z-0" />
+      <CardContent className="p-0 flex-grow relative z-10">
+        <blockquote
+          className={cn(
+            "text-lg italic font-medium leading-relaxed text-foreground/80 transition-all duration-300",
+            !isExpanded && isLongQuote ? "max-h-[150px] overflow-hidden" : "max-h-full"
+          )}
+        >
           “{testimonial.quote}”
         </blockquote>
+         {isLongQuote && !isExpanded && (
+          <div className="absolute bottom-0 left-0 w-full h-12 bg-gradient-to-t from-card to-transparent"></div>
+        )}
       </CardContent>
-      <div className="mt-6">
+      <div className="mt-6 z-10">
+        {isLongQuote && (
+          <Button variant="link" onClick={() => setIsExpanded(!isExpanded)} className="p-0 h-auto mb-4">
+            {isExpanded ? 'Read Less' : 'Read More'}
+          </Button>
+        )}
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-4">
             <Avatar>
@@ -31,7 +51,7 @@ function TestimonialCard({ testimonial }: TestimonialCardProps) {
               <AvatarFallback>{authorInitial}</AvatarFallback>
             </Avatar>
             <div>
-              <p className="font-semibold">{testimonial.author}</p>
+              <p className="font-semibold text-card-foreground">{testimonial.author}</p>
               <p className="text-sm text-muted-foreground">{testimonial.affiliation}</p>
             </div>
           </div>
@@ -58,13 +78,12 @@ export default function TestimonialsSection() {
           <Carousel
             opts={{
               align: "start",
-              loop: true,
             }}
             className="w-full"
           >
-            <CarouselContent>
+            <CarouselContent className="-ml-4">
               {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 pl-4">
                   <div className="p-1 h-full">
                     <TestimonialCard testimonial={testimonial} />
                   </div>
