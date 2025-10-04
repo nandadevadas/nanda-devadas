@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import * as z from "zod"
@@ -16,6 +17,7 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { useToast } from "@/hooks/use-toast"
 
 const formSchema = z.object({
@@ -25,9 +27,10 @@ const formSchema = z.object({
   email: z.string().email({
     message: "Please enter a valid email address.",
   }),
-  organization: z.string().min(2, {
-    message: "Organization must be at least 2 characters.",
+  reason: z.string({
+    required_error: "Please select a reason for contacting.",
   }),
+  organization: z.string().optional(),
   message: z.string().min(10, {
     message: "Message must be at least 10 characters.",
   }),
@@ -35,6 +38,8 @@ const formSchema = z.object({
 
 export default function ContactForm() {
   const { toast } = useToast()
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -47,17 +52,25 @@ export default function ContactForm() {
 
   // Mock function to simulate form submission
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    // Here you would typically send the data to a backend endpoint (e.g., Firebase Function)
-    // For now, we'll just simulate a delay and show a success message.
     console.log("Form submitted:", values);
+    
+    // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 1500));
     
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you shortly.",
-    })
+    // On successful submission
+    setIsSubmitted(true);
     form.reset();
   }
+  
+  if (isSubmitted) {
+    return (
+        <div className="text-center p-8 bg-background rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-2">Thank you for your message!</h3>
+            <p className="text-muted-foreground">I will get back to you within 2-3 business days.</p>
+        </div>
+    );
+  }
+
 
   return (
     <Form {...form}>
@@ -90,10 +103,34 @@ export default function ContactForm() {
         />
         <FormField
           control={form.control}
+          name="reason"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Reason for Contact</FormLabel>
+              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <FormControl>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select a reason" />
+                  </SelectTrigger>
+                </FormControl>
+                <SelectContent>
+                  <SelectItem value="Job Opportunity">Job Opportunity</SelectItem>
+                  <SelectItem value="Collaboration Request">Collaboration Request</SelectItem>
+                  <SelectItem value="Speaking Engagement">Speaking Engagement</SelectItem>
+                  <SelectItem value="Parent / Guardian Inquiry">Parent / Guardian Inquiry</SelectItem>
+                  <SelectItem value="Other">Other</SelectItem>
+                </SelectContent>
+              </Select>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
           name="organization"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>School / Organization</FormLabel>
+              <FormLabel>School / Organization (Optional)</FormLabel>
               <FormControl>
                 <Input placeholder="Your School or Organization" {...field} />
               </FormControl>
@@ -114,7 +151,7 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" className="w-full" disabled={form.formState.isSubmitting}>
+        <Button type="submit" className="w-full" disabled={form.formState.isSubmitting} style={{ backgroundColor: '#7A8D7D' }}>
           {form.formState.isSubmitting ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
