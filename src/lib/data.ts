@@ -240,14 +240,14 @@ export const testimonials = [
     }
 ];
 
-type ProfessionalTrainingSubCategory = {
+type ProfessionalDevelopmentSubCategory = {
     title: string;
     items: string[];
 };
 
 export type CredentialCategory = {
     title: string;
-    items: string[] | ProfessionalTrainingSubCategory[];
+    items: string[] | ProfessionalDevelopmentSubCategory[];
 };
 
 export const credentials: CredentialCategory[] = [

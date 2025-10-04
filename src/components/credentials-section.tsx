@@ -1,12 +1,18 @@
 import { credentials, CredentialCategory } from '@/lib/data';
 import { Card, CardContent } from '@/components/ui/card';
-import { CheckCircle2, GraduationCap, Briefcase, Award } from 'lucide-react';
+import { CheckCircle2, GraduationCap, Briefcase, Award, Users, FlaskConical } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const iconMap = {
   Education: GraduationCap,
   Experience: Briefcase,
   "Professional Development": Award,
+}
+
+const subCategoryIconMap = {
+  Certifications: Award,
+  Workshops: Users,
+  "Specialized Training": FlaskConical,
 }
 
 // Helper to check if an item is a sub-category
@@ -21,7 +27,7 @@ export default function CredentialsSection() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl">
-              Credentials & Training
+              Credentials & Development
             </h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               A summary of my qualifications, professional development, and teaching status.
@@ -31,10 +37,10 @@ export default function CredentialsSection() {
         <div className="mx-auto max-w-5xl py-12 sm:columns-2 sm:gap-12">
           {credentials.map((category) => {
             const Icon = iconMap[category.title as keyof typeof iconMap] || CheckCircle2;
-            const isProfessionalTraining = category.title === "Professional Development";
+            const isProfessionalDevelopment = category.title === "Professional Development";
             
             return (
-              <div key={category.title} className={cn("grid gap-4 mb-8 credential-category", isProfessionalTraining && "sm:col-span-1")}>
+              <div key={category.title} className={cn("grid gap-4 mb-8 credential-category", isProfessionalDevelopment && "sm:col-span-1")}>
                 <h3 className="flex items-center gap-3 text-xl font-bold font-headline">
                   <Icon className="h-6 w-6 text-primary" />
                   {category.title}
@@ -42,10 +48,14 @@ export default function CredentialsSection() {
                 <div className="grid gap-6 pl-9">
                   {(category.items as any[]).map((item, index) => {
                     if (isSubCategory(item)) {
+                      const SubIcon = subCategoryIconMap[item.title as keyof typeof subCategoryIconMap] || CheckCircle2;
                       return (
                         <div key={index}>
-                          <h4 className="font-semibold text-card-foreground mb-2">{item.title}</h4>
-                          <ul className="grid gap-3">
+                          <h4 className="font-semibold text-card-foreground mb-2 flex items-center gap-2">
+                            <SubIcon className="h-5 w-5 text-primary/80" />
+                            {item.title}
+                          </h4>
+                          <ul className="grid gap-3 pl-7">
                             {item.items.map((subItem, subIndex) => (
                               <li key={subIndex} className="flex items-start gap-3">
                                 <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
