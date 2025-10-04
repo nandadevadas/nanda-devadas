@@ -1,7 +1,12 @@
-import { about, quickFacts } from '@/lib/data';
+import { about, quickFacts, tagDefinitions } from '@/lib/data';
 import { Card, CardContent } from '@/components/ui/card';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { Info } from 'lucide-react';
+import { Badge } from './ui/badge';
 
 export default function AboutSection() {
+  const strengths = quickFacts.find(fact => fact.id === 'strengths')?.text as (keyof typeof tagDefinitions)[] | undefined;
+
   return (
     <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-background">
       <div className="container px-4 md:px-6">
@@ -22,11 +27,26 @@ export default function AboutSection() {
                     {fact.id === 'strengths' && Array.isArray(fact.text) ? (
                       <>
                         <h4 className="font-semibold text-card-foreground mb-2">Strengths</h4>
-                        <ul className="space-y-2 list-disc list-inside">
-                          {fact.text.map((point, i) => (
-                            <li key={i} className="text-base text-card-foreground">{point}</li>
+                        <div className="flex flex-wrap gap-2">
+                          {strengths?.map((strength) => (
+                            <Popover key={strength}>
+                              <PopoverTrigger asChild>
+                                <Badge
+                                  variant='secondary'
+                                  className="cursor-pointer flex items-center gap-1"
+                                  role="button"
+                                >
+                                  {strength}
+                                  <Info className="h-3 w-3 opacity-70" />
+                                </Badge>
+                              </PopoverTrigger>
+                              <PopoverContent className="w-80 text-sm text-left">
+                                  <h4 className="font-bold mb-2">{strength}</h4>
+                                  <p className="text-muted-foreground">{tagDefinitions[strength]}</p>
+                              </PopoverContent>
+                            </Popover>
                           ))}
-                        </ul>
+                        </div>
                       </>
                     ) : (
                       <p className="text-base text-card-foreground pt-1">{fact.text}</p>

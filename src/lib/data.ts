@@ -43,6 +43,15 @@ export const quickFacts: QuickFact[] = [
   { id: 'location', text: "Based in Scarborough, ON — open to GTA roles.", icon: Target },
 ];
 
+export const tagDefinitions = {
+  "Inquiry-based lesson design": "Learning is driven by student questions and exploration, where students actively construct their own knowledge rather than passively receiving facts.",
+  "Phenomenon-Driven instruction": "Lessons start with a real-world observable event (a science puzzle) that students work collaboratively to explain, making the science relevant and memorable.",
+  "Differentiated Instruction": "Teaching is responsive to the needs of every learner by adjusting the content, process, or product so all students can achieve the same learning goal.",
+  "5E model lesson planning": "A structured framework that guides students through five phases of learning—Engage, Explore, Explain, Elaborate, and Evaluate—to build deep conceptual understanding.",
+  "IGCSE": "A globally recognized curriculum and examination system focused on developing knowledge, practical skills, and critical thinking essential for success in higher education."
+};
+
+
 export const philosophy = [
   {
     title: "The Learning Environment",
