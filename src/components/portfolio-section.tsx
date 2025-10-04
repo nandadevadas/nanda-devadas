@@ -86,7 +86,7 @@ export default function PortfolioSection() {
               </CardHeader>
               <CardContent className="flex-grow flex flex-col justify-between">
                 <p className="text-sm text-muted-foreground italic mb-4">"{item.drivingQuestion}"</p>
-                <Button onClick={() => setSelectedItem(item)} className="w-full mt-auto">View Artifacts</Button>
+                <Button onClick={() => setSelectedItem(item)} className="w-full mt-auto">Dive Deeper</Button>
               </CardContent>
             </Card>
           )})}
