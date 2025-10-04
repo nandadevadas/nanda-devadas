@@ -4,6 +4,7 @@
 
 
 
+
 import { BookOpen, Target, Users, Briefcase, GraduationCap, Trophy, Award, CheckCircle2 } from 'lucide-react';
 
 export const siteInfo = {
@@ -237,7 +238,7 @@ export const testimonials = [
         published: true
     },
     {
-        quote: "The communication from Ms. Nanda is excellent. We always know what our daughter is learning and how we can support her at home. The 'Steaming Stories' project was fantastic; it was wonderful to see our child so engaged in a school project, applying her learning in such a creative way. We've seen her confidence grow immensely.",
+        quote: "Dear Nanda Ma'am,  Thank you so much for being an exceptional teacher and guiding star in my child's (Jaya Nandhan) educational,social and emotional journey. Beyond lessons and textbooks, you have nurtured curiosity, confidence and a love for learning in a way that only a passionate teacher can. Your kindness, patience, and inspiration have touched not just my child's education but also his outlook towards knowledge and growth. I will remain deeply grateful. Your lessons are my child's world. Once again thank you so much ma'am for helping my child become a better person and excel in education , especially in Science.  With Warm Regards, Y Hymavathi",
         author: "Hymavadhi",
         affiliation: "Parent (Grade 4)",
         order: 7,
