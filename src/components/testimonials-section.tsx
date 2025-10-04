@@ -72,7 +72,7 @@ export default function TestimonialsSection() {
               <MessagesSquare className="h-8 w-8 text-primary" />
               What Others Are Saying
             </h2>
-            <p className="max-w-[900px] text-primary md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="max-w-[900px] text-primary md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-bold">
               In Their Words - Feedback from Students, Parents and Colleagues who have seen my practice firsthand.
             </p>
           </div>
