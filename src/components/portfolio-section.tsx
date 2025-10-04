@@ -26,23 +26,7 @@ type Tag = keyof typeof tagDefinitions;
 export default function PortfolioSection() {
   const allTags = Object.keys(tagDefinitions) as Tag[];
 
-  const [activeFilters, setActiveFilters] = useState<string[]>([]);
   const [selectedItem, setSelectedItem] = useState<PortfolioItem | null>(null);
-
-  const toggleFilter = (tag: string) => {
-    setActiveFilters(prev =>
-      prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag]
-    );
-  };
-
-  const filteredItems = useMemo(() => {
-    if (activeFilters.length === 0) {
-      return portfolioItems;
-    }
-    return portfolioItems.filter(item =>
-      activeFilters.every(filter => item.tags.includes(filter))
-    );
-  }, [activeFilters]);
   
   const portfolioImages = PlaceHolderImages.filter(p => p.id.startsWith('portfolio-'));
 
@@ -61,11 +45,9 @@ export default function PortfolioSection() {
               <Popover key={tag}>
                 <PopoverTrigger asChild>
                   <Badge
-                    variant={activeFilters.includes(tag) ? 'default' : 'secondary'}
-                    onClick={() => toggleFilter(tag)}
+                    variant='secondary'
                     className="cursor-pointer flex items-center gap-1"
                     role="button"
-                    aria-pressed={activeFilters.includes(tag)}
                   >
                     {tag}
                     <Info className="h-3 w-3 opacity-70" />
@@ -80,7 +62,7 @@ export default function PortfolioSection() {
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {filteredItems.map((item, index) => {
+          {portfolioItems.map((item, index) => {
              const image = portfolioImages.find(img => img.id === `portfolio-${item.order}`);
             return(
             <Card key={item.title} className="overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
