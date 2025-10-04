@@ -1,3 +1,4 @@
+
 import { BookOpen, Target, Users, Briefcase, GraduationCap, Trophy, Award, CheckCircle2 } from 'lucide-react';
 
 export const siteInfo = {
@@ -253,16 +254,18 @@ export const credentials: CredentialCategory[] = [
     {
         title: "Education",
         items: [
-            "Bachelor of Education (B.Ed.), Science Specialization",
-            "Bachelor of Science (B.Sc.), Biology Major"
+            "Master of Science (M.Sc.), Biotechnology (First Rank, Distinction)",
+            "Bachelor of Education (B.Ed.) (First Class, Distinction)",
+            "Bachelor of Science (B.Sc.), Biotechnology (First Class, Distinction)"
         ]
     },
     {
         title: "Experience",
         items: [
-            "Cambridge IGCSE Biology/Science Teacher",
-            "Facilitated Collaborative Investigations & Ethics Debates (Focus on Critical Thinking)",
-            "Ontario Certified Teacher (OCT) application in progress."
+            "Cambridge IGCSE Biology Teacher (Grade 10)",
+            "Cambridge Primary Science Teacher (Grades 3 & 4)",
+            "STEM Program Coordinator (Grades 1–9)",
+            "Social-Emotional Learning (SEL) Instructor (Grade 4)"
         ]
     },
     {
