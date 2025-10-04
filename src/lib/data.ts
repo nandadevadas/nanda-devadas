@@ -7,6 +7,7 @@
 
 
 
+
 import { BookOpen, Target, Users, Briefcase, GraduationCap, Trophy, Award, CheckCircle2 } from 'lucide-react';
 
 export const siteInfo = {
@@ -267,10 +268,6 @@ export const credentials = [
     {
         title: "Professional Training",
         items: [
-            "Assessment for Learning Strategies",
-            "Universal Design for Learning (UDL) Principles",
-            "ESL-Sensitive Scaffolding in STEM",
-            "Google Workspace for Education Certified",
             "Certified STEM Educator (Chitti, 2025)",
             "Artificial Intelligence Tools for Innovative Practices (Chitti, 2025)"
         ]
