@@ -1,6 +1,7 @@
 
 
 
+
 import { BookOpen, Target, Users, Briefcase, GraduationCap, Trophy, Award, CheckCircle2 } from 'lucide-react';
 
 export const siteInfo = {
@@ -199,7 +200,7 @@ export const testimonials = [
         published: true
     },
     {
-        quote: "Working with Nanda is a professional joy. She brings a rare combination of scientific rigor and pedagogical creativity to her role. Her units on ecosystem dynamics and cellular biology were models of clarity and student engagement. She builds confidence in her students by making complex topics accessible and exciting.",
+        quote: "I genuinely cherish working with you. Your interactions with students, the lasting impact you have on their growth, and your enthusiasm for improving their scientific skills are truly commendable. Our core conversations about IGCSE and the extended conversations about Biology are the days I remember forever. I wish you all the best for your future endeavours, and you deserve the best.",
         author: "Alekhya Bellapu",
         affiliation: "Science Department Lead",
         order: 2,
