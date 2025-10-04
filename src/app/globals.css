@@ -79,6 +79,9 @@
       background-image: linear-gradient(to bottom, var(--timeline-muted) 50%, transparent 50%);
       background-size: 1.5px 8px;
     }
+    .credential-category {
+      break-inside: avoid;
+    }
 }
 
 /* General container for the timeline */

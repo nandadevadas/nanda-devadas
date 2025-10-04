@@ -1,6 +1,7 @@
 import { credentials, CredentialCategory } from '@/lib/data';
 import { Card, CardContent } from '@/components/ui/card';
 import { CheckCircle2, GraduationCap, Briefcase, Award } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 const iconMap = {
   Education: GraduationCap,
@@ -27,16 +28,18 @@ export default function CredentialsSection() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 sm:grid-cols-2 md:gap-12">
+        <div className="mx-auto max-w-5xl py-12 sm:columns-2 sm:gap-12">
           {credentials.map((category) => {
             const Icon = iconMap[category.title as keyof typeof iconMap] || CheckCircle2;
+            const isProfessionalTraining = category.title === "Professional Training";
+            
             return (
-              <div key={category.title} className="grid gap-4">
+              <div key={category.title} className={cn("grid gap-4 mb-8 credential-category", isProfessionalTraining && "sm:col-span-1")}>
                 <h3 className="flex items-center gap-3 text-xl font-bold font-headline">
                   <Icon className="h-6 w-6 text-primary" />
                   {category.title}
                 </h3>
-                <div className="grid gap-4 pl-9">
+                <div className="grid gap-6 pl-9">
                   {(category.items as any[]).map((item, index) => {
                     if (isSubCategory(item)) {
                       return (
