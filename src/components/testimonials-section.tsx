@@ -7,7 +7,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Quote } from 'lucide-react';
+import { Quote, MessagesSquare } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 
@@ -68,7 +68,10 @@ export default function TestimonialsSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl">What Others Are Saying</h2>
+            <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl flex items-center gap-3 justify-center">
+              <MessagesSquare className="h-8 w-8 text-primary" />
+              What Others Are Saying
+            </h2>
             <p className="max-w-[900px] text-primary md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               In Their Words - Feedback from Students, Parents and Colleagues who have seen my practice firsthand.
             </p>
