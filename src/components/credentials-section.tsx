@@ -68,7 +68,7 @@ export default function CredentialsSection() {
             {professionalDevelopment && (
                <div>
                   <h3 className="flex items-center gap-3 text-xl font-bold font-headline mb-4">
-                    <LifeBuoy className="h-6 w-6 text-accent-foreground" />
+                    <LifeBuoy className="h-6 w-6 text-primary" />
                     {professionalDevelopment.title}
                   </h3>
                   <div className="grid gap-6 pl-9">
@@ -77,16 +77,17 @@ export default function CredentialsSection() {
                           const SubIcon = subCategoryIconMap[item.title as keyof typeof subCategoryIconMap] || CheckCircle2;
                           return (
                             <div key={index}>
-                              <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2 font-headline">
-                                <SubIcon className="h-5 w-5 text-accent" />
+                              <h4 className="font-semibold text-primary mb-2 flex items-center gap-2 font-headline">
+                                <SubIcon className="h-5 w-5 text-primary" />
                                 {item.title}
                               </h4>
                               <ul className="grid gap-3 pl-7">
                                 {item.items.map((subItem, subIndex) => (
                                   <li key={subIndex} className="flex items-start gap-3">
-                                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-accent" />
+                                    <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
                                     <span className="text-muted-foreground">{subItem}</span>
                                   </li>
+
                                 ))}
                               </ul>
                             </div>
