@@ -6,6 +6,7 @@
 
 
 
+
 import { BookOpen, Target, Users, Briefcase, GraduationCap, Trophy, Award, CheckCircle2 } from 'lucide-react';
 
 export const siteInfo = {
@@ -259,7 +260,8 @@ export const credentials = [
         title: "Experience",
         items: [
             "Cambridge IGCSE Biology/Science Teacher",
-            "Transition to Ontario Curriculum (SNC1W, SBI2D)"
+            "Facilitated Collaborative Investigations & Ethics Debates (Focus on Critical Thinking)",
+            "Ontario Certified Teacher (OCT) application in progress."
         ]
     },
     {
@@ -268,13 +270,9 @@ export const credentials = [
             "Assessment for Learning Strategies",
             "Universal Design for Learning (UDL) Principles",
             "ESL-Sensitive Scaffolding in STEM",
-            "Google Workspace for Education Certified"
-        ]
-    },
-    {
-        title: "Status",
-        items: [
-            "Ontario Certified Teacher (OCT) application in progress."
+            "Google Workspace for Education Certified",
+            "Certified STEM Educator (Chitti, 2025)",
+            "Artificial Intelligence Tools for Innovative Practices (Chitti, 2025)"
         ]
     }
 ]
