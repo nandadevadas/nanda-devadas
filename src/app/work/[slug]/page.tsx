@@ -19,6 +19,25 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
 
   const image = PlaceHolderImages.find(img => img.id === `portfolio-${item.order}`);
   const geneticsImages = PlaceHolderImages.filter(img => img.id.startsWith('genetics-'));
+  const kidneyImages = PlaceHolderImages.filter(img => img.id.startsWith('kidney-'));
+
+
+  const renderGallery = (images: typeof PlaceHolderImages) => (
+    <div className="my-8 grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+      {images.map((img) => (
+        <Link href={img.imageUrl} key={img.id} target="_blank">
+          <Image
+            src={img.imageUrl}
+            alt={img.description}
+            data-ai-hint={img.imageHint}
+            width={1024}
+            height={768}
+            className="rounded-lg shadow-lg w-full h-auto object-contain"
+          />
+        </Link>
+      ))}
+    </div>
+  );
 
 
   return (
@@ -48,26 +67,11 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
                 ))}
               </div>
             </div>
+            
+            {params.slug === '1' && renderGallery(geneticsImages)}
+            {params.slug === '2' && renderGallery(kidneyImages)}
 
-            {params.slug === '1' ? (
-               <div className="my-8 grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
-               {geneticsImages.map((img, index) => (
-                 <Link href={img.imageUrl} key={img.id} target="_blank" className={cn(
-                   "col-span-1",
-                   index === 0 && "sm:col-span-2"
-                 )}>
-                    <Image
-                      src={img.imageUrl}
-                      alt={img.description}
-                      data-ai-hint={img.imageHint}
-                      width={1024}
-                      height={768}
-                      className="rounded-lg shadow-lg w-full h-auto object-contain"
-                    />
-                 </Link>
-               ))}
-             </div>
-            ) : image && (
+            {params.slug !== '1' && params.slug !== '2' && image && (
               <div className="relative my-8 h-80 w-full overflow-hidden rounded-lg shadow-lg">
                 <Image
                   src={image.imageUrl}
