@@ -26,6 +26,8 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
     let galleryImages: typeof PlaceHolderImages = [];
     if (slug === '2') {
       galleryImages = PlaceHolderImages.filter(img => img.id.startsWith('kidney-'));
+    } else if (slug === '5') {
+      galleryImages = PlaceHolderImages.filter(img => img.id.startsWith('dna-profiling-'));
     }
 
     if (galleryImages.length > 0) {
