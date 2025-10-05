@@ -22,37 +22,6 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
   const imageId = hasDetailImage ? detailImageId : `portfolio-${item.order}`;
   const image = PlaceHolderImages.find(img => img.id === imageId);
   
-  const renderGallery = (slug: string) => {
-    let galleryImages: typeof PlaceHolderImages = [];
-    if (slug === '2') {
-      galleryImages = PlaceHolderImages.filter(img => img.id.startsWith('kidney-'));
-    } else if (slug === '5') {
-      galleryImages = PlaceHolderImages.filter(img => img.id.startsWith('dna-profiling-'));
-    }
-
-    if (galleryImages.length > 0) {
-      return (
-        <div className="my-8 grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
-          {galleryImages.map((img) => (
-            <div key={img.id} className="relative overflow-hidden rounded-lg shadow-lg bg-card aspect-auto">
-              <a href={img.imageUrl} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                 <Image
-                    src={img.imageUrl}
-                    alt={img.description}
-                    data-ai-hint={img.imageHint}
-                    width={800}
-                    height={600}
-                    className="object-contain w-full h-full"
-                />
-              </a>
-            </div>
-          ))}
-        </div>
-      );
-    }
-    return null;
-  };
-
   const isSpecialSlug = ['3', '4'].includes(params.slug);
 
   return (
@@ -116,7 +85,6 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
                 ))}
               </ul>
             )}
-             {renderGallery(params.slug)}
             
             <h2 className="font-headline">Assessment &amp; Outcomes</h2>
             <p>{item.assessment}</p>
