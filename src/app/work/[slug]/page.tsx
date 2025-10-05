@@ -76,24 +76,20 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
               </div>
             </div>
             
-            {params.slug === '2' ? (
-              renderGallery(params.slug)
-            ) : (
-              image && (
-                 <div className={cn("relative my-8 w-full overflow-hidden rounded-lg shadow-lg",
-                  params.slug === '3' ? "aspect-auto" : "h-80"
-                )}>
-                  <Image
-                    src={image.imageUrl}
-                    alt={image.description}
-                    data-ai-hint={image.imageHint}
-                    width={params.slug === '3' ? 1080 : undefined}
-                    height={params.slug === '3' ? 1080 : undefined}
-                    fill={params.slug !== '3'}
-                    className={cn(params.slug === '3' ? "object-contain w-full h-full" : "object-cover")}
-                  />
-                </div>
-              )
+            {image && (
+              <div className={cn("relative my-8 w-full overflow-hidden rounded-lg shadow-lg",
+                  params.slug === '3' ? "aspect-auto" : "aspect-[4/3]"
+              )}>
+                <Image
+                  src={image.imageUrl}
+                  alt={image.description}
+                  data-ai-hint={image.imageHint}
+                  width={params.slug === '3' ? 1080 : undefined}
+                  height={params.slug === '3' ? 810 : undefined}
+                  fill={params.slug !== '3'}
+                  className={cn(params.slug === '3' ? "object-contain w-full h-full" : "object-cover")}
+                />
+              </div>
             )}
             
             <blockquote className="border-l-4 border-primary bg-muted/20 p-4 italic text-foreground/80">
@@ -134,5 +130,3 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
     </div>
   );
 }
-
-    
