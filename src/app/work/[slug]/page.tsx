@@ -17,8 +17,10 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
     notFound();
   }
 
-  const imageId = params.slug === '3' ? `portfolio-${item.order}-detail` : `portfolio-${item.order}`;
-  const image = PlaceHolderImages.find(img => img.id === imageId) || PlaceHolderImages.find(img => img.id === `portfolio-${item.order}`);
+  const detailImageId = `portfolio-${item.order}-detail`;
+  const hasDetailImage = PlaceHolderImages.some(img => img.id === detailImageId);
+  const imageId = hasDetailImage ? detailImageId : `portfolio-${item.order}`;
+  const image = PlaceHolderImages.find(img => img.id === imageId);
   
   const renderGallery = (slug: string) => {
     let galleryImages: typeof PlaceHolderImages = [];
@@ -48,6 +50,8 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
     }
     return null;
   };
+
+  const isSpecialSlug = ['3', '4'].includes(params.slug);
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -79,16 +83,16 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
             
             {image && (
               <div className={cn("relative my-8 w-full overflow-hidden rounded-lg shadow-lg",
-                  params.slug === '3' ? "aspect-auto" : "aspect-[4/3]"
+                  isSpecialSlug ? "aspect-auto" : "aspect-[4/3]"
               )}>
                 <Image
                   src={image.imageUrl}
                   alt={image.description}
                   data-ai-hint={image.imageHint}
-                  width={params.slug === '3' ? 1080 : undefined}
-                  height={params.slug === '3' ? 810 : undefined}
-                  fill={params.slug !== '3'}
-                  className={cn(params.slug === '3' ? "object-contain w-full h-full" : "object-cover")}
+                  width={isSpecialSlug ? 1080 : undefined}
+                  height={isSpecialSlug ? 810 : undefined}
+                  fill={!isSpecialSlug}
+                  className={cn(isSpecialSlug ? "object-contain w-full h-full" : "object-cover")}
                 />
               </div>
             )}

@@ -43,6 +43,12 @@
       "imageHint": "pesticide sprayer"
     },
     {
+      "id": "portfolio-4-detail",
+      "description": "Students working on a biopesticide project.",
+      "imageUrl": "/assets/evidence_of_practice/biopesticide/1.jpeg",
+      "imageHint": "students biopesticide project"
+    },
+    {
       "id": "portfolio-5",
       "description": "A magnifying glass over a fingerprint, representing a crime scene investigation.",
       "imageUrl": "https://images.unsplash.com/photo-1530036067142-31e9b88da9b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxDcmltZXxlbnwwfHx8fDE3NTk2ODU1MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
