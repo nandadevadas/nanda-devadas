@@ -34,9 +34,9 @@ export default function PhilosophySection() {
                 src={philosophyImage.imageUrl}
                 alt={philosophyImage.description}
                 data-ai-hint={philosophyImage.imageHint}
-                width={550}
-                height={733}
-                className="rounded-xl object-cover shadow-lg"
+                width={1080}
+                height={1080}
+                className="rounded-xl object-cover shadow-lg aspect-square"
               />
             </div>
           )}
