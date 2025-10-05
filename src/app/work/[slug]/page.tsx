@@ -8,6 +8,7 @@ import Footer from '@/components/footer';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, FileText, Image as ImageIcon } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 export default function PortfolioItemPage({ params }: { params: { slug: string } }) {
   const item = portfolioItems.find((p) => p.order.toString() === params.slug);
@@ -49,21 +50,32 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
             </div>
 
             {params.slug === '1' ? (
-              <div className="my-8 grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
-                {geneticsImages.map(img => (
-                  <Link href={img.imageUrl} key={img.id} target="_blank">
-                    <div className="relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
-                      <Image
-                        src={img.imageUrl}
-                        alt={img.description}
-                        data-ai-hint={img.imageHint}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  </Link>
-                ))}
-              </div>
+               <div className="my-8 grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+               {geneticsImages.map(img => (
+                 <Link href={img.imageUrl} key={img.id} target="_blank">
+                   {img.id === 'genetics-1' ? (
+                     <Image
+                       src={img.imageUrl}
+                       alt={img.description}
+                       data-ai-hint={img.imageHint}
+                       width={1024}
+                       height={768}
+                       className="rounded-lg shadow-lg w-full h-auto object-contain"
+                     />
+                   ) : (
+                     <div className="relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
+                       <Image
+                         src={img.imageUrl}
+                         alt={img.description}
+                         data-ai-hint={img.imageHint}
+                         fill
+                         className="object-cover"
+                       />
+                     </div>
+                   )}
+                 </Link>
+               ))}
+             </div>
             ) : image && (
               <div className="relative my-8 h-80 w-full overflow-hidden rounded-lg shadow-lg">
                 <Image
