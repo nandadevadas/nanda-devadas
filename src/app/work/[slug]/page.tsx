@@ -21,9 +21,7 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
   
   const renderGallery = (slug: string) => {
     let galleryImages: typeof PlaceHolderImages = [];
-    if (slug === '1') {
-      galleryImages = PlaceHolderImages.filter(img => img.id.startsWith('genetics-'));
-    } else if (slug === '2') {
+    if (slug === '2') {
       galleryImages = PlaceHolderImages.filter(img => img.id.startsWith('kidney-'));
     }
 
@@ -31,7 +29,7 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
       return (
         <div className="my-8 grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
           {galleryImages.map((img, index) => (
-            <div key={img.id} className="relative overflow-hidden rounded-lg shadow-lg bg-card">
+            <div key={img.id} className="relative overflow-hidden rounded-lg shadow-lg bg-card aspect-video">
               <a href={img.imageUrl} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
                  <Image
                     src={img.imageUrl}
@@ -82,13 +80,17 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
               renderGallery(params.slug)
             ) : (
               image && (
-                <div className="relative my-8 h-80 w-full overflow-hidden rounded-lg shadow-lg">
+                 <div className={cn("relative my-8 w-full overflow-hidden rounded-lg shadow-lg",
+                  params.slug === '3' ? "aspect-auto" : "h-80"
+                )}>
                   <Image
                     src={image.imageUrl}
                     alt={image.description}
                     data-ai-hint={image.imageHint}
-                    fill
-                    className="object-cover"
+                    width={params.slug === '3' ? 1080 : undefined}
+                    height={params.slug === '3' ? 1080 : undefined}
+                    fill={params.slug !== '3'}
+                    className={cn(params.slug === '3' ? "object-contain w-full h-full" : "object-cover")}
                   />
                 </div>
               )
