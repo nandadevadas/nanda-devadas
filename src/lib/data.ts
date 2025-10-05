@@ -218,21 +218,24 @@ export const portfolioItems = [
     order: 5
   },
   {
-    title: "Modeling Meiosis",
-    course: "IGCSE Biology",
-    grade: "10",
+    title: "Assembly Spotlight: Critical Thinking & Citizenship",
+    course: "Grade 4 Assembly",
+    grade: "4",
     drivingQuestion: "“How early should we start teaching road safety?”",
     whatStudentsDid: "Used pipe cleaners, beads, and paper cutouts to model the stages of meiosis, focusing on crossing over and independent assortment.",
-    assessment: "Students created a stop-motion video or a narrated slideshow explaining their model, assessed with a rubric on accuracy and clarity.",
-    overview: "Meiosis is a notoriously difficult topic due to its microscopic and sequential nature. This lesson aimed to make the process tangible and understandable by having students physically model each stage. By moving the 'chromosomes' themselves, they could directly visualize complex events like crossing over and the reduction of chromosome number, which are critical for genetic variation.",
+    assessment: "The debate was followed by an interactive session on traffic rules and a clarifying quiz, reinforcing essential road safety guidelines.",
+    overview: "This Grade 4 assembly project transformed the topic of road safety into a Problem-Based Learning (PBL) exercise. The lesson was integrated into the Social-Emotional Learning (SEL) curriculum, using the high-stakes issue of underage driving to facilitate a meaningful conversation about moral values and civic responsibility. The debate format was specifically designed to promote ethical reflection and responsible decision-making.",
     learningObjectives: [
-      "Sequence the stages of Meiosis I and Meiosis II.",
-      "Model the process of crossing over and explain its importance for genetic variation.",
-      "Distinguish between meiosis and mitosis in terms of process and outcome.",
-      "Explain why meiosis results in four unique haploid cells."
+      "Analyze the ethical and safety implications of traffic rules and responsible citizenship.",
+      "Develop critical thinking skills by constructing and defending arguments for opposing viewpoints.",
+      "Foster empathy and respect for diverse perspectives through structured debate."
     ],
-    activities: "The lesson was a hands-on workshop. Each student group received a kit with different colored pipe cleaners (to represent homologous chromosomes) and beads (to represent centromeres). Following a guided worksheet, they manipulated these materials to walk through Prophase I, Metaphase I, etc. A key instruction was to physically exchange segments of pipe cleaners during 'crossing over' to see the resulting new combination of alleles.",
-    reflection: "This was one of the most effective lessons for a difficult topic. The physical act of moving the chromosomes and creating recombinant chromatids created a powerful mental model for students that diagrams alone could not. The stop-motion video assessment was a fantastic way to check for understanding, as students had to explain each step's significance. It turned a passive learning topic into an active, creative, and memorable experience.",
+    activities: [
+      { "title": "Lively Debate", "description": "Students were divided into two groups: the \"pro-freedom\" side and the \"pro-safety\" side. This differentiated instruction method gave every student a clear role and platform for expression." },
+      { "title": "Active Engagement", "description": "The exchange of ideas required students to articulate their reasoning, showcasing their ability to make informed decisions and reflect on their choices as responsible citizens." },
+      { "title": "Application & Assessment", "description": "The debate was followed by an interactive session on traffic rules and a clarifying quiz, reinforcing essential road safety guidelines." }
+    ],
+    reflection: "The success of the assembly validated the power of using real-life scenarios and ethical dilemmas to teach SEL principles. By creating a collaborative environment, the project ensured that these young minds were learning the significance of making informed, safety-conscious decisions from an early age, fostering respect and responsibility in an inclusive classroom culture.",
     tags: ["Differentiated Instruction", "5E model lesson planning"],
     artifacts: [
         { type: "image", url: "#", label: "Student Model" },
