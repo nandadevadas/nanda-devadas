@@ -166,21 +166,20 @@ export const portfolioItems = [
     order: 4
   },
   {
-    title: "Forensic Files Unveiled at Aimee!",
+    title: "Forensic Files Unveiled: DNA Profiling and STEM Literacy",
     course: "STEM Project",
     grade: "4",
     drivingQuestion: "“What makes every living organism as unique as a zebra’s stripes?”",
     whatStudentsDid: "Students designed and conducted experiments with bean seeds, manipulating variables like light, water, and soil. They documented growth daily in journals.",
     assessment: "Students analyzed a mock 'crime scene' where a plant was 'stolen'. They used chromatography to separate the 'ink' from a ransom note and compared fingerprints left at the scene. The final assessment was a 'forensic report' where they documented their findings and identified the 'culprit' from a list of suspects.",
-    overview: "This thrilling STEM unit introduced students to forensic science by asking what makes things unique. The driving question led to explorations of fingerprints, chromatography, and the importance of careful observation. The unit was structured as a mystery to be solved, with students taking on the role of crime scene investigators.",
+    overview: "As the STEM Program Coordinator, this engaging unit was designed to introduce the intricate concept of DNA profiling by transforming the classroom into a crime lab. The lesson was launched using a compelling Phenomenon-Driven hook: the real-life 1980s case from England that pioneered DNA profiling. By framing the start as a \"crime thriller,\" the activity immediately sparked curiosity and engagement among all students.",
     learningObjectives: [
-      "Understand that fingerprints are unique to each individual.",
-      "Use paper chromatography to separate mixtures (like ink).",
-      "Develop and practice systematic observation and recording skills.",
-      "Use evidence to draw a logical conclusion."
+        "Explain the principle of individual uniqueness using metaphors (e.g., zebra patterns) as an accessible anchor.",
+        "Introduce the fundamental purpose of forensic science and its application in real-world scenarios.",
+        "Foster critical thinking and problem-solving through mock investigation and evidence analysis."
     ],
-    activities: "The unit began with a staged 'crime scene' in the classroom. Students learned to lift fingerprints using pencils and tape. The main lab involved using paper chromatography to see if the ink from the 'ransom note' matched pens belonging to several 'suspects.' Each activity was framed as a step in solving the case, keeping engagement high.",
-    reflection: "The mystery narrative was incredibly effective. Students were meticulous in their observations because they knew it was 'evidence.' Chromatography, which can be a simple color-mixing activity, became a high-stakes analytical tool. This project demonstrated that complex scientific practices can be made accessible and exciting for elementary students through creative, thematic instruction. The final forensic reports showed great pride and a solid grasp of the scientific concepts.",
+    activities: "This project was structured around Inquiry-based and hands-on activities, ensuring accessibility and engagement for all students.\n\nConceptual Bridging: The uniqueness of organisms was introduced using zebra patterns as a visual metaphor, simplifying the complex idea of individual genetic profiles.\n\nHands-On Simulation: A mock crime scene was meticulously set up, complete with teachers acting as suspects, making the activity interactive and memorable for the students.\n\nScaffolding & Accessibility: A clear and precise worksheet was created to guide the investigation, effectively differentiating instruction to ensure accessibility and success for all learners, including those who may process information more slowly.",
+    reflection: "The success of this large-scale STEM activity confirmed that planning, innovative ideas, and organized execution can make complex topics like forensic science accessible and exciting for a wide range of students. The high levels of student enthusiasm and the practical application of scientific concepts demonstrated the power of experiential learning in enhancing scientific literacy and critical thinking across grade levels.",
     tags: ["Inquiry-based lesson design", "5E model lesson planning"],
     artifacts: [
         { type: "image", url: "#", label: "Student Journal" },
