@@ -125,20 +125,6 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
             <h2 className="font-headline">Reflection</h2>
             <p>{item.reflection}</p>
 
-            <div className="not-prose">
-              <h3 className="font-headline text-xl mt-12 mb-4">Artifacts</h3>
-              <div className="flex flex-wrap gap-2">
-                  {item.artifacts.map((artifact, index) => (
-                      <Button asChild variant="secondary" key={index}>
-                          <Link href={artifact.url} target="_blank">
-                              {artifact.type === 'pdf' ? <FileText className="mr-2 h-4 w-4"/> : <ImageIcon className="mr-2 h-4 w-4"/>}
-                              {artifact.label}
-                          </Link>
-                      </Button>
-                  ))}
-              </div>
-            </div>
-
           </article>
         </div>
       </main>
