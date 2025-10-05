@@ -102,15 +102,14 @@ export const portfolioItems = [
     drivingQuestion: "How does your body turn 180 liters of fluid into just 1.5 liters of urine?",
     whatStudentsDid: "Field data collection, species counts, improvement proposal.",
     assessment: "The summative assessment was a detailed lab report where students analyzed simulated patient data (urine composition, hormone levels) to diagnose a kidney-related ailment. This was supported by a concept map illustrating the entire process of osmoregulation and selective reabsorption.",
-    overview: "This unit demystified the excretory system by framing it as a feat of biological engineering. We started with the astonishing fact that the kidneys filter the entire blood volume over 60 times a day. The driving question guided students to explore the structures of the nephron and the physiological processes of ultrafiltration, selective reabsorption, and osmoregulation.",
+    overview: "This IGCSE Biology unit on Excretion and the Kidney was launched using a compelling Phenomenon-Driven hook: \"Let's peep into poop!\" and the real-world puzzle of why bird nests stay clean. This counter-intuitive opening immediately captured student attention, transforming the study of nephrology from a lecture-based topic into an engaging scientific investigation.",
     learningObjectives: [
-      "Label the structures of the human kidney and a nephron.",
-      "Describe the process of ultrafiltration in the glomerulus.",
-      "Explain the role of ADH in regulating water content in the blood (osmoregulation).",
-      "Analyze data to diagnose common kidney problems."
+      "Explain the structure and function of the human kidney (Nephrons).",
+      "Describe the processes of ultrafiltration and selective reabsorption in urine formation.",
+      "Analyze the relationship between fluid input and output through quantitative reasoning."
     ],
-    activities: "Students built physical models of the nephron using tubing, funnels, and semi-permeable membranes to simulate filtration and reabsorption. We used a digital simulation to manipulate hormone levels and observe the resulting changes in urine concentration. A 'gallery walk' of different case studies allowed students to apply their knowledge collaboratively before the individual assessment.",
-    reflection: "Focusing on the 'engineering' aspect of the kidney made the topic less clinical and more fascinating for students. The hands-on model building was a highlight, as it made the abstract process of reabsorption tangible. Initially, students found the hormonal regulation complex, but the digital simulation provided a dynamic way to visualize cause and effect. The diagnostic challenge at the end was highly engaging and served as an authentic assessment of their understanding.",
+    activities: "This lesson followed an Inquiry-based structure, moving students through questioning, exploration, and hands-on investigation.\n\nInquiry Fun: Discussions were prompted by questions like, \"Why do birds excrete paste-like urine?\" which bridged a familiar observation to the complex physiology of nitrogenous waste.\n\nHands-On Learning: Students conducted a goat kidney dissection, providing a direct, tactile experience of the organ's structure and function.\n\nCritical Thinking & Calculation: Students calculated and analyzed the kidney's efficiency, discovering the massive filtration volume (180L/day) versus the small urine output (1.5L), leading to a deep understanding of selective reabsorption.\n\nRoleplay as Nephrologists: The unit culminated in a mock panel discussion where students took on the roles of medical experts to answer public queries about kidney health, transplants, and stones, solidifying their applied knowledge.",
+    reflection: "This approach, rooted in the Inquiry and Phenomenon-Driven framework, ensured maximum engagement and mastery. By linking the complex math of fluid dynamics with a hands-on dissection and a final role-play, students achieved advanced scientific literacy and applied IGCSE Biology concepts as practicing scientists. The unit successfully transformed a dry topic into an exciting and memorable journey of discovery.",
     tags: ["Inquiry-based lesson design", "5E model lesson planning"],
     artifacts: [
       { type: "image", url: "#", label: "Field Data Sheet" },
