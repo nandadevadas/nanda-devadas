@@ -51,28 +51,19 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
 
             {params.slug === '1' ? (
                <div className="my-8 grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
-               {geneticsImages.map(img => (
-                 <Link href={img.imageUrl} key={img.id} target="_blank">
-                   {img.id === 'genetics-1' ? (
-                     <Image
-                       src={img.imageUrl}
-                       alt={img.description}
-                       data-ai-hint={img.imageHint}
-                       width={1024}
-                       height={768}
-                       className="rounded-lg shadow-lg w-full h-auto object-contain"
-                     />
-                   ) : (
-                     <div className="relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
-                       <Image
-                         src={img.imageUrl}
-                         alt={img.description}
-                         data-ai-hint={img.imageHint}
-                         fill
-                         className="object-cover"
-                       />
-                     </div>
-                   )}
+               {geneticsImages.map((img, index) => (
+                 <Link href={img.imageUrl} key={img.id} target="_blank" className={cn(
+                   "col-span-1",
+                   index === 0 && "sm:col-span-2"
+                 )}>
+                    <Image
+                      src={img.imageUrl}
+                      alt={img.description}
+                      data-ai-hint={img.imageHint}
+                      width={1024}
+                      height={768}
+                      className="rounded-lg shadow-lg w-full h-auto object-contain"
+                    />
                  </Link>
                ))}
              </div>
