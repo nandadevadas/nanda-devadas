@@ -38,9 +38,9 @@
     },
     {
       "id": "portfolio-6",
-      "description": "A child learning about road safety.",
-      "imageUrl": "https://images.unsplash.com/photo-1627135775457-9c001a0537bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyb2FkJTIwc2FmZXR5fGVufDB8fHx8MTc1OTY4NTYyNXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "road safety"
+      "description": "A view of city traffic from above.",
+      "imageUrl": "https://images.unsplash.com/photo-1557404763-69708cd8b9ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8dHJhZmZpY3xlbnwwfHx8fDE3NTk2ODU3MTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "traffic city"
     },
     {
       "id": "testimonial-1",
