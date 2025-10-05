@@ -21,13 +21,13 @@
     {
       "id": "portfolio-2",
       "description": "A diagram of a human kidney.",
-      "imageUrl": "https://images.unsplash.com/photo-1559757175-9e351c9a1301?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxraWRuZXl8ZW58MHx8fHwxNzU5MzQzNTU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/assets/evidence_of_practice/poop/2.jpeg",
       "imageHint": "kidney diagram"
     },
     {
       "id": "portfolio-3",
       "description": "A diagram of the human digestive system.",
-      "imageUrl": "/assets/evidence_of_practice/idli/1.jpeg",
+      "imageUrl": "https://images.unsplash.com/photo-1743767587835-7a80fe384236?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkaWdlc3RpdmUlMjBzeXN0ZW0lMjB8ZW58MHx8fHwxNzU5NzA1MzU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "digestive system"
     },
     {
@@ -89,36 +89,6 @@
       "description": "Avatar for a parent.",
       "imageUrl": "https://images.unsplash.com/photo-1698898404494-f13a839ef4bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwYXJlbnQlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk1OTU0MjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "parent portrait"
-    },
-    {
-      "id": "genetics-1",
-      "description": "A close-up of a student's hands as they work with a Punnett square diagram, with letters representing alleles.",
-      "imageUrl": "/assets/evidence_of_practice/genetics/1.jpeg",
-      "imageHint": "punnett square"
-    },
-    {
-      "id": "genetics-2",
-      "description": "A student's notebook open to a page with handwritten notes and diagrams about ABO blood types and inheritance patterns.",
-      "imageUrl": "/assets/evidence_of_practice/genetics/2.jpeg",
-      "imageHint": "science notes"
-    },
-    {
-      "id": "genetics-3",
-      "description": "A simulated blood typing test kit, showing different trays with agglutination results, mimicking a forensic lab setup.",
-      "imageUrl": "/assets/evidence_of_practice/genetics/3.jpeg",
-      "imageHint": "blood typing"
-    },
-    {
-      "id": "genetics-4",
-      "description": "A group of diverse students collaborating around a table, pointing at a worksheet that resembles a case file, with a serious and engaged expression.",
-      "imageUrl": "/assets/evidence_of_practice/genetics/4.jpeg",
-      "imageHint": "students collaborating"
-    },
-    {
-      "id": "genetics-5",
-      "description": "A close-up of a student's hands as they work with a Punnett square diagram, with letters representing alleles.",
-      "imageUrl": "/assets/evidence_of_practice/genetics/5.jpeg",
-      "imageHint": "punnett square"
     },
     {
       "id": "kidney-1",
