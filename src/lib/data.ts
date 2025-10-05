@@ -6,9 +6,9 @@ export const siteInfo = {
   role: "High School Biology Teacher & Elementary Science Educator | B.Ed., M.Sc. Biotech, B.Sc. Biotech",
   heroTagline: "I design inquiry-rich lessons that make science visible, purposeful, and joyful.",
   resumeUrl: "/assets/resume/Resume_Nanda_Dev.pdf",
-  email: "hello@nanda.dev",
+  email: "nandadevadas@gmail.com",
   social: {
-    linkedin: "https://www.linkedin.com/in/example",
+    linkedin: "https://www.linkedin.com/in/nanda-devadas-p",
   }
 };
 
