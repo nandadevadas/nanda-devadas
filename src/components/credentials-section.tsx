@@ -1,9 +1,9 @@
 "use client";
 
 import { credentials } from '@/lib/data';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Separator } from '@/components/ui/separator';
 import { CheckCircle2, GraduationCap, Briefcase, Award, Users, FlaskConical, LifeBuoy } from 'lucide-react';
-import { cn } from '@/lib/utils';
 
 const categoryIconMap = {
   Education: GraduationCap,
@@ -39,45 +39,49 @@ export default function CredentialsSection() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-x-12 gap-y-8 py-12 md:grid-cols-5">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 py-12 md:grid-cols-2">
           {/* Left Column */}
-          <div className="space-y-8 md:col-span-2">
+          <div className="space-y-8">
             {educationAndExperience.map((category) => {
               const Icon = categoryIconMap[category.title as keyof typeof categoryIconMap] || CheckCircle2;
               return (
-                <div key={category.title}>
-                  <h3 className="flex items-center gap-3 text-xl font-bold font-headline mb-4">
-                    <Icon className="h-6 w-6 text-primary" />
-                    {category.title}
-                  </h3>
-                  <div className="grid gap-4 pl-9">
+                <Card key={category.title}>
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-3 font-headline text-xl">
+                      <Icon className="h-6 w-6 text-primary" />
+                      {category.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="grid gap-4 pl-8">
                     {(category.items as string[]).map((item, index) => (
                       <div key={index} className="flex items-start gap-3">
                         <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
                         <span className="text-muted-foreground">{item}</span>
                       </div>
                     ))}
-                  </div>
-                </div>
+                  </CardContent>
+                </Card>
               );
             })}
           </div>
 
           {/* Right Column */}
-          <div className="md:col-span-3">
+          <div>
             {professionalDevelopment && (
-               <div>
-                  <h3 className="flex items-center gap-3 text-xl font-bold font-headline mb-4">
-                    <LifeBuoy className="h-6 w-6 text-primary" />
-                    {professionalDevelopment.title}
-                  </h3>
-                  <div className="grid gap-6 pl-9">
+               <Card>
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-3 font-headline text-xl">
+                      <LifeBuoy className="h-6 w-6 text-primary" />
+                      {professionalDevelopment.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="grid gap-6 pl-8">
                   {(professionalDevelopment.items as any[]).map((item, index) => {
                       if (isSubCategory(item)) {
                           const SubIcon = subCategoryIconMap[item.title as keyof typeof subCategoryIconMap] || CheckCircle2;
                           return (
-                            <div key={index}>
-                              <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2 font-headline">
+                            <div key={index} className="space-y-4">
+                              <h4 className="font-semibold text-foreground flex items-center gap-2 font-headline">
                                 <SubIcon className="h-5 w-5 text-primary" />
                                 {item.title}
                               </h4>
@@ -87,16 +91,15 @@ export default function CredentialsSection() {
                                     <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
                                     <span className="text-muted-foreground">{subItem}</span>
                                   </li>
-
                                 ))}
                               </ul>
                             </div>
                           );
                       }
-                      return null; // Should not happen with the current data structure
+                      return null;
                   })}
-                  </div>
-              </div>
+                  </CardContent>
+              </Card>
             )}
           </div>
         </div>
