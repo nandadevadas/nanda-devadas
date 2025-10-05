@@ -57,13 +57,13 @@
     {
       "id": "portfolio-6",
       "description": "A view of city traffic from above.",
-      "imageUrl": "https://images.unsplash.com/photo-1557404763-69708cd8b9ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8dHJhZmZpY3xlbnwwfHx8fDE3NTk2ODU3MTR8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1557404763-69708cd8b9ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8dHJhZmZpY3xlbnwwfHx8fDE3NTk2ODU3MTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "traffic city"
     },
     {
       "id": "testimonial-1",
       "description": "Avatar for a school principal.",
-      "imageUrl": "https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NTk0ODYwMDl8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NTk0ODYwMDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional headshot"
     },
     {
@@ -143,6 +143,30 @@
       "description": "Close up of a goat kidney dissection.",
       "imageUrl": "/assets/evidence_of_practice/poop/2.jpeg",
       "imageHint": "kidney dissection"
+    },
+    {
+      "id": "genetics-1",
+      "description": "Student work on genetics.",
+      "imageUrl": "/assets/evidence_of_practice/genetics/1.jpeg",
+      "imageHint": "student work genetics"
+    },
+    {
+      "id": "genetics-2",
+      "description": "Student work on genetics.",
+      "imageUrl": "/assets/evidence_of_practice/genetics/2.jpeg",
+      "imageHint": "student work genetics"
+    },
+    {
+      "id": "genetics-3",
+      "description": "Student work on genetics.",
+      "imageUrl": "/assets/evidence_of_practice/genetics/3.jpeg",
+      "imageHint": "student work genetics"
+    },
+    {
+      "id": "genetics-4",
+      "description": "Student work on genetics.",
+      "imageUrl": "/assets/evidence_of_practice/genetics/4.jpeg",
+      "imageHint": "student work genetics"
     }
   ]
 }

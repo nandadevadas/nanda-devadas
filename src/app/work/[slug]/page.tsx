@@ -10,6 +10,7 @@ import { ArrowLeft } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const slugToGalleryMap: Record<string, string[]> = {
+  '1': ['genetics-1', 'genetics-2', 'genetics-3', 'genetics-4'],
   '2': ['poop-1', 'poop-2'],
   '5': ['dna-profiling-1', 'dna-profiling-2', 'dna-profiling-3'],
   '6': ['sel-1', 'sel-2'],
