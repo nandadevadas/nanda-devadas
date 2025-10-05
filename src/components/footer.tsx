@@ -14,7 +14,7 @@ export default function Footer() {
         </div>
         <div className="flex items-center gap-4">
            <Button variant="outline" size="sm" asChild>
-            <Link href={siteInfo.resumeUrl} download>
+            <Link href="/assets/resume/Resume_Nanda_MyKelly.pdf" download>
               <Download className="mr-2 h-4 w-4" />
               Download Resume
             </Link>
