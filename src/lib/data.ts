@@ -143,21 +143,20 @@ export const portfolioItems = [
     order: 3
   },
   {
-    title: "Bridging classroom lessons with real-world issues!",
+    title: "Biopesticide Creation: STEM for Social Impact",
     course: "STEM Project",
     grade: "4",
     drivingQuestion: "What if young scientists could fight pests and protect pollinators?”",
     whatStudentsDid: "Punnett simulations; ethics discussion; newsletter for families.",
     assessment: "Students, in groups, designed and marketed a 'pollinator-friendly' pest control solution. They created a poster and a short presentation arguing why their method was effective and safe for the environment. They were assessed on their scientific reasoning, creativity, and communication skills.",
-    overview: "This project connected concepts of life cycles, food chains, and ecosystems to the real-world challenge of pest control in gardens. Students were tasked with becoming 'eco-engineers' to solve a problem: how to get rid of aphids without harming bees and butterflies. This led to an exploration of biological controls, natural repellents, and the vital role of pollinators.",
+    overview: "This unit transformed the study of environmental science into a Problem-Based Learning (PBL) challenge. It was launched using a compelling, local Phenomenon: the impact of chemical pesticides on pollinators and the ethical case of Endosulfan in Kasaragod, Kerala. This approach bridged core Cambridge Primary Science lessons with immediate social and environmental issues, fostering empathy and accountability among Grade 4 students.",
     learningObjectives: [
-      "Distinguish between pests and beneficial organisms in an ecosystem.",
-      "Describe the role of pollinators in a plant's life cycle.",
-      "Design a solution to a real-world problem using scientific principles.",
-      "Communicate scientific ideas to a specific audience."
+      "Analyze the negative effects of chemical pesticides on pollinators and the environment.",
+      "Design and synthesize sustainable, natural biopesticides as an effective alternative.",
+      "Demonstrate environmental stewardship by applying science to drive positive social change."
     ],
-    activities: "Students started by observing plants in the school garden to identify different insects. They researched the life cycles of both pests (aphids) and pollinators (bees). The core activity was the design challenge, where groups brainstormed, tested (using water sprays on plants), and refined their solutions, such as introducing ladybugs (biological control) or planting marigolds (natural repellent).",
-    reflection: "The 'eco-engineer' framing gave students a strong sense of purpose and agency. They took their role seriously and were deeply invested in protecting the 'good bugs.' The project successfully integrated biology, engineering design, and communication. The final presentations were impressive, showing that even young learners can grasp complex ecological relationships when the context is meaningful and the task is authentic.",
+    activities: "This project was highly Inquiry-based and focused on practical, hands-on application of scientific principles:\n\nProblem Identification: Students researched the environmental hazards of chemical pesticides, which fueled their motivation to find solutions.\n\nFormulation & Synthesis: In a hands-on activity, students actively crafted various natural solutions, including: neem oil spray, garlic chili spray, tobacco spray, and baking soda fungicide.\n\nApplication & Evaluation: Students learned the science behind these biopesticides, understanding how natural solutions effectively target pests while preserving ecological balance.",
+    reflection: "This integrated STEM activity successfully cultivated core 21st-century competencies:\n\nProblem-Solving: Students moved from analyzing a severe real-world problem to synthesizing a sustainable, responsible solution.\n\nEnvironmental Stewardship: The unit fostered a deep sense of responsibility, proving that young minds can use science to drive positive change for a better future.\n\nResponsible Innovation: The activity highlighted the importance of choosing environmentally sound methods, linking scientific literacy directly to ethical decision-making.",
     tags: ["IGCSE", "Differentiated Instruction"],
     artifacts: [
         { type: "pdf", url: "#", label: "Problem Set" },
