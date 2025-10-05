@@ -77,7 +77,7 @@ const TimelineCard = ({ item }: { item: (typeof educationData[0] | typeof experi
              <AlertDialog>
               <AlertDialogTrigger asChild>
                 <button className="transform transition-transform duration-300 hover:scale-125 focus:scale-125 focus:outline-none">
-                  <Trophy className="h-5 w-5 text-amber-500 animate-pulse" />
+                  <Trophy className="h-5 w-5 text-amber-500 animate-wiggle" />
                   <span className="sr-only">View Award Proof</span>
                 </button>
               </AlertDialogTrigger>
