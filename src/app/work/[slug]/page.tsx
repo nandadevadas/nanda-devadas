@@ -7,7 +7,7 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, FileText, Image as ImageIcon } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export default function PortfolioItemPage({ params }: { params: { slug: string } }) {
@@ -28,7 +28,7 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
     if (galleryImages.length > 0) {
       return (
         <div className="my-8 grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
-          {galleryImages.map((img, index) => (
+          {galleryImages.map((img) => (
             <div key={img.id} className="relative overflow-hidden rounded-lg shadow-lg bg-card aspect-video">
               <a href={img.imageUrl} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
                  <Image
@@ -134,3 +134,5 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
     </div>
   );
 }
+
+    
