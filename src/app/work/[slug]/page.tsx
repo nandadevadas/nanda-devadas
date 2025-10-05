@@ -17,7 +17,8 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
     notFound();
   }
 
-  const image = PlaceHolderImages.find(img => img.id === `portfolio-${item.order}`);
+  const imageId = params.slug === '3' ? `portfolio-${item.order}-detail` : `portfolio-${item.order}`;
+  const image = PlaceHolderImages.find(img => img.id === imageId) || PlaceHolderImages.find(img => img.id === `portfolio-${item.order}`);
   
   const renderGallery = (slug: string) => {
     let galleryImages: typeof PlaceHolderImages = [];
@@ -29,7 +30,7 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
       return (
         <div className="my-8 grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
           {galleryImages.map((img) => (
-            <div key={img.id} className="relative overflow-hidden rounded-lg shadow-lg bg-card aspect-video">
+            <div key={img.id} className="relative overflow-hidden rounded-lg shadow-lg bg-card aspect-auto">
               <a href={img.imageUrl} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
                  <Image
                     src={img.imageUrl}
@@ -116,7 +117,8 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
                 ))}
               </ul>
             )}
-
+             {renderGallery(params.slug)}
+            
             <h2 className="font-headline">Assessment &amp; Outcomes</h2>
             <p>{item.assessment}</p>
 
