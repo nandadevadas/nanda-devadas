@@ -219,7 +219,7 @@ export const portfolioItems = [
   },
   {
     title: "Assembly Spotlight: Critical Thinking & Citizenship",
-    course: "Grade 4 Assembly",
+    course: "SEL",
     grade: "4",
     drivingQuestion: "“How early should we start teaching road safety?”",
     whatStudentsDid: "Used pipe cleaners, beads, and paper cutouts to model the stages of meiosis, focusing on crossing over and independent assortment.",
