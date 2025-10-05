@@ -31,21 +31,15 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
       return (
         <div className="my-8 grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
           {galleryImages.map((img, index) => (
-            <div key={img.id} className={cn(
-              "relative overflow-hidden rounded-lg shadow-lg",
-              index === 0 && slug === '1' ? 'sm:col-span-2 aspect-[4/3]' : 'aspect-video'
-            )}>
-              <a href={img.imageUrl} target="_blank" rel="noopener noreferrer">
+            <div key={img.id} className="relative overflow-hidden rounded-lg shadow-lg bg-card">
+              <a href={img.imageUrl} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
                  <Image
                     src={img.imageUrl}
                     alt={img.description}
                     data-ai-hint={img.imageHint}
-                    width={index === 0 && slug === '1' ? 800 : 600}
-                    height={index === 0 && slug === '1' ? 600 : 338}
-                    className={cn(
-                        "object-contain w-full h-full",
-                        index !== 0 || slug !== '1' ? 'object-cover' : ''
-                    )}
+                    width={800}
+                    height={600}
+                    className="object-contain w-full h-full"
                 />
               </a>
             </div>
@@ -84,7 +78,7 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
               </div>
             </div>
             
-            {params.slug === '1' || params.slug === '2' ? (
+            {params.slug === '2' ? (
               renderGallery(params.slug)
             ) : (
               image && (
