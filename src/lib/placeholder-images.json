@@ -93,25 +93,25 @@
     {
       "id": "genetics-1",
       "description": "A close-up of a student's hands as they work with a Punnett square diagram, with letters representing alleles.",
-      "imageUrl": "/assets/evidence_of_practice/genetics/Gemini_Generated_Image_a231fea231fea231.jpeg",
+      "imageUrl": "/assets/evidence_of_practice/genetics/1.jpeg",
       "imageHint": "punnett square"
     },
     {
       "id": "genetics-2",
       "description": "A student's notebook open to a page with handwritten notes and diagrams about ABO blood types and inheritance patterns.",
-      "imageUrl": "/assets/evidence_of_practice/genetics/Gemini_Generated_Image_a231fea231fea232.jpeg",
+      "imageUrl": "/assets/evidence_of_practice/genetics/2.jpeg",
       "imageHint": "science notes"
     },
     {
       "id": "genetics-3",
       "description": "A simulated blood typing test kit, showing different trays with agglutination results, mimicking a forensic lab setup.",
-      "imageUrl": "/assets/evidence_of_practice/genetics/Gemini_Generated_Image_a231fea231fea233.jpeg",
+      "imageUrl": "/assets/evidence_of_practice/genetics/3.jpeg",
       "imageHint": "blood typing"
     },
     {
       "id": "genetics-4",
       "description": "A group of diverse students collaborating around a table, pointing at a worksheet that resembles a case file, with a serious and engaged expression.",
-      "imageUrl": "/assets/evidence_of_practice/genetics/Gemini_Generated_Image_a231fea231fea234.jpeg",
+      "imageUrl": "/assets/evidence_of_practice/genetics/4.jpeg",
       "imageHint": "students collaborating"
     }
   ]
