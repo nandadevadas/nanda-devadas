@@ -75,7 +75,7 @@
     {
       "id": "testimonial-5",
       "description": "Avatar for a high school student.",
-      "imageUrl": "https://images.unsplash.com/photo-1612759183367-cbd1103b1e13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdHVkZW50JTIwaGVhZHNob3R8ZW58MHx8fHwxNzU5NTk1NDIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1612759183367-cbd1103b1e13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdHVkZW50JTIwaGVhZHNob3R8ZW58MHx8fHwxNzU5NTk1NDIxfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "student headshot"
     },
     {
@@ -87,8 +87,32 @@
     {
       "id": "testimonial-7",
       "description": "Avatar for a parent.",
-      "imageUrl": "https://images.unsplash.com/photo-1698898404494-f13a839ef4bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwYXJlbnQlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk1OTU0MjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1698898404494-f13a839ef4bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwYXJlbnQlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk1OTU0MjF8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "parent portrait"
+    },
+    {
+      "id": "genetics-1",
+      "description": "A close-up of a student's hands as they work with a Punnett square diagram, with letters representing alleles.",
+      "imageUrl": "/assets/evidence_of_practice/genetics/Gemini_Generated_Image_a231fea231fea231.jpeg",
+      "imageHint": "punnett square"
+    },
+    {
+      "id": "genetics-2",
+      "description": "A student's notebook open to a page with handwritten notes and diagrams about ABO blood types and inheritance patterns.",
+      "imageUrl": "/assets/evidence_of_practice/genetics/Gemini_Generated_Image_a231fea231fea232.jpeg",
+      "imageHint": "science notes"
+    },
+    {
+      "id": "genetics-3",
+      "description": "A simulated blood typing test kit, showing different trays with agglutination results, mimicking a forensic lab setup.",
+      "imageUrl": "/assets/evidence_of_practice/genetics/Gemini_Generated_Image_a231fea231fea233.jpeg",
+      "imageHint": "blood typing"
+    },
+    {
+      "id": "genetics-4",
+      "description": "A group of diverse students collaborating around a table, pointing at a worksheet that resembles a case file, with a serious and engaged expression.",
+      "imageUrl": "/assets/evidence_of_practice/genetics/Gemini_Generated_Image_a231fea231fea234.jpeg",
+      "imageHint": "students collaborating"
     }
   ]
 }

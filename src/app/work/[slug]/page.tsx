@@ -17,6 +17,8 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
   }
 
   const image = PlaceHolderImages.find(img => img.id === `portfolio-${item.order}`);
+  const geneticsImages = PlaceHolderImages.filter(img => img.id.startsWith('genetics-'));
+
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -46,7 +48,21 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
               </div>
             </div>
 
-            {image && (
+            {params.slug === '1' ? (
+              <div className="my-8 grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+                {geneticsImages.map(img => (
+                  <div key={img.id} className="relative aspect-video w-full overflow-hidden rounded-lg shadow-lg">
+                    <Image
+                      src={img.imageUrl}
+                      alt={img.description}
+                      data-ai-hint={img.imageHint}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+            ) : image && (
               <div className="relative my-8 h-80 w-full overflow-hidden rounded-lg shadow-lg">
                 <Image
                   src={image.imageUrl}
