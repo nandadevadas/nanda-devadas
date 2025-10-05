@@ -1,14 +1,13 @@
 "use client";
 
-import { useState, useMemo } from 'react';
+import { useMemo } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { portfolioItems } from '@/lib/data';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import PortfolioModal from './portfolio-modal';
-import type { PortfolioItem } from "@/lib/data";
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Info } from 'lucide-react';
 
@@ -25,8 +24,6 @@ type Tag = keyof typeof tagDefinitions;
 
 export default function PortfolioSection() {
   const allTags = Object.keys(tagDefinitions) as Tag[];
-
-  const [selectedItem, setSelectedItem] = useState<PortfolioItem | null>(null);
   
   const portfolioImages = PlaceHolderImages.filter(p => p.id.startsWith('portfolio-'));
 
@@ -83,13 +80,14 @@ export default function PortfolioSection() {
               </CardHeader>
               <CardContent className="flex-grow flex flex-col justify-between">
                 <p className="text-sm text-muted-foreground italic mb-4">"{item.drivingQuestion}"</p>
-                <Button onClick={() => setSelectedItem(item)} className="w-full mt-auto">Dive Deeper</Button>
+                <Button asChild className="w-full mt-auto">
+                  <Link href={`/work/${item.order}`}>Dive Deeper</Link>
+                </Button>
               </CardContent>
             </Card>
           )})}
         </div>
       </div>
-      <PortfolioModal isOpen={!!selectedItem} onClose={() => setSelectedItem(null)} item={selectedItem} />
     </section>
   );
 }

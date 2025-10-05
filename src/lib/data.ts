@@ -78,7 +78,16 @@ export const portfolioItems = [
     grade: "10",
     drivingQuestion: "Can you use blood types to crack a century-old Hollywood case?",
     whatStudentsDid: "Modeled feedback loops; labs on heart rate recovery.",
-    assessment: "CER write-up + lab report with success criteria.",
+    assessment: "Students analyzed mock forensic reports and historical documents to construct a scientific argument using the Claim, Evidence, Reasoning (CER) framework. Their final product was a formal lab report, assessed with a detailed rubric focusing on argumentation, data analysis, and scientific communication.",
+    overview: "This project-based learning unit immersed students in a fictional historical mystery inspired by real-life paternity cases. Tasked with determining the heir to a Hollywood fortune, students delved into Mendelian genetics, blood typing, and pedigree analysis. The narrative-driven approach transformed abstract genetic concepts into a tangible, high-stakes investigation.",
+    learningObjectives: [
+      "Explain the principles of Mendelian inheritance, including dominant and recessive alleles.",
+      "Predict offspring genotypes and phenotypes using Punnett squares.",
+      "Analyze pedigree charts to determine inheritance patterns.",
+      "Construct a scientific argument using the Claim, Evidence, Reasoning (CER) framework."
+    ],
+    activities: "The unit kicked off with a 'case file' containing letters, photos, and conflicting accounts. Students progressed through a series of lab stations, including simulated blood typing and karyotype analysis. They collaborated in 'investigative teams' to piece together evidence, culminating in a peer-review session where they challenged each other's conclusions.",
+    reflection: "The narrative context was a powerful motivator. Students who previously struggled with the abstract nature of genetics were suddenly debating co-dominance and allele frequencies with passion. The CER framework proved invaluable for structuring their thoughts and moving beyond simple right/wrong answers to a more nuanced, evidence-based understanding. Future iterations will include more red herrings in the case file to deepen the critical thinking challenge.",
     tags: ["Inquiry-based lesson design", "Phenomenon-Driven instruction"],
     artifacts: [
       { type: "image", url: "#", label: "Student Lab Setup" },
@@ -93,7 +102,16 @@ export const portfolioItems = [
     grade: "10",
     drivingQuestion: "How does your body turn 180 liters of fluid into just 1.5 liters of urine?",
     whatStudentsDid: "Field data collection, species counts, improvement proposal.",
-    assessment: "Group presentation + reflection (metacognition stem).",
+    assessment: "The summative assessment was a detailed lab report where students analyzed simulated patient data (urine composition, hormone levels) to diagnose a kidney-related ailment. This was supported by a concept map illustrating the entire process of osmoregulation and selective reabsorption.",
+    overview: "This unit demystified the excretory system by framing it as a feat of biological engineering. We started with the astonishing fact that the kidneys filter the entire blood volume over 60 times a day. The driving question guided students to explore the structures of the nephron and the physiological processes of ultrafiltration, selective reabsorption, and osmoregulation.",
+    learningObjectives: [
+      "Label the structures of the human kidney and a nephron.",
+      "Describe the process of ultrafiltration in the glomerulus.",
+      "Explain the role of ADH in regulating water content in the blood (osmoregulation).",
+      "Analyze data to diagnose common kidney problems."
+    ],
+    activities: "Students built physical models of the nephron using tubing, funnels, and semi-permeable membranes to simulate filtration and reabsorption. We used a digital simulation to manipulate hormone levels and observe the resulting changes in urine concentration. A 'gallery walk' of different case studies allowed students to apply their knowledge collaboratively before the individual assessment.",
+    reflection: "Focusing on the 'engineering' aspect of the kidney made the topic less clinical and more fascinating for students. The hands-on model building was a highlight, as it made the abstract process of reabsorption tangible. Initially, students found the hormonal regulation complex, but the digital simulation provided a dynamic way to visualize cause and effect. The diagnostic challenge at the end was highly engaging and served as an authentic assessment of their understanding.",
     tags: ["Inquiry-based lesson design", "5E model lesson planning"],
     artifacts: [
       { type: "image", url: "#", label: "Field Data Sheet" },
@@ -108,7 +126,16 @@ export const portfolioItems = [
     grade: "4",
     drivingQuestion: "Ever wondered what your lunch thinks as it travels through your body?”",
     whatStudentsDid: "Microscopic imaging + annotated gallery; peer feedback rounds.",
-    assessment: "Rubric focusing on observation → inference.",
+    assessment: "Students created a comic strip or a short story from the 'perspective' of a piece of food traveling through the digestive system. This was assessed on the accurate sequence of organs, the function described for each organ, and creative expression.",
+    overview: "To make the digestive system accessible and memorable for younger learners, we personified food on its journey through the body. The lesson, anchored by the beloved food 'idli,' used storytelling to trace the path from the mouth to the small intestine, focusing on the roles of different organs in breaking down food for energy.",
+    learningObjectives: [
+      "Identify the main organs of the human digestive system (mouth, esophagus, stomach, small intestine).",
+      "Describe the function of each organ in simple terms (e.g., 'the stomach mashes food').",
+      "Sequence the journey of food through the digestive tract.",
+      "Understand that digestion is the process of breaking down food for our body to use."
+    ],
+    activities: "We began by reading a story about 'Idli's Great Adventure.' Students then created a life-sized body map on large paper, drawing and labeling the organs. A hands-on activity involved 'digesting' a cracker in a sealed bag with water and a little vinegar to simulate the stomach, demonstrating both mechanical and chemical breakdown in a safe, observable way.",
+    reflection: "The storytelling approach was a resounding success. Students were highly engaged and could easily recall the sequence and function of the organs by referencing the story. The 'stomach in a bag' activity was a powerful, concrete demonstration that solidified their understanding. For some students, the creative writing assessment was a chance to shine, allowing them to demonstrate scientific understanding in a non-traditional format.",
     tags: ["IGCSE", "Inquiry-based lesson design"],
     artifacts: [
         { type: "image", url: "#", label: "Annotated Image" },
@@ -123,7 +150,16 @@ export const portfolioItems = [
     grade: "4",
     drivingQuestion: "What if young scientists could fight pests and protect pollinators?”",
     whatStudentsDid: "Punnett simulations; ethics discussion; newsletter for families.",
-    assessment: "Problem set + short editorial with sources.",
+    assessment: "Students, in groups, designed and marketed a 'pollinator-friendly' pest control solution. They created a poster and a short presentation arguing why their method was effective and safe for the environment. They were assessed on their scientific reasoning, creativity, and communication skills.",
+    overview: "This project connected concepts of life cycles, food chains, and ecosystems to the real-world challenge of pest control in gardens. Students were tasked with becoming 'eco-engineers' to solve a problem: how to get rid of aphids without harming bees and butterflies. This led to an exploration of biological controls, natural repellents, and the vital role of pollinators.",
+    learningObjectives: [
+      "Distinguish between pests and beneficial organisms in an ecosystem.",
+      "Describe the role of pollinators in a plant's life cycle.",
+      "Design a solution to a real-world problem using scientific principles.",
+      "Communicate scientific ideas to a specific audience."
+    ],
+    activities: "Students started by observing plants in the school garden to identify different insects. They researched the life cycles of both pests (aphids) and pollinators (bees). The core activity was the design challenge, where groups brainstormed, tested (using water sprays on plants), and refined their solutions, such as introducing ladybugs (biological control) or planting marigolds (natural repellent).",
+    reflection: "The 'eco-engineer' framing gave students a strong sense of purpose and agency. They took their role seriously and were deeply invested in protecting the 'good bugs.' The project successfully integrated biology, engineering design, and communication. The final presentations were impressive, showing that even young learners can grasp complex ecological relationships when the context is meaningful and the task is authentic.",
     tags: ["IGCSE", "Differentiated Instruction"],
     artifacts: [
         { type: "pdf", url: "#", label: "Problem Set" },
@@ -138,7 +174,16 @@ export const portfolioItems = [
     grade: "4",
     drivingQuestion: "“What makes every living organism as unique as a zebra’s stripes?”",
     whatStudentsDid: "Students designed and conducted experiments with bean seeds, manipulating variables like light, water, and soil. They documented growth daily in journals.",
-    assessment: "Lab journal with observations, data, and a concluding CER (Claim, Evidence, Reasoning) statement.",
+    assessment: "Students analyzed a mock 'crime scene' where a plant was 'stolen'. They used chromatography to separate the 'ink' from a ransom note and compared fingerprints left at the scene. The final assessment was a 'forensic report' where they documented their findings and identified the 'culprit' from a list of suspects.",
+    overview: "This thrilling STEM unit introduced students to forensic science by asking what makes things unique. The driving question led to explorations of fingerprints, chromatography, and the importance of careful observation. The unit was structured as a mystery to be solved, with students taking on the role of crime scene investigators.",
+    learningObjectives: [
+      "Understand that fingerprints are unique to each individual.",
+      "Use paper chromatography to separate mixtures (like ink).",
+      "Develop and practice systematic observation and recording skills.",
+      "Use evidence to draw a logical conclusion."
+    ],
+    activities: "The unit began with a staged 'crime scene' in the classroom. Students learned to lift fingerprints using pencils and tape. The main lab involved using paper chromatography to see if the ink from the 'ransom note' matched pens belonging to several 'suspects.' Each activity was framed as a step in solving the case, keeping engagement high.",
+    reflection: "The mystery narrative was incredibly effective. Students were meticulous in their observations because they knew it was 'evidence.' Chromatography, which can be a simple color-mixing activity, became a high-stakes analytical tool. This project demonstrated that complex scientific practices can be made accessible and exciting for elementary students through creative, thematic instruction. The final forensic reports showed great pride and a solid grasp of the scientific concepts.",
     tags: ["Inquiry-based lesson design", "5E model lesson planning"],
     artifacts: [
         { type: "image", url: "#", label: "Student Journal" },
@@ -154,6 +199,15 @@ export const portfolioItems = [
     drivingQuestion: "“How early should we start teaching road safety?”",
     whatStudentsDid: "Used pipe cleaners, beads, and paper cutouts to model the stages of meiosis, focusing on crossing over and independent assortment.",
     assessment: "Students created a stop-motion video or a narrated slideshow explaining their model, assessed with a rubric on accuracy and clarity.",
+    overview: "Meiosis is a notoriously difficult topic due to its microscopic and sequential nature. This lesson aimed to make the process tangible and understandable by having students physically model each stage. By moving the 'chromosomes' themselves, they could directly visualize complex events like crossing over and the reduction of chromosome number, which are critical for genetic variation.",
+    learningObjectives: [
+      "Sequence the stages of Meiosis I and Meiosis II.",
+      "Model the process of crossing over and explain its importance for genetic variation.",
+      "Distinguish between meiosis and mitosis in terms of process and outcome.",
+      "Explain why meiosis results in four unique haploid cells."
+    ],
+    activities: "The lesson was a hands-on workshop. Each student group received a kit with different colored pipe cleaners (to represent homologous chromosomes) and beads (to represent centromeres). Following a guided worksheet, they manipulated these materials to walk through Prophase I, Metaphase I, etc. A key instruction was to physically exchange segments of pipe cleaners during 'crossing over' to see the resulting new combination of alleles.",
+    reflection: "This was one of the most effective lessons for a difficult topic. The physical act of moving the chromosomes and creating recombinant chromatids created a powerful mental model for students that diagrams alone could not. The stop-motion video assessment was a fantastic way to check for understanding, as students had to explain each step's significance. It turned a passive learning topic into an active, creative, and memorable experience.",
     tags: ["Differentiated Instruction", "5E model lesson planning"],
     artifacts: [
         { type: "image", url: "#", label: "Student Model" },
