@@ -10,6 +10,40 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
+const slugToGalleryMap: Record<string, string[]> = {
+  '2': ['kidney-1', 'kidney-2'],
+  '5': ['dna-profiling-1', 'dna-profiling-2', 'dna-profiling-3'],
+};
+
+function renderGallery(slug: string) {
+  const imageIds = slugToGalleryMap[slug];
+  if (!imageIds) return null;
+
+  const images = imageIds.map(id => PlaceHolderImages.find(img => img.id === id)).filter(Boolean);
+
+  if (images.length === 0) return null;
+
+  return (
+    <div className="my-8 grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+      {images.map((image, index) => (
+        image && (
+          <div key={index} className="relative w-full overflow-hidden rounded-lg shadow-lg aspect-auto">
+            <Image
+              src={image.imageUrl}
+              alt={image.description}
+              data-ai-hint={image.imageHint}
+              width={1080}
+              height={810}
+              className="object-contain w-full h-full"
+            />
+          </div>
+        )
+      ))}
+    </div>
+  );
+}
+
+
 export default function PortfolioItemPage({ params }: { params: { slug: string } }) {
   const item = portfolioItems.find((p) => p.order.toString() === params.slug);
 
@@ -23,6 +57,8 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
   const image = PlaceHolderImages.find(img => img.id === imageId);
   
   const isSpecialSlug = ['3', '4'].includes(params.slug);
+  const gallery = renderGallery(params.slug);
+
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -45,7 +81,7 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
               </p>
             </div>
             
-            {image && (
+            {!gallery && image && (
               <div className={cn("relative my-8 w-full overflow-hidden rounded-lg shadow-lg",
                   isSpecialSlug ? "aspect-auto" : "aspect-[4/3]"
               )}>
@@ -60,6 +96,8 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
                 />
               </div>
             )}
+
+            {gallery}
             
             <blockquote className="border-l-4 border-primary bg-muted/20 p-4 italic text-foreground/80">
               "{item.drivingQuestion}"
@@ -99,3 +137,5 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
     </div>
   );
 }
+
+    
