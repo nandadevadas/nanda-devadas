@@ -131,18 +131,6 @@
       "description": "Close-up of the dissected goat kidney.",
       "imageUrl": "/assets/evidence_of_practice/poop/2.jpeg",
       "imageHint": "dissection closeup"
-    },
-    {
-      "id": "kidney-3",
-      "description": "Students pointing at a diagram of a nephron.",
-      "imageUrl": "/assets/evidence_of_practice/poop/3.jpg",
-      "imageHint": "nephron diagram"
-    },
-    {
-      "id": "kidney-4",
-      "description": "Whiteboard with calculations of kidney filtration rates.",
-      "imageUrl": "/assets/evidence_of_practice/poop/4.jpg",
-      "imageHint": "science calculation"
     }
   ]
 }
