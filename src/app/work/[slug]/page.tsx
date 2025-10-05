@@ -5,12 +5,12 @@ import { portfolioItems } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
-import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const slugToGalleryMap: Record<string, string[]> = {
+  '2': ['poop-1', 'poop-2'],
   '5': ['dna-profiling-1', 'dna-profiling-2', 'dna-profiling-3'],
   '6': ['sel-1', 'sel-2'],
 };
