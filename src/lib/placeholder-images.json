@@ -69,7 +69,7 @@
     {
       "id": "testimonial-2",
       "description": "Avatar for a science department lead.",
-      "imageUrl": "https://images.unsplash.com/photo-1666183701139-2dd760d462df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlZHVjYXRvciUyMHBvcnRyYWl0fGVufDB8fHx8MTc1OTU5NTQyMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1666183701139-2dd760d462df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlZHVjYXRvciUyMHBvcnRyYWl0fGVufDB8fHx8MTc1OTU5NTQyMXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "educator portrait"
     },
     {
@@ -81,7 +81,7 @@
     {
       "id": "testimonial-4",
       "description": "Avatar for a high school student.",
-      "imageUrl": "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzdHVkZW50JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzU5NTYxNjAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzdHVkZW50JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzU5NTYxNjAzfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "student portrait"
     },
     {
@@ -103,18 +103,6 @@
       "imageHint": "parent portrait"
     },
     {
-      "id": "kidney-1",
-      "description": "Students engaged in a goat kidney dissection.",
-      "imageUrl": "/assets/evidence_of_practice/poop/1.jpeg",
-      "imageHint": "kidney dissection"
-    },
-    {
-      "id": "kidney-2",
-      "description": "Close-up of the dissected goat kidney.",
-      "imageUrl": "/assets/evidence_of_practice/poop/2.jpeg",
-      "imageHint": "dissection closeup"
-    },
-    {
       "id": "dna-profiling-1",
       "description": "Students working on a DNA profiling project.",
       "imageUrl": "/assets/evidence_of_practice/dna profiling/1.jpeg",
@@ -131,6 +119,18 @@
       "description": "Student work from the DNA profiling activity.",
       "imageUrl": "/assets/evidence_of_practice/dna profiling/3.jpeg",
       "imageHint": "student work"
+    },
+    {
+      "id": "sel-1",
+      "description": "Screenshot of a road safety presentation.",
+      "imageUrl": "/assets/evidence_of_practice/SEL/Screenshot 2025-10-05 132520.png",
+      "imageHint": "road safety presentation"
+    },
+    {
+      "id": "sel-2",
+      "description": "Another screenshot of a road safety presentation.",
+      "imageUrl": "/assets/evidence_of_practice/SEL/Screenshot 2025-10-05 132508.png",
+      "imageHint": "road safety presentation"
     }
   ]
 }

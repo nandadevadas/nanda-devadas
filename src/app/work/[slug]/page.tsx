@@ -11,8 +11,8 @@ import { ArrowLeft } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const slugToGalleryMap: Record<string, string[]> = {
-  '2': ['kidney-1', 'kidney-2'],
   '5': ['dna-profiling-1', 'dna-profiling-2', 'dna-profiling-3'],
+  '6': ['sel-1', 'sel-2'],
 };
 
 function renderGallery(slug: string) {
@@ -137,5 +137,3 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
     </div>
   );
 }
-
-    
