@@ -73,7 +73,7 @@ export const philosophy = [
 export type PortfolioItem = typeof portfolioItems[0];
 export const portfolioItems = [
   {
-    title: "🎬 Genetics, Inquiry, and a Touch of Hollywood Drama 🧬",
+    title: "Genetics, Inquiry, and a Touch of Hollywood Drama",
     course: "IGCSE Biology",
     grade: "10",
     drivingQuestion: "Can you use blood types to crack a century-old Hollywood case?",
@@ -103,10 +103,10 @@ export const portfolioItems = [
     order: 2
   },
   {
-    title: "Steaming Stories: Tales from the Idli Plate 🍚🔥📝",
+    title: "Steaming Stories: Tales from the Idli Plate",
     course: "Cambridge Primary Science",
     grade: "4",
-    drivingQuestion: "Ever wondered what your lunch thinks as it travels through your body?” 🍏🤔",
+    drivingQuestion: "Ever wondered what your lunch thinks as it travels through your body?”",
     whatStudentsDid: "Microscopic imaging + annotated gallery; peer feedback rounds.",
     assessment: "Rubric focusing on observation → inference.",
     tags: ["IGCSE", "Inquiry-based lesson design"],
@@ -118,10 +118,10 @@ export const portfolioItems = [
     order: 3
   },
   {
-    title: "🌍🌿 Bridging classroom lessons with real-world issues!",
+    title: "Bridging classroom lessons with real-world issues!",
     course: "STEM Project",
     grade: "4",
-    drivingQuestion: "What if young scientists could fight pests and protect pollinators?” 🐝🌿",
+    drivingQuestion: "What if young scientists could fight pests and protect pollinators?”",
     whatStudentsDid: "Punnett simulations; ethics discussion; newsletter for families.",
     assessment: "Problem set + short editorial with sources.",
     tags: ["IGCSE", "Differentiated Instruction"],
@@ -133,10 +133,10 @@ export const portfolioItems = [
     order: 4
   },
   {
-    title: "🔬 Forensic Files Unveiled at Aimee! 🕵️‍♂️",
+    title: "Forensic Files Unveiled at Aimee!",
     course: "STEM Project",
     grade: "4",
-    drivingQuestion: "“What makes every living organism as unique as a zebra’s stripes?” 🦓",
+    drivingQuestion: "“What makes every living organism as unique as a zebra’s stripes?”",
     whatStudentsDid: "Students designed and conducted experiments with bean seeds, manipulating variables like light, water, and soil. They documented growth daily in journals.",
     assessment: "Lab journal with observations, data, and a concluding CER (Claim, Evidence, Reasoning) statement.",
     tags: ["Inquiry-based lesson design", "5E model lesson planning"],
@@ -148,7 +148,7 @@ export const portfolioItems = [
     order: 5
   },
   {
-    title: "Modeling Meiosis 🧬",
+    title: "Modeling Meiosis",
     course: "IGCSE Biology",
     grade: "10",
     drivingQuestion: "“How early should we start teaching road safety?”",
