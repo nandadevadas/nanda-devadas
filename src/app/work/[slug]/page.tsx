@@ -18,6 +18,43 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
   }
 
   const image = PlaceHolderImages.find(img => img.id === `portfolio-${item.order}`);
+  
+  const renderGallery = (slug: string) => {
+    let galleryImages: typeof PlaceHolderImages = [];
+    if (slug === '1') {
+      galleryImages = PlaceHolderImages.filter(img => img.id.startsWith('genetics-'));
+    } else if (slug === '2') {
+      galleryImages = PlaceHolderImages.filter(img => img.id.startsWith('kidney-'));
+    }
+
+    if (galleryImages.length > 0) {
+      return (
+        <div className="my-8 grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+          {galleryImages.map((img, index) => (
+            <div key={img.id} className={cn(
+              "relative overflow-hidden rounded-lg shadow-lg",
+              index === 0 && slug === '1' ? 'sm:col-span-2 aspect-[4/3]' : 'aspect-video'
+            )}>
+              <a href={img.imageUrl} target="_blank" rel="noopener noreferrer">
+                 <Image
+                    src={img.imageUrl}
+                    alt={img.description}
+                    data-ai-hint={img.imageHint}
+                    width={index === 0 && slug === '1' ? 800 : 600}
+                    height={index === 0 && slug === '1' ? 600 : 338}
+                    className={cn(
+                        "object-contain w-full h-full",
+                        index !== 0 || slug !== '1' ? 'object-cover' : ''
+                    )}
+                />
+              </a>
+            </div>
+          ))}
+        </div>
+      );
+    }
+    return null;
+  };
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -47,16 +84,20 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
               </div>
             </div>
             
-            {image && (
-              <div className="relative my-8 h-80 w-full overflow-hidden rounded-lg shadow-lg">
-                <Image
-                  src={image.imageUrl}
-                  alt={image.description}
-                  data-ai-hint={image.imageHint}
-                  fill
-                  className="object-cover"
-                />
-              </div>
+            {params.slug === '1' || params.slug === '2' ? (
+              renderGallery(params.slug)
+            ) : (
+              image && (
+                <div className="relative my-8 h-80 w-full overflow-hidden rounded-lg shadow-lg">
+                  <Image
+                    src={image.imageUrl}
+                    alt={image.description}
+                    data-ai-hint={image.imageHint}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              )
             )}
             
             <blockquote className="border-l-4 border-primary bg-muted/20 p-4 italic text-foreground/80">

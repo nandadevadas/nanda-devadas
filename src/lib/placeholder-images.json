@@ -123,25 +123,25 @@
     {
       "id": "kidney-1",
       "description": "Students engaged in a goat kidney dissection.",
-      "imageUrl": "/assets/evidence_of_practice/kidney/1.jpg",
+      "imageUrl": "/assets/evidence_of_practice/poop/1.jpeg",
       "imageHint": "kidney dissection"
     },
     {
       "id": "kidney-2",
       "description": "Close-up of the dissected goat kidney.",
-      "imageUrl": "/assets/evidence_of_practice/kidney/2.jpg",
+      "imageUrl": "/assets/evidence_of_practice/poop/2.jpeg",
       "imageHint": "dissection closeup"
     },
     {
       "id": "kidney-3",
       "description": "Students pointing at a diagram of a nephron.",
-      "imageUrl": "/assets/evidence_of_practice/kidney/3.jpg",
+      "imageUrl": "/assets/evidence_of_practice/poop/3.jpg",
       "imageHint": "nephron diagram"
     },
     {
       "id": "kidney-4",
       "description": "Whiteboard with calculations of kidney filtration rates.",
-      "imageUrl": "/assets/evidence_of_practice/kidney/4.jpg",
+      "imageUrl": "/assets/evidence_of_practice/poop/4.jpg",
       "imageHint": "science calculation"
     }
   ]
