@@ -7,6 +7,12 @@
       "imageHint": "professional portrait"
     },
     {
+      "id": "philosophy-image",
+      "description": "Nanda Dev in a classroom, standing next to a microscope and a screen displaying a DNA helix.",
+      "imageUrl": "/assets/philosophy/my_philosophy_photo.jpg",
+      "imageHint": "teacher classroom"
+    },
+    {
       "id": "portfolio-1",
       "description": "Student work showing a diagram of human systems.",
       "imageUrl": "https://images.unsplash.com/photo-1579154392128-bf8c7ebee541?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxHZW5ldGljc3xlbnwwfHx8fDE3NTkzNDM0NjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
