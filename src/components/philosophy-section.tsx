@@ -30,7 +30,7 @@ export default function PhilosophySection() {
         <div className="mx-auto grid max-w-6xl items-start gap-12 py-12 lg:grid-cols-2 lg:gap-16">
           {philosophyImage && (
             <div className="relative flex items-center justify-center">
-              <Image
+              <Image  
                 src={philosophyImage.imageUrl}
                 alt={philosophyImage.description}
                 data-ai-hint={philosophyImage.imageHint}

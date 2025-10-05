@@ -5,7 +5,7 @@ export const siteInfo = {
   name: "Nanda Dev",
   role: "High School Biology Teacher & Elementary Science Educator | B.Ed., M.Sc. Biotech, B.Sc. Biotech",
   heroTagline: "I design inquiry-rich lessons that make science visible, purposeful, and joyful.",
-  resumeUrl: "/assets/resume/Resume_Nanda_Dev.pdf",
+  resumeUrl: "/assets/resume/Resume_Nanda_MyKelly.pdf",
   email: "nandadevadas@gmail.com",
   social: {
     linkedin: "https://www.linkedin.com/in/nanda-devadas-p",
@@ -81,15 +81,11 @@ export const portfolioItems = [
     assessment: "Students analyzed mock forensic reports and historical documents to construct a scientific argument using the Claim, Evidence, Reasoning (CER) framework. Their final product was a formal lab report, assessed with a detailed rubric focusing on argumentation, data analysis, and scientific communication.",
     overview: "This unit was taught using Phenomenon-Driven Instruction, immediately hooking students with a high-stakes, real-world genetic mystery: the Charlie Chaplin paternity suit and ABO blood typing case. Instead of beginning with theory, the lesson started with the verifiable evidence (the blood types of Chaplin, the mother, and the child), immediately transforming the study of Multiple Alleles and Codominance from an abstract concept into a forensic investigation. This narrative-driven approach was designed to foster scientific curiosity and deeper understanding.",
     learningObjectives: [
-      "Analyze and explain the inheritance patterns of Multiple Alleles (ABO Blood Typing).",
-      "Apply genetic principles (Punnett squares) to determine unknown genotypes and phenotypes.",
-      "Construct a compelling scientific argument using the Claim, Evidence, Reasoning (CER) framework."
+        "Analyze and explain the inheritance patterns of Multiple Alleles (ABO Blood Typing).",
+        "Apply genetic principles (Punnett squares) to determine unknown genotypes and phenotypes.",
+        "Construct a compelling scientific argument using the Claim, Evidence, Reasoning (CER) framework."
     ],
-    activities: [
-        { "title": "Foundation", "description": "Students utilized initial scaffolded notes and illustrations to rapidly build foundational knowledge of codominance and multiple alleles." },
-        { "title": "Evidence Gathering", "description": "Students were presented with the case files, including simulated blood typing results and historical documents. They actively analyzed pedigree charts and applied blood-typing rules to gather the necessary evidence." },
-        { "title": "Critical Thinking", "description": "The core activity involved students collaborating as \"forensic geneticists\" to prove the actor's innocence (or guilt) with blood-typing rules. This required them to apply critical thinking and problem-solving skills to connect real-life drama with genetic principles." }
-    ],
+    activities: "The unit was defined by the central Inquiry Question: \"Based on the blood types, could Charlie Chaplin have been the biological father?\"\n\n*   **Foundation:** Students utilized initial scaffolded notes and illustrations to rapidly build foundational knowledge of codominance and multiple alleles.\n*   **Evidence Gathering:** Students were presented with the case files, including simulated blood typing results and historical documents. They actively analyzed pedigree charts and applied blood-typing rules to gather the necessary evidence.\n*   **Critical Thinking:** The core activity involved students collaborating as \"forensic geneticists\" to prove the actor's innocence (or guilt) with blood-typing rules. This required them to apply critical thinking and problem-solving skills to connect real-life drama with genetic principles.",
     reflection: "The use of this real-world phenomenon was highly effective, demonstrating successful Differentiated Instruction by providing multiple entry points (narrative, case evidence, scientific calculations) for students to access the content. The continuous Inquiry-based process fostered vibrant discussions and helped students move beyond simple memorization. The final CER report validated that students gained a deep, evidence-based understanding of complex inheritance patterns, reinforcing foundational knowledge while building a love for problem-solving.",
     tags: ["Inquiry-based lesson design", "Phenomenon-Driven instruction"],
     artifacts: [
@@ -112,12 +108,7 @@ export const portfolioItems = [
       "Describe the processes of ultrafiltration and selective reabsorption in urine formation.",
       "Analyze the relationship between fluid input and output through quantitative reasoning."
     ],
-    activities: [
-        { "title": "Inquiry Fun", "description": "Discussions were prompted by questions like, \"Why do birds excrete paste-like urine?\" which bridged a familiar observation to the complex physiology of nitrogenous waste." },
-        { "title": "Hands-On Learning", "description": "Students conducted a goat kidney dissection, providing a direct, tactile experience of the organ's structure and function." },
-        { "title": "Critical Thinking & Calculation", "description": "Students calculated and analyzed the kidney's efficiency, discovering the massive filtration volume (180L/day) versus the small urine output (1.5L), leading to a deep understanding of selective reabsorption." },
-        { "title": "Roleplay as Nephrologists", "description": "The unit culminated in a mock panel discussion where students took on the roles of medical experts to answer public queries about kidney health, transplants, and stones, solidifying their applied knowledge." }
-    ],
+    activities: "This lesson followed an Inquiry-based structure, moving students through questioning, exploration, and hands-on investigation.\n\n*   **Inquiry Fun:** Discussions were prompted by questions like, \"Why do birds excrete paste-like urine?\" which bridged a familiar observation to the complex physiology of nitrogenous waste.\n*   **Hands-On Learning:** Students conducted a goat kidney dissection, providing a direct, tactile experience of the organ's structure and function.\n*   **Critical Thinking & Calculation:** Students calculated and analyzed the kidney's efficiency, discovering the massive filtration volume (180L/day) versus the small urine output (1.5L), leading to a deep understanding of selective reabsorption.\n*   **Roleplay as Nephrologists:** The unit culminated in a mock panel discussion where students took on the roles of medical experts to answer public queries about kidney health, transplants, and stones, solidifying their applied knowledge.",
     reflection: "This approach, rooted in the Inquiry and Phenomenon-Driven framework, ensured maximum engagement and mastery. By linking the complex math of fluid dynamics with a hands-on dissection and a final role-play, students achieved advanced scientific literacy and applied IGCSE Biology concepts as practicing scientists. The unit successfully transformed a dry topic into an exciting and memorable journey of discovery.",
     tags: ["Inquiry-based lesson design", "5E model lesson planning"],
     artifacts: [
@@ -196,16 +187,16 @@ export const portfolioItems = [
     ],
     activities: [
       {
-        title: "Conceptual Bridging",
-        description: "The uniqueness of organisms was introduced using zebra patterns as a visual metaphor, simplifying the complex idea of individual genetic profiles."
+        "title": "Conceptual Bridging",
+        "description": "The uniqueness of organisms was introduced using zebra patterns as a visual metaphor, simplifying the complex idea of individual genetic profiles."
       },
       {
-        title: "Hands-On Simulation",
-        description: "A mock crime scene was meticulously set up, complete with teachers acting as suspects, making the activity interactive and memorable for the students."
+        "title": "Hands-On Simulation",
+        "description": "A mock crime scene was meticulously set up, complete with teachers acting as suspects, making the activity interactive and memorable for the students."
       },
       {
-        title: "Scaffolding & Accessibility",
-        description: "A clear and precise worksheet was created to guide the investigation, effectively differentiating instruction to ensure accessibility and success for all learners, including those who may process information more slowly."
+        "title": "Scaffolding & Accessibility",
+        "description": "A clear and precise worksheet was created to guide the investigation, effectively differentiating instruction to ensure accessibility and success for all learners, including those who may process information more slowly."
       }
     ],
     reflection: "The success of this large-scale STEM activity confirmed that planning, innovative ideas, and organized execution can make complex topics like forensic science accessible and exciting for a wide range of students. The high levels of student enthusiasm and the practical application of scientific concepts demonstrated the power of experiential learning in enhancing scientific literacy and critical thinking across grade levels.",
