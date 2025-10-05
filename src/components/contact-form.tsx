@@ -128,7 +128,9 @@ export default function ContactForm() {
         >
             <CheckCircle className="w-12 h-12 text-primary" />
             <h3 className="text-xl font-semibold">Thank you for your message!</h3>
-            <p className="text-muted-foreground">I will get back to you within 2-3 business days.</p>
+            <p className="text-muted-foreground">
+                I’ll follow up within 1–2 business days. Replies will come from nandadevadas@gmail.com — please check your spam folder just in case.
+            </p>
         </div>
     );
   }

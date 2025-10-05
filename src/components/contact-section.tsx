@@ -12,7 +12,7 @@ export default function ContactSection() {
               Get in Touch
             </h2>
             <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              I’d love to connect and discuss how my skills can benefit your school. Please share a time that works for you.
+              I'd love to connect and discuss how my skills can benefit your school. Please use the form below to get in touch.
             </p>
              <p className="text-sm">
                 You can also{" "}
