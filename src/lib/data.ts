@@ -134,18 +134,21 @@ export const portfolioItems = [
     drivingQuestion: "Ever wondered what your lunch thinks as it travels through your body?”",
     whatStudentsDid: "Microscopic imaging + annotated gallery; peer feedback rounds.",
     assessment: "Students created a comic strip or a short story from the 'perspective' of a piece of food traveling through the digestive system. This was assessed on the accurate sequence of organs, the function described for each organ, and creative expression.",
-    overview: "To make the digestive system accessible and memorable for younger learners, we personified food on its journey through the body. The lesson, anchored by the beloved food 'idli,' used storytelling to trace the path from the mouth to the small intestine, focusing on the roles of different organs in breaking down food for energy.",
+    overview: "This Cambridge Primary Science unit on the Digestive System was rooted in Inquiry-based teaching and integrated Social-Emotional Learning (SEL). The lesson transformed the traditional study of physiology into a creative exercise in empathy by asking students to narrate the journey of their lunch (\"Idli\") from the perspective of the food itself. This innovative approach brilliantly intertwined core science concepts with SEL principles.",
     learningObjectives: [
-      "Identify the main organs of the human digestive system (mouth, esophagus, stomach, small intestine).",
-      "Describe the function of each organ in simple terms (e.g., 'the stomach mashes food').",
-      "Sequence the journey of food through the digestive tract.",
-      "Understand that digestion is the process of breaking down food for our body to use."
+      "Accurately sequence and describe the process of digestion using correct scientific terminology (e.g., esophagus, small intestine).",
+      "Develop creative writing skills by adopting an anthropomorphic perspective (empathy).",
+      "Foster an inclusive space where every child's thoughts and feelings are valued and expressed."
     ],
-    activities: "We began by reading a story about 'Idli's Great Adventure.' Students then created a life-sized body map on large paper, drawing and labeling the organs. A hands-on activity involved 'digesting' a cracker in a sealed bag with water and a little vinegar to simulate the stomach, demonstrating both mechanical and chemical breakdown in a safe, observable way.",
-    reflection: "The storytelling approach was a resounding success. Students were highly engaged and could easily recall the sequence and function of the organs by referencing the story. The 'stomach in a bag' activity was a powerful, concrete demonstration that solidified their understanding. For some students, the creative writing assessment was a chance to shine, allowing them to demonstrate scientific understanding in a non-traditional format.",
+    activities: [
+        { "title": "Inquiry Hook", "description": "Students were prompted with the question, \"How might food feel during digestion?\". This spurred active discussion and imaginative thinking." },
+        { "title": "The \"IDLY-DAIRY\" Artifact", "description": "Students composed a \"diary\" from the perspective of the food, requiring them to accurately map the journey through the body—from the mouth and saliva down to the small intestine and anus." },
+        { "title": "Creative Expression", "description": "The narrative format fostered creativity and ensured that even complex vocabulary was naturally integrated into an engaging story, demonstrating conceptual understanding." }
+    ],
+    reflection: "The success of the \"Steaming Stories\" activity confirms that fostering imagination alongside core science concepts enhances learning. This approach not only ensures that students meet scientific grade expectations but also builds confidence and social-emotional awareness. By encouraging students to delve into the realm of imagination, the lesson achieved a remarkable impact on their learning experience, making science come alive.",
     tags: ["IGCSE", "Inquiry-based lesson design"],
     artifacts: [
-        { type: "image", url: "#", label: "Annotated Image" },
+        { type: "image", url: "#", label: "IDLY-DAIRY Artifact" },
         { type: "pdf", url: "#", label: "Assessment Rubric" }
     ],
     published: true,
@@ -192,9 +195,18 @@ export const portfolioItems = [
         "Foster critical thinking and problem-solving through mock investigation and evidence analysis."
     ],
     activities: [
-        { "title": "Conceptual Bridging", "description": "The uniqueness of organisms was introduced using zebra patterns as a visual metaphor, simplifying the complex idea of individual genetic profiles." },
-        { "title": "Hands-On Simulation", "description": "A mock crime scene was meticulously set up, complete with teachers acting as suspects, making the activity interactive and memorable for the students." },
-        { "title": "Scaffolding & Accessibility", "description": "A clear and precise worksheet was created to guide the investigation, effectively differentiating instruction to ensure accessibility and success for all learners, including those who may process information more slowly." }
+      {
+        title: "Conceptual Bridging",
+        description: "The uniqueness of organisms was introduced using zebra patterns as a visual metaphor, simplifying the complex idea of individual genetic profiles."
+      },
+      {
+        title: "Hands-On Simulation",
+        description: "A mock crime scene was meticulously set up, complete with teachers acting as suspects, making the activity interactive and memorable for the students."
+      },
+      {
+        title: "Scaffolding & Accessibility",
+        description: "A clear and precise worksheet was created to guide the investigation, effectively differentiating instruction to ensure accessibility and success for all learners, including those who may process information more slowly."
+      }
     ],
     reflection: "The success of this large-scale STEM activity confirmed that planning, innovative ideas, and organized execution can make complex topics like forensic science accessible and exciting for a wide range of students. The high levels of student enthusiasm and the practical application of scientific concepts demonstrated the power of experiential learning in enhancing scientific literacy and critical thinking across grade levels.",
     tags: ["Inquiry-based lesson design", "5E model lesson planning"],
