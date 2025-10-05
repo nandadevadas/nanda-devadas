@@ -12,6 +12,20 @@ export default function HeroSection() {
     <section id="home" className="w-full pt-12 md:pt-24 lg:pt-32">
       <div className="container px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16">
+          <div className="relative flex items-center justify-center lg:order-last">
+            {heroImage && (
+              <Image
+                src={heroImage.imageUrl}
+                alt={heroImage.description}
+                data-ai-hint={heroImage.imageHint}
+                width={500}
+                height={500}
+                className="rounded-xl object-cover shadow-lg aspect-square"
+                priority
+              />
+            )}
+             <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-[500px] max-h-[500px] bg-accent/30 rounded-full blur-3xl"></div>
+          </div>
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-4">
               <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
@@ -34,20 +48,6 @@ export default function HeroSection() {
                 <Link href={siteInfo.resumeUrl} download>Download Resume</Link>
               </Button>
             </div>
-          </div>
-          <div className="relative flex items-center justify-center">
-            {heroImage && (
-              <Image
-                src={heroImage.imageUrl}
-                alt={heroImage.description}
-                data-ai-hint={heroImage.imageHint}
-                width={500}
-                height={500}
-                className="rounded-xl object-cover shadow-lg aspect-square"
-                priority
-              />
-            )}
-             <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-[500px] max-h-[500px] bg-accent/30 rounded-full blur-3xl"></div>
           </div>
         </div>
       </div>
