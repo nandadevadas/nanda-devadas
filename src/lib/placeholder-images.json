@@ -21,7 +21,7 @@
     {
       "id": "portfolio-2",
       "description": "A diagram of a human kidney.",
-      "imageUrl": "/assets/evidence_of_practice/poop/2.jpeg",
+      "imageUrl": "https://images.unsplash.com/photo-1559757175-9e351c9a1301?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxraWRuZXl8ZW58MHx8fHwxNzU5NzA2OTQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "kidney diagram"
     },
     {
@@ -63,7 +63,7 @@
     {
       "id": "testimonial-1",
       "description": "Avatar for a school principal.",
-      "imageUrl": "https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NTk0ODYwMDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NTk0ODYwMDl8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "professional headshot"
     },
     {
