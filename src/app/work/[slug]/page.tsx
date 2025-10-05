@@ -71,7 +71,17 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
             </ul>
 
             <h2 className="font-headline">Key Activities</h2>
-            <p>{item.activities}</p>
+            {typeof item.activities === 'string' ? (
+              <p>{item.activities}</p>
+            ) : (
+              <ul className="list-disc pl-6 space-y-2">
+                {item.activities.map((activity, i) => (
+                  <li key={i}>
+                    <strong>{activity.title}:</strong> {activity.description}
+                  </li>
+                ))}
+              </ul>
+            )}
 
             <h2 className="font-headline">Assessment &amp; Outcomes</h2>
             <p>{item.assessment}</p>

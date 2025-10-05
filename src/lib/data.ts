@@ -85,7 +85,11 @@ export const portfolioItems = [
       "Apply genetic principles (Punnett squares) to determine unknown genotypes and phenotypes.",
       "Construct a compelling scientific argument using the Claim, Evidence, Reasoning (CER) framework."
     ],
-    activities: "The unit was defined by the central Inquiry Question: \"Based on the blood types, could Charlie Chaplin have been the biological father?\"\n\nFoundation: Students utilized initial scaffolded notes and illustrations to rapidly build foundational knowledge of codominance and multiple alleles.\n\nEvidence Gathering: Students were presented with the case files, including simulated blood typing results and historical documents. They actively analyzed pedigree charts and applied blood-typing rules to gather the necessary evidence.\n\nCritical Thinking: The core activity involved students collaborating as \"forensic geneticists\" to prove the actor's innocence (or guilt) with blood-typing rules. This required them to apply critical thinking and problem-solving skills to connect real-life drama with genetic principles.",
+    activities: [
+        { "title": "Foundation", "description": "Students utilized initial scaffolded notes and illustrations to rapidly build foundational knowledge of codominance and multiple alleles." },
+        { "title": "Evidence Gathering", "description": "Students were presented with the case files, including simulated blood typing results and historical documents. They actively analyzed pedigree charts and applied blood-typing rules to gather the necessary evidence." },
+        { "title": "Critical Thinking", "description": "The core activity involved students collaborating as \"forensic geneticists\" to prove the actor's innocence (or guilt) with blood-typing rules. This required them to apply critical thinking and problem-solving skills to connect real-life drama with genetic principles." }
+    ],
     reflection: "The use of this real-world phenomenon was highly effective, demonstrating successful Differentiated Instruction by providing multiple entry points (narrative, case evidence, scientific calculations) for students to access the content. The continuous Inquiry-based process fostered vibrant discussions and helped students move beyond simple memorization. The final CER report validated that students gained a deep, evidence-based understanding of complex inheritance patterns, reinforcing foundational knowledge while building a love for problem-solving.",
     tags: ["Inquiry-based lesson design", "Phenomenon-Driven instruction"],
     artifacts: [
@@ -108,7 +112,12 @@ export const portfolioItems = [
       "Describe the processes of ultrafiltration and selective reabsorption in urine formation.",
       "Analyze the relationship between fluid input and output through quantitative reasoning."
     ],
-    activities: "This lesson followed an Inquiry-based structure, moving students through questioning, exploration, and hands-on investigation.\n\nInquiry Fun: Discussions were prompted by questions like, \"Why do birds excrete paste-like urine?\" which bridged a familiar observation to the complex physiology of nitrogenous waste.\n\nHands-On Learning: Students conducted a goat kidney dissection, providing a direct, tactile experience of the organ's structure and function.\n\nCritical Thinking & Calculation: Students calculated and analyzed the kidney's efficiency, discovering the massive filtration volume (180L/day) versus the small urine output (1.5L), leading to a deep understanding of selective reabsorption.\n\nRoleplay as Nephrologists: The unit culminated in a mock panel discussion where students took on the roles of medical experts to answer public queries about kidney health, transplants, and stones, solidifying their applied knowledge.",
+    activities: [
+        { "title": "Inquiry Fun", "description": "Discussions were prompted by questions like, \"Why do birds excrete paste-like urine?\" which bridged a familiar observation to the complex physiology of nitrogenous waste." },
+        { "title": "Hands-On Learning", "description": "Students conducted a goat kidney dissection, providing a direct, tactile experience of the organ's structure and function." },
+        { "title": "Critical Thinking & Calculation", "description": "Students calculated and analyzed the kidney's efficiency, discovering the massive filtration volume (180L/day) versus the small urine output (1.5L), leading to a deep understanding of selective reabsorption." },
+        { "title": "Roleplay as Nephrologists", "description": "The unit culminated in a mock panel discussion where students took on the roles of medical experts to answer public queries about kidney health, transplants, and stones, solidifying their applied knowledge." }
+    ],
     reflection: "This approach, rooted in the Inquiry and Phenomenon-Driven framework, ensured maximum engagement and mastery. By linking the complex math of fluid dynamics with a hands-on dissection and a final role-play, students achieved advanced scientific literacy and applied IGCSE Biology concepts as practicing scientists. The unit successfully transformed a dry topic into an exciting and memorable journey of discovery.",
     tags: ["Inquiry-based lesson design", "5E model lesson planning"],
     artifacts: [
@@ -155,7 +164,11 @@ export const portfolioItems = [
       "Design and synthesize sustainable, natural biopesticides as an effective alternative.",
       "Demonstrate environmental stewardship by applying science to drive positive social change."
     ],
-    activities: "This project was highly Inquiry-based and focused on practical, hands-on application of scientific principles:\n\nProblem Identification: Students researched the environmental hazards of chemical pesticides, which fueled their motivation to find solutions.\n\nFormulation & Synthesis: In a hands-on activity, students actively crafted various natural solutions, including: neem oil spray, garlic chili spray, tobacco spray, and baking soda fungicide.\n\nApplication & Evaluation: Students learned the science behind these biopesticides, understanding how natural solutions effectively target pests while preserving ecological balance.",
+    activities: [
+        { "title": "Problem Identification", "description": "Students researched the environmental hazards of chemical pesticides, which fueled their motivation to find solutions." },
+        { "title": "Formulation & Synthesis", "description": "In a hands-on activity, students actively crafted various natural solutions, including: neem oil spray, garlic chili spray, tobacco spray, and baking soda fungicide." },
+        { "title": "Application & Evaluation", "description": "Students learned the science behind these biopesticides, understanding how natural solutions effectively target pests while preserving ecological balance." }
+    ],
     reflection: "This integrated STEM activity successfully cultivated core 21st-century competencies:\n\nProblem-Solving: Students moved from analyzing a severe real-world problem to synthesizing a sustainable, responsible solution.\n\nEnvironmental Stewardship: The unit fostered a deep sense of responsibility, proving that young minds can use science to drive positive change for a better future.\n\nResponsible Innovation: The activity highlighted the importance of choosing environmentally sound methods, linking scientific literacy directly to ethical decision-making.",
     tags: ["IGCSE", "Differentiated Instruction"],
     artifacts: [
@@ -178,7 +191,11 @@ export const portfolioItems = [
         "Introduce the fundamental purpose of forensic science and its application in real-world scenarios.",
         "Foster critical thinking and problem-solving through mock investigation and evidence analysis."
     ],
-    activities: "This project was structured around Inquiry-based and hands-on activities, ensuring accessibility and engagement for all students.\n\nConceptual Bridging: The uniqueness of organisms was introduced using zebra patterns as a visual metaphor, simplifying the complex idea of individual genetic profiles.\n\nHands-On Simulation: A mock crime scene was meticulously set up, complete with teachers acting as suspects, making the activity interactive and memorable for the students.\n\nScaffolding & Accessibility: A clear and precise worksheet was created to guide the investigation, effectively differentiating instruction to ensure accessibility and success for all learners, including those who may process information more slowly.",
+    activities: [
+        { "title": "Conceptual Bridging", "description": "The uniqueness of organisms was introduced using zebra patterns as a visual metaphor, simplifying the complex idea of individual genetic profiles." },
+        { "title": "Hands-On Simulation", "description": "A mock crime scene was meticulously set up, complete with teachers acting as suspects, making the activity interactive and memorable for the students." },
+        { "title": "Scaffolding & Accessibility", "description": "A clear and precise worksheet was created to guide the investigation, effectively differentiating instruction to ensure accessibility and success for all learners, including those who may process information more slowly." }
+    ],
     reflection: "The success of this large-scale STEM activity confirmed that planning, innovative ideas, and organized execution can make complex topics like forensic science accessible and exciting for a wide range of students. The high levels of student enthusiasm and the practical application of scientific concepts demonstrated the power of experiential learning in enhancing scientific literacy and critical thinking across grade levels.",
     tags: ["Inquiry-based lesson design", "5E model lesson planning"],
     artifacts: [
