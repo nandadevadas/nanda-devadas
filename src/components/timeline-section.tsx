@@ -1,5 +1,16 @@
 import React from 'react';
-import { GraduationCap, Briefcase } from 'lucide-react';
+import { GraduationCap, Briefcase, Trophy } from 'lucide-react';
+import {
+  AlertDialog,
+  AlertDialogContent,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+  AlertDialogCancel,
+} from "@/components/ui/alert-dialog"
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+
 
 const educationData = [
   {
@@ -17,6 +28,7 @@ const educationData = [
     status: "First Rank, Distinction",
     inProgress: false,
     icon: GraduationCap,
+    isRankHolder: true,
   },
   {
     title: "Bachelor of Education (B.Ed.)",
@@ -48,7 +60,10 @@ const experienceData = [
 ];
 
 
-const TimelineCard = ({ item }: { item: typeof educationData[0] | typeof experienceData[0] }) => (
+const TimelineCard = ({ item }: { item: (typeof educationData[0] | typeof experienceData[0]) & { isRankHolder?: boolean } }) => {
+    const rankImages = PlaceHolderImages.filter(p => p.id.startsWith('rank-holder-'));
+
+    return (
     <div className="timeline-item">
         <div className="mb-4 text-primary">
         <item.icon className="h-8 w-8 mx-auto" />
@@ -56,8 +71,38 @@ const TimelineCard = ({ item }: { item: typeof educationData[0] | typeof experie
         <h3 className="text-xl font-bold font-headline mb-2">{item.title}</h3>
         <p className="text-muted-foreground mb-1">{item.institution}</p>
         <p className="text-sm text-muted-foreground">{item.duration}</p>
-        <p className="text-sm text-muted-foreground">
-        {item.status}
+        <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
+        <span>{item.status}</span>
+        {item.isRankHolder && (
+             <AlertDialog>
+              <AlertDialogTrigger asChild>
+                <button className="transform transition-transform duration-300 hover:scale-125 focus:scale-125 focus:outline-none">
+                  <Trophy className="h-5 w-5 text-amber-500 animate-pulse" />
+                  <span className="sr-only">View Award Proof</span>
+                </button>
+              </AlertDialogTrigger>
+              <AlertDialogContent>
+                <AlertDialogHeader>
+                  <AlertDialogTitle>First Rank - M.Sc. Biotechnology</AlertDialogTitle>
+                </AlertDialogHeader>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose max-h-[60vh] overflow-y-auto">
+                    {rankImages.map((image) => (
+                        <div key={image.id} className="relative w-full overflow-hidden rounded-lg shadow-lg aspect-auto">
+                            <Image
+                                src={image.imageUrl}
+                                alt={image.description}
+                                data-ai-hint={image.imageHint}
+                                width={1080}
+                                height={810}
+                                className="object-contain w-full h-full"
+                            />
+                        </div>
+                    ))}
+                </div>
+                 <AlertDialogCancel>Close</AlertDialogCancel>
+              </AlertDialogContent>
+            </AlertDialog>
+        )}
         {item.inProgress && (
             <span className="ml-2 inline-block px-2 py-1 text-xs font-semibold text-primary-foreground bg-primary rounded-full">
             In progress
@@ -65,7 +110,8 @@ const TimelineCard = ({ item }: { item: typeof educationData[0] | typeof experie
         )}
         </p>
     </div>
-);
+    )
+};
 
 
 export default function TimelineSection() {

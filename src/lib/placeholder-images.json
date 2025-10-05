@@ -27,7 +27,7 @@
     {
       "id": "portfolio-3",
       "description": "A diagram of the human digestive system.",
-      "imageUrl": "https://images.unsplash.com/photo-1743767587835-7a80fe384236?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkaWdlc3RpdmUlMjBzeXN0ZW0lMjB8ZW58MHx8fHwxNzU5NzA1MzU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/assets/evidence_of_practice/idli/1.jpeg",
       "imageHint": "digestive system"
     },
     {
@@ -39,7 +39,7 @@
     {
       "id": "portfolio-4",
       "description": "A sprayer applying pesticide to a field, representing pest control.",
-      "imageUrl": "https://images.unsplash.com/photo-1593999094742-4f5280054b23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZXN0aWNpZGVzfGVufDB8fHx8MTc1OTM0NDIwOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1593999094742-4f5280054b23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZXN0aWNpZGVzfGVufDB8fHx8MTc1OTM0NDIwOXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "pesticide sprayer"
     },
     {
@@ -51,7 +51,7 @@
     {
       "id": "portfolio-5",
       "description": "A magnifying glass over a fingerprint, representing a crime scene investigation.",
-      "imageUrl": "https://images.unsplash.com/photo-1530036067142-31e9b88da9b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxDcmltZXxlbnwwfHx8fDE3NTk2ODU1MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1530036067142-31e9b88da9b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxDcmltZXxlbnwwfHx8fDE3NTk2ODU1MzB8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "crime scene"
     },
     {
@@ -63,7 +63,7 @@
     {
       "id": "testimonial-1",
       "description": "Avatar for a school principal.",
-      "imageUrl": "https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NTk0ODYwMDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NTk0ODYwMDl8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "professional headshot"
     },
     {
@@ -167,6 +167,18 @@
       "description": "Student work on genetics.",
       "imageUrl": "/assets/evidence_of_practice/genetics/4.jpeg",
       "imageHint": "student work genetics"
+    },
+    {
+      "id": "rank-holder-1",
+      "description": "Photo of award for first rank.",
+      "imageUrl": "/assets/rank/1.jpeg",
+      "imageHint": "award photo"
+    },
+    {
+      "id": "rank-holder-2",
+      "description": "Second photo of award for first rank.",
+      "imageUrl": "/assets/rank/2.jpeg",
+      "imageHint": "award photo"
     }
   ]
 }
