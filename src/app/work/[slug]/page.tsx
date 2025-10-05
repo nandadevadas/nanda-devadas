@@ -72,13 +72,6 @@ export default function PortfolioItemPage({ params }: { params: { slug: string }
               <p className="text-xl text-muted-foreground">
                 {item.course} - Grade {item.grade}
               </p>
-              <div className="flex flex-wrap gap-2">
-                {item.tags.map((tag) => (
-                  <Badge key={tag} variant="secondary">
-                    {tag}
-                  </Badge>
-                ))}
-              </div>
             </div>
             
             {image && (
