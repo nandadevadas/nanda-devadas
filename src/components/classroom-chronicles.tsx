@@ -57,7 +57,7 @@ export default function ClassroomChronicles({ images }: ClassroomChroniclesProps
                 </div>
               ))}
             </div>
-             <ScrollBar orientation="horizontal" />
+             <ScrollBar orientation="horizontal" className="h-4" thumbClassName="bg-primary/50" />
           </ScrollArea>
 
           <AlertDialogCancel onClick={() => setIsModalOpen(false)}>Close</AlertDialogCancel>
