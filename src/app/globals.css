@@ -84,37 +84,12 @@
     }
 }
 
-/* General container for the timeline */
-.timeline-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.timeline-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
-}
-
-
 /* Individual timeline item */
 .timeline-item {
-  position: relative;
-  flex: 1; 
-  min-width: 250px; 
-  max-width: 300px;
   border: 1px solid hsl(var(--border));
   border-radius: var(--radius);
   background-color: hsl(var(--card));
   padding: 20px;
-  margin-bottom: 20px;
   transition: all 0.3s ease;
 }
 

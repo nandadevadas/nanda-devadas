@@ -10,17 +10,11 @@ import {
 } from "@/components/ui/alert-dialog"
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 
 
 const educationData = [
-  {
-    title: "B.Sc. Biotechnology",
-    institution: "University of Calicut",
-    duration: "2015–2018",
-    status: "First Class, Distinction",
-    inProgress: false,
-    icon: GraduationCap,
-  },
   {
     title: "M.Sc. Biotechnology",
     institution: "Mahatma Gandhi University",
@@ -34,6 +28,14 @@ const educationData = [
     title: "Bachelor of Education (B.Ed.)",
     institution: "University of Calicut",
     duration: "2020–2022",
+    status: "First Class, Distinction",
+    inProgress: false,
+    icon: GraduationCap,
+  },
+  {
+    title: "B.Sc. Biotechnology",
+    institution: "University of Calicut",
+    duration: "2015–2018",
     status: "First Class, Distinction",
     inProgress: false,
     icon: GraduationCap,
@@ -65,50 +67,54 @@ const TimelineCard = ({ item }: { item: (typeof educationData[0] | typeof experi
 
     return (
     <div className="timeline-item">
-        <div className="mb-4 text-primary">
-        <item.icon className="h-8 w-8 mx-auto" />
-        </div>
-        <h3 className="text-xl font-bold font-headline mb-2">{item.title}</h3>
-        <p className="text-muted-foreground mb-1">{item.institution}</p>
-        <p className="text-sm text-muted-foreground">{item.duration}</p>
-        <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
-        <span>{item.status}</span>
-        {item.isRankHolder && (
-             <AlertDialog>
-              <AlertDialogTrigger asChild>
-                <button className="transform transition-transform duration-300 hover:scale-125 focus:scale-125 focus:outline-none">
-                  <Trophy className="h-5 w-5 text-amber-500 animate-wiggle" />
-                  <span className="sr-only">View Award Proof</span>
-                </button>
-              </AlertDialogTrigger>
-              <AlertDialogContent>
-                <AlertDialogHeader>
-                  <AlertDialogTitle>First Rank - M.Sc. Biotechnology</AlertDialogTitle>
-                </AlertDialogHeader>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose max-h-[60vh] overflow-y-auto">
-                    {rankImages.map((image) => (
-                        <div key={image.id} className="relative w-full overflow-hidden rounded-lg shadow-lg aspect-auto">
-                            <Image
-                                src={image.imageUrl}
-                                alt={image.description}
-                                data-ai-hint={image.imageHint}
-                                width={1080}
-                                height={810}
-                                className="object-contain w-full h-full"
-                            />
+        <div className="flex items-start gap-4">
+            <div className="bg-primary/10 text-primary p-3 rounded-full">
+                <item.icon className="h-6 w-6" />
+            </div>
+            <div className='flex-1'>
+                <h3 className="text-lg font-bold font-headline mb-1">{item.title}</h3>
+                <p className="text-muted-foreground text-sm">{item.institution}</p>
+                {item.duration && <p className="text-sm text-muted-foreground">{item.duration}</p>}
+                {item.status && <p className="text-sm text-muted-foreground mt-1">{item.status}</p>}
+                
+                {item.inProgress && (
+                    <span className="mt-2 inline-block px-2 py-1 text-xs font-semibold text-primary-foreground bg-primary rounded-full">
+                        In progress
+                    </span>
+                )}
+
+                {item.isRankHolder && (
+                     <AlertDialog>
+                      <AlertDialogTrigger asChild>
+                         <Button variant="outline" size="sm" className="mt-3 gap-2">
+                            <Trophy className="h-4 w-4 text-amber-500 animate-wiggle" />
+                            View Proof
+                        </Button>
+                      </AlertDialogTrigger>
+                      <AlertDialogContent>
+                        <AlertDialogHeader>
+                          <AlertDialogTitle>First Rank - M.Sc. Biotechnology</AlertDialogTitle>
+                        </AlertDialogHeader>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose max-h-[60vh] overflow-y-auto">
+                            {rankImages.map((image) => (
+                                <div key={image.id} className="relative w-full overflow-hidden rounded-lg shadow-lg aspect-auto">
+                                    <Image
+                                        src={image.imageUrl}
+                                        alt={image.description}
+                                        data-ai-hint={image.imageHint}
+                                        width={1080}
+                                        height={810}
+                                        className="object-contain w-full h-full"
+                                    />
+                                </div>
+                            ))}
                         </div>
-                    ))}
-                </div>
-                 <AlertDialogCancel>Close</AlertDialogCancel>
-              </AlertDialogContent>
-            </AlertDialog>
-        )}
-        {item.inProgress && (
-            <span className="ml-2 inline-block px-2 py-1 text-xs font-semibold text-primary-foreground bg-primary rounded-full">
-            In progress
-            </span>
-        )}
-        </p>
+                         <AlertDialogCancel>Close</AlertDialogCancel>
+                      </AlertDialogContent>
+                    </AlertDialog>
+                )}
+            </div>
+        </div>
     </div>
     )
 };
@@ -123,13 +129,24 @@ export default function TimelineSection() {
             My Road So Far: From Foundations to Future Goals
           </h2>
         </div>
-        <div className="timeline-container">
-            <div className="timeline-row">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
+            {/* Education Column */}
+            <div className="space-y-8">
+                 <h3 className='text-2xl font-headline font-bold flex items-center gap-3 justify-center md:justify-start'>
+                    <GraduationCap className="h-7 w-7 text-primary" />
+                    Education
+                </h3>
                 {educationData.map((item, index) => (
                     <TimelineCard key={index} item={item} />
                 ))}
             </div>
-            <div className="timeline-row">
+
+            {/* Experience Column */}
+            <div className="space-y-8">
+                <h3 className='text-2xl font-headline font-bold flex items-center gap-3 justify-center md:justify-start'>
+                    <Briefcase className="h-7 w-7 text-primary" />
+                    Experience
+                </h3>
                  {experienceData.map((item, index) => (
                     <TimelineCard key={index} item={item} />
                 ))}
