@@ -1,8 +1,32 @@
 import { about, quickFacts, tagDefinitions } from '@/lib/data';
 import { Card, CardContent } from '@/components/ui/card';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { Info } from 'lucide-react';
+import { Info, Paintbrush, Music, ChefHat, Scissors } from 'lucide-react';
 import { Badge } from './ui/badge';
+
+const passions = [
+    {
+      title: "Applied Arts",
+      description: "Hands-on creation through painting, jewelry making, and other crafts.",
+      icon: Paintbrush
+    },
+    {
+      title: "Choreography & Movement",
+      description: "Engaging in dance for fitness, joy, and mastering new routines.",
+      icon: Music
+    },
+    {
+      title: "Gastronomy",
+      description: "Developing recipes and exploring the science and art of high-quality cooking.",
+      icon: ChefHat
+    },
+    {
+      title: "Bespoke Design",
+      description: "The full process of dress designing, from initial concept to final stitch.",
+      icon: Scissors
+    }
+];
+
 
 export default function AboutSection() {
   const strengths = quickFacts.find(fact => fact.id === 'strengths')?.text as (keyof typeof tagDefinitions)[] | undefined;
@@ -17,44 +41,64 @@ export default function AboutSection() {
               {about.paragraph}
             </p>
           </div>
-          <div className="flex flex-col gap-6">
-             <h3 className="text-2xl font-headline tracking-tighter sm:text-3xl">Professional Snapshot</h3>
-            {quickFacts.map((fact, index) => (
-              <Card key={index} className="bg-card">
-                <CardContent className="p-4 flex items-start gap-4">
-                  <fact.icon className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
-                  <div>
-                    {fact.id === 'strengths' && Array.isArray(fact.text) ? (
-                      <>
-                        <h4 className="font-semibold text-card-foreground mb-2">Strengths</h4>
-                        <div className="flex flex-col gap-2 items-start">
-                          {strengths?.map((strength) => (
-                            <Popover key={strength}>
-                              <PopoverTrigger asChild>
-                                <Badge
-                                  variant='secondary'
-                                  className="cursor-pointer flex items-center gap-1 text-left"
-                                  role="button"
-                                >
-                                  {strength}
-                                  <Info className="h-3 w-3 opacity-70" />
-                                </Badge>
-                              </PopoverTrigger>
-                              <PopoverContent className="w-80 text-sm text-left">
-                                  <h4 className="font-bold mb-2">{strength}</h4>
-                                  <p className="text-muted-foreground">{tagDefinitions[strength]}</p>
-                              </PopoverContent>
-                            </Popover>
-                          ))}
-                        </div>
-                      </>
-                    ) : (
-                      <p className="text-base text-card-foreground pt-1">{fact.text}</p>
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="flex flex-col gap-8">
+            <div>
+              <h3 className="text-2xl font-headline tracking-tighter sm:text-3xl mb-6">Professional Snapshot</h3>
+              <div className="flex flex-col gap-6">
+                {quickFacts.map((fact, index) => (
+                  <Card key={index} className="bg-card">
+                    <CardContent className="p-4 flex items-start gap-4">
+                      <fact.icon className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                      <div>
+                        {fact.id === 'strengths' && Array.isArray(fact.text) ? (
+                          <>
+                            <h4 className="font-semibold text-card-foreground mb-2">Strengths</h4>
+                            <div className="flex flex-col gap-2 items-start">
+                              {strengths?.map((strength) => (
+                                <Popover key={strength}>
+                                  <PopoverTrigger asChild>
+                                    <Badge
+                                      variant='secondary'
+                                      className="cursor-pointer flex items-center gap-1 text-left"
+                                      role="button"
+                                    >
+                                      {strength}
+                                      <Info className="h-3 w-3 opacity-70" />
+                                    </Badge>
+                                  </PopoverTrigger>
+                                  <PopoverContent className="w-80 text-sm text-left">
+                                      <h4 className="font-bold mb-2">{strength}</h4>
+                                      <p className="text-muted-foreground">{tagDefinitions[strength]}</p>
+                                  </PopoverContent>
+                                </Popover>
+                              ))}
+                            </div>
+                          </>
+                        ) : (
+                          <p className="text-base text-card-foreground pt-1">{fact.text}</p>
+                        )}
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+            <div>
+                <h3 className="text-2xl font-headline tracking-tighter sm:text-3xl mb-6">Passions Outside the Classroom</h3>
+                <div className="flex flex-col gap-6">
+                    {passions.map((passion, index) => (
+                        <Card key={index} className="bg-card">
+                            <CardContent className="p-4 flex items-start gap-4">
+                                <passion.icon className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                                <div>
+                                    <h4 className="font-semibold text-card-foreground">{passion.title}</h4>
+                                    <p className="text-base text-muted-foreground">{passion.description}</p>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    ))}
+                </div>
+            </div>
           </div>
         </div>
       </div>
