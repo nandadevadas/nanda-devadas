@@ -42,21 +42,21 @@ export default function AboutSection() {
                 {about.paragraph}
               </p>
             </div>
-            <div>
-                <h3 className="text-2xl font-headline tracking-tighter sm:text-3xl mb-6">Passions Outside the Classroom</h3>
-                <div className="flex flex-col gap-6">
-                    {passions.map((passion, index) => (
-                        <Card key={index} className="bg-card">
-                            <CardContent className="p-4 flex items-start gap-4">
-                                <passion.icon className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
-                                <div>
-                                    <h4 className="font-semibold text-card-foreground">{passion.title}</h4>
-                                    <p className="text-base text-muted-foreground">{passion.description}</p>
-                                </div>
-                            </CardContent>
-                        </Card>
-                    ))}
-                </div>
+             <div>
+              <h3 className="text-2xl font-headline tracking-tighter sm:text-3xl mb-6">Passions Outside the Classroom</h3>
+              <div className="flex flex-col gap-6">
+                {passions.map((passion, index) => (
+                  <Card key={index} className="bg-card">
+                    <CardContent className="p-4 flex items-start gap-4">
+                      <passion.icon className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold text-card-foreground">{passion.title}</h4>
+                        <p className="text-sm text-muted-foreground">{passion.description}</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
             </div>
           </div>
           <div className="flex flex-col gap-8">
