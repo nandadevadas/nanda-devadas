@@ -279,7 +279,7 @@ export const testimonials = [
         published: true
     },
     {
-        quote: "I genuinely cherish working with you. Your interactions with students, the lasting impact you have on their growth, and your enthusiasm for improving their scientific skills are truly commendable. Our core conversations about IGCSE and the extended conversations about Biology are the days I remember forever. I wish you all the best for your future endeavours, and you deserve the best.",
+        quote: "Nanda's teaching style is a masterful blend of heart and intellect, where emotional connections pave the way for profound learning. With a keen eye on each student's unique needs, she crafts personalized learning journeys, deviating from traditional one-size-fits-all approaches. Her experiential learning methodology ignites scientific curiosity, as students engage in hands-on experiments that spark wonder and discovery. What sets her apart is her unwavering commitment to the holistic development of every child, meeting them where they are, and gently nudging them forward. With a perfect balance of scientific temperament and emotional intelligence, Nanda creates a safe, inclusive, and stimulating environment that inspires students to grow, explore, and thrive.",
         author: "Alekhya Bellapu",
         affiliation: "Science Department Lead",
         order: 2,
@@ -314,7 +314,7 @@ export const testimonials = [
         published: true
     },
     {
-        quote: "I used to be nervous about science, but Ms. Nanda’s class changed that. She uses interesting examples and makes sure everyone understands before moving on. The group activities are fun, and I learned so much from my classmates. She is patient and always encourages us to ask questions, no matter how small.",
+        quote: "Dear Ms. Nanda mam,  I want to express my heartfelt gratitude for everything you’ve done. You have been incredibly supportive and kind, always there to help and encourage me. Your friendly nature and warm approach have made learning so enjoyable. I especially appreciate how you use experiments to make concepts come alive and how you trusted me with the main role in the assembly. That meant a lot to me and showed how much you believe in your students.  Thank you for being such a wonderful teacher and mentor 🫂 😍",
         author: "Vihaan",
         affiliation: "Grade 4 Student",
         order: 5,
