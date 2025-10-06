@@ -75,7 +75,7 @@ export default function PortfolioSection() {
                         alt={image.description}
                         data-ai-hint={image.imageHint}
                         fill
-                        className="object-contain"
+                        className="object-cover"
                     />
                  </div>
               )}
