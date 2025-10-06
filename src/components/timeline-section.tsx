@@ -13,6 +13,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
+import { cn } from '@/lib/utils';
 
 
 const educationData = [
@@ -76,7 +77,7 @@ const TimelineCard = ({ item }: { item: (typeof educationData[0] | typeof experi
             <div className='flex-1'>
                 <div className="flex items-center gap-2 flex-wrap">
                     <h3 className="text-lg font-bold font-headline">{item.title}</h3>
-                    {item.years && <Badge variant="secondary">{item.years}</Badge>}
+                    {item.years && <Badge variant="secondary" className="bg-purple-600 text-white hover:bg-purple-700">{item.years}</Badge>}
                 </div>
                 <p className="text-muted-foreground text-sm mt-1">{item.institution}</p>
                 {item.duration && <p className="text-sm text-muted-foreground">{item.duration}</p>}
