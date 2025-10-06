@@ -39,7 +39,7 @@
     {
       "id": "portfolio-4",
       "description": "A sprayer applying pesticide to a field, representing pest control.",
-      "imageUrl": "https://images.unsplash.com/photo-1593999094742-4f5280054b23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZXN0aWNpZGVzfGVufDB8fHx8MTc1OTM0NDIwOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1593999094742-4f5280054b23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZXN0aWNpZGVzfGVufDB8fHx8MTc1OTM0NDIwOXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "pesticide sprayer"
     },
     {
@@ -63,7 +63,7 @@
     {
       "id": "testimonial-1",
       "description": "Avatar for a school principal.",
-      "imageUrl": "/assets/testimonials_pics/omkara%20sir.jpeg",
+      "imageUrl": "/assets/testimonials_pics/omkara sir.jpeg",
       "imageHint": "professional headshot"
     },
     {
@@ -99,7 +99,7 @@
     {
       "id": "testimonial-7",
       "description": "Avatar for a parent.",
-      "imageUrl": "https://images.unsplash.com/photo-1698898404494-f13a839ef4bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwYXJlbnQlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk1OTU0MjF8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/assets/testimonials_pics/hymamaam.jpg",
       "imageHint": "parent portrait"
     },
     {
