@@ -47,7 +47,7 @@ function TestimonialCard({ testimonial }: TestimonialCardProps) {
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-4">
             <Avatar>
-              {avatar && <AvatarImage src={avatar.imageUrl} alt={testimonial.author} data-ai-hint={avatar.imageHint} />}
+              {avatar && <AvatarImage src={avatar.imageUrl} alt={testimonial.author} data-ai-hint={avatar.imageHint} className="object-cover" />}
               <AvatarFallback>{authorInitial}</AvatarFallback>
             </Avatar>
             <div>
