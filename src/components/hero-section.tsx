@@ -45,7 +45,7 @@ export default function HeroSection() {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link href="/assets/resume/Resume_Nanda_MyKelly.pdf" download>Download Resume</Link>
+                <Link href="/assets/resume/Resume_Nanda_Dev.pdf" download>Download Resume</Link>
               </Button>
             </div>
           </div>
