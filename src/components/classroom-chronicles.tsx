@@ -34,7 +34,7 @@ export default function ClassroomChronicles({ images }: ClassroomChroniclesProps
         </AlertDialogHeader>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 not-prose max-h-[70vh] overflow-y-auto p-1">
           {images.map((image) => (
-            <div key={image.id} className="relative w-full overflow-hidden rounded-lg shadow-md">
+            <div key={image.id} className="relative w-full overflow-hidden rounded-lg shadow-md bg-muted/20">
               <Image
                 src={image.imageUrl}
                 alt={image.description}
@@ -51,5 +51,3 @@ export default function ClassroomChronicles({ images }: ClassroomChroniclesProps
     </AlertDialog>
   );
 }
-
-    
