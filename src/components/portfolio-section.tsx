@@ -9,7 +9,8 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { Info } from 'lucide-react';
+import { Info, Camera } from 'lucide-react';
+import ClassroomChronicles from './classroom-chronicles';
 
 const tagDefinitions = {
   "Inquiry-based lesson design": "Learning is driven by student questions and exploration, where students actively construct their own knowledge rather than passively receiving facts.",
@@ -26,6 +27,7 @@ export default function PortfolioSection() {
   const allTags = Object.keys(tagDefinitions) as Tag[];
   
   const portfolioImages = PlaceHolderImages.filter(p => p.id.startsWith('portfolio-'));
+  const classroomImages = PlaceHolderImages.filter(p => p.id.startsWith('classroom-'));
 
   return (
     <section id="work" className="w-full py-12 md:py-24 lg:py-32 bg-background">
@@ -37,7 +39,10 @@ export default function PortfolioSection() {
               Explore what learning looked like and why it worked in my classroom & here is “<strong className="font-semibold text-foreground">A quick view of what I bring to your school.</strong>”
             </p>
           </div>
-          <div className="flex flex-wrap justify-center gap-2 py-6 items-center">
+           <div className="py-6">
+            <ClassroomChronicles images={classroomImages} />
+          </div>
+          <div className="flex flex-wrap justify-center gap-2 pb-6 items-center">
             {allTags.map(tag => (
               <Popover key={tag}>
                 <PopoverTrigger asChild>

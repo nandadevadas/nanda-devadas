@@ -167,6 +167,42 @@
       "description": "Student work on genetics.",
       "imageUrl": "/assets/evidence_of_practice/genetics/4.jpeg",
       "imageHint": "student work genetics"
+    },
+    {
+      "id": "classroom-1",
+      "description": "A vibrant classroom with students engaged in a group activity.",
+      "imageUrl": "https://images.unsplash.com/photo-1752564291723-bb816a3dfb33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjbGFzc3Jvb20lMjBzdHVkZW50c3xlbnwwfHx8fDE3NTk3MTQ4MjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "classroom students"
+    },
+    {
+      "id": "classroom-2",
+      "description": "A science experiment setup on a classroom table.",
+      "imageUrl": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzY2llbmNlJTIwZXhwZXJpbWVudHxlbnwwfHx8fDE3NTk3MDU5NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "science experiment"
+    },
+    {
+      "id": "classroom-3",
+      "description": "A student presenting their project to the class.",
+      "imageUrl": "https://images.unsplash.com/photo-1712903911017-7c10a3c4b3e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdHVkZW50JTIwcHJlc2VudGF0aW9ufGVufDB8fHx8MTc1OTc0MDkxOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "student presentation"
+    },
+    {
+      "id": "classroom-4",
+      "description": "A bulletin board decorated with student's science artwork.",
+      "imageUrl": "https://images.unsplash.com/photo-1636772523547-5577d04e8dc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjbGFzc3Jvb20lMjBidWxsZXRpbiUyMGJvYXJkfGVufDB8fHx8MTc1OTc3NDAzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "classroom bulletin board"
+    },
+    {
+      "id": "classroom-5",
+      "description": "A teacher guiding a student with a microscope.",
+      "imageUrl": "https://images.unsplash.com/photo-1694701478292-3f60eb30c3b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZWFjaGVyJTIwc3R1ZGVudCUyMG1pY3Jvc2NvcGV8ZW58MHx8fHwxNzU5Nzc0MDM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "teacher student microscope"
+    },
+    {
+      "id": "classroom-6",
+      "description": "Students collaborating on a project on a whiteboard.",
+      "imageUrl": "https://images.unsplash.com/photo-1758876202507-f789e0ab34e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3R1ZGVudHMlMjBjb2xsYWJvcmF0aW5nJTIwd2hpdGVib2FyZHxlbnwwfHx8fDE3NTk3NzQwMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "students collaborating whiteboard"
     }
   ]
 }
