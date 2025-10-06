@@ -12,6 +12,7 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import { Badge } from './ui/badge';
 
 
 const educationData = [
@@ -47,6 +48,7 @@ const experienceData = [
     title: "Cambridge IGCSE Biology & Science Teacher",
     institution: "AIMEE International School",
     duration: "2023–April 2025",
+    years: "2 Years",
     status: "",
     inProgress: false, 
     icon: Briefcase,
@@ -62,7 +64,7 @@ const experienceData = [
 ];
 
 
-const TimelineCard = ({ item }: { item: (typeof educationData[0] | typeof experienceData[0]) & { isRankHolder?: boolean } }) => {
+const TimelineCard = ({ item }: { item: (typeof educationData[0] | typeof experienceData[0]) & { isRankHolder?: boolean, years?: string } }) => {
     const rankImages = PlaceHolderImages.filter(p => p.id.startsWith('rank-holder-'));
 
     return (
@@ -72,8 +74,11 @@ const TimelineCard = ({ item }: { item: (typeof educationData[0] | typeof experi
                 <item.icon className="h-6 w-6" />
             </div>
             <div className='flex-1'>
-                <h3 className="text-lg font-bold font-headline mb-1">{item.title}</h3>
-                <p className="text-muted-foreground text-sm">{item.institution}</p>
+                <div className="flex items-center gap-2 flex-wrap">
+                    <h3 className="text-lg font-bold font-headline">{item.title}</h3>
+                    {item.years && <Badge variant="secondary">{item.years}</Badge>}
+                </div>
+                <p className="text-muted-foreground text-sm mt-1">{item.institution}</p>
                 {item.duration && <p className="text-sm text-muted-foreground">{item.duration}</p>}
                 {item.status && <p className="text-sm text-muted-foreground mt-1">{item.status}</p>}
                 
