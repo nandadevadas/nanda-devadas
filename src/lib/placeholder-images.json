@@ -167,48 +167,6 @@
       "description": "Student work on genetics.",
       "imageUrl": "/assets/evidence_of_practice/genetics/4.jpeg",
       "imageHint": "student work genetics"
-    },
-    {
-      "id": "rank-holder-1",
-      "description": "Photo of award for first rank.",
-      "imageUrl": "/assets/rank/1.jpeg",
-      "imageHint": "award photo"
-    },
-    {
-      "id": "rank-holder-2",
-      "description": "Second photo of award for first rank.",
-      "imageUrl": "/assets/rank/2.jpeg",
-      "imageHint": "award photo"
-    },
-    {
-      "id": "rank-holder-3",
-      "description": "Third photo of award for first rank.",
-      "imageUrl": "/assets/rank/IMG-20251005-WA0002.jpg",
-      "imageHint": "award photo"
-    },
-    {
-      "id": "rank-holder-4",
-      "description": "Fourth photo of award for first rank.",
-      "imageUrl": "/assets/rank/IMG-20251005-WA0003.jpg",
-      "imageHint": "award photo"
-    },
-    {
-      "id": "rank-holder-5",
-      "description": "Fifth photo of award for first rank.",
-      "imageUrl": "/assets/rank/IMG-20251005-WA0004.jpg",
-      "imageHint": "award photo"
-    },
-    {
-      "id": "rank-holder-6",
-      "description": "Sixth photo of award for first rank.",
-      "imageUrl": "/assets/rank/IMG-20251005-WA0005.jpg",
-      "imageHint": "award photo"
-    },
-    {
-      "id": "rank-holder-7",
-      "description": "Seventh photo of award for first rank.",
-      "imageUrl": "/assets/rank/IMG-20251005-WA0006.jpg",
-      "imageHint": "award photo"
     }
   ]
 }
