@@ -69,13 +69,13 @@ export default function PortfolioSection() {
             return(
             <Card key={item.title} className="overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
               {image && (
-                 <div className="relative h-48 w-full">
+                 <div className="relative w-full aspect-video bg-muted/30">
                     <Image
                         src={image.imageUrl}
                         alt={image.description}
                         data-ai-hint={image.imageHint}
                         fill
-                        className="object-cover"
+                        className="object-contain"
                     />
                  </div>
               )}
