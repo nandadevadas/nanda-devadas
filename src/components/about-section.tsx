@@ -1,28 +1,28 @@
 import { about, quickFacts, tagDefinitions } from '@/lib/data';
 import { Card, CardContent } from '@/components/ui/card';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { Info, Paintbrush, Music, ChefHat, Scissors } from 'lucide-react';
+import { Info, Paintbrush, Music, ChefHat, Scissors, CheckCircle2 } from 'lucide-react';
 import { Badge } from './ui/badge';
 
 const passions = [
     {
       title: "Applied Arts",
-      description: "Hands-on creation through painting, jewelry making, and other crafts.",
+      description: "Painting, crafts making, etc.",
       icon: Paintbrush
     },
     {
       title: "Choreography & Movement",
-      description: "Engaging in dance for fitness, joy, and mastering new routines.",
+      description: "Dancing.",
       icon: Music
     },
     {
       title: "Gastronomy",
-      description: "Developing recipes and exploring the science and art of high-quality cooking.",
+      description: "Cooking and culinary exploration.",
       icon: ChefHat
     },
     {
       title: "Bespoke Design",
-      description: "The full process of dress designing, from initial concept to final stitch.",
+      description: "Dress designing.",
       icon: Scissors
     }
 ];
@@ -34,7 +34,7 @@ export default function AboutSection() {
   return (
     <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-background">
       <div className="container px-4 md:px-6">
-        <div className="grid gap-10 lg:grid-cols-2">
+        <div className="grid gap-10 lg:grid-cols-2 lg:gap-x-16">
           <div className="space-y-12">
             <div className="space-y-4">
               <h2 className="text-3xl font-headline tracking-tighter sm:text-4xl md:text-5xl">Know Nanda</h2>
@@ -42,21 +42,19 @@ export default function AboutSection() {
                 {about.paragraph}
               </p>
             </div>
-             <div>
-              <h3 className="text-2xl font-headline tracking-tighter sm:text-3xl mb-6">Passions Outside the Classroom</h3>
-              <div className="flex flex-col gap-6">
+             <div className="space-y-6">
+              <h3 className="text-2xl font-headline tracking-tighter sm:text-3xl">Passions Outside the Classroom</h3>
+              <ul className="grid gap-4">
                 {passions.map((passion, index) => (
-                  <Card key={index} className="bg-card">
-                    <CardContent className="p-4 flex items-start gap-4">
-                      <passion.icon className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
-                      <div>
-                        <h4 className="font-semibold text-card-foreground">{passion.title}</h4>
-                        <p className="text-sm text-muted-foreground">{passion.description}</p>
-                      </div>
-                    </CardContent>
-                  </Card>
+                  <li key={index} className="flex items-start gap-3">
+                     <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                     <div>
+                        <span className="font-semibold text-foreground">{passion.title}:</span>{' '}
+                        <span className="text-muted-foreground">{passion.description}</span>
+                     </div>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           </div>
           <div className="flex flex-col gap-8">
