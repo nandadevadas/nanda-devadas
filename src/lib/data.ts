@@ -315,8 +315,8 @@ export const testimonials = [
     },
     {
         quote: "I used to be nervous about science, but Ms. Nanda’s class changed that. She uses interesting examples and makes sure everyone understands before moving on. The group activities are fun, and I learned so much from my classmates. She is patient and always encourages us to ask questions, no matter how small.",
-        author: "Mithravrindha",
-        affiliation: "Grade 10 Student",
+        author: "Vihaan",
+        affiliation: "Grade 4 Student",
         order: 5,
         published: true
     }
