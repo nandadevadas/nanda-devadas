@@ -82,6 +82,26 @@
     .credential-category {
       break-inside: avoid;
     }
+    .masonry-grid {
+      column-count: 2;
+      column-gap: 1rem;
+    }
+    .masonry-item {
+        break-inside: avoid;
+        margin-bottom: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .masonry-grid {
+        column-count: 3;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .masonry-grid {
+        column-count: 4;
+      }
+    }
 }
 
 /* Individual timeline item */
