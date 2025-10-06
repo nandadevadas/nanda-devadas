@@ -94,7 +94,7 @@ const TimelineCard = ({ item }: { item: (typeof educationData[0] | typeof experi
                       <AlertDialogTrigger asChild>
                          <Button variant="outline" size="sm" className="mt-3 gap-2">
                             <Trophy className="h-4 w-4 text-amber-500 animate-wiggle" />
-                            View Proof
+                            Gallery
                         </Button>
                       </AlertDialogTrigger>
                       <AlertDialogContent>
