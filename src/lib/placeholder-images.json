@@ -63,7 +63,7 @@
     {
       "id": "testimonial-1",
       "description": "Avatar for a school principal.",
-      "imageUrl": "/assets/testimonials_pics/omkara sir.jpeg",
+      "imageUrl": "/assets/testimonials_pics/omkara%20sir.jpeg",
       "imageHint": "professional headshot"
     },
     {
@@ -93,13 +93,13 @@
     {
       "id": "testimonial-6",
       "description": "Avatar for Sindhu Mukkamala, a parent.",
-      "imageUrl": "/assets/testimonials/sindhu_mukkamala.jpg",
+      "imageUrl": "/assets/testimonials_pics/sindhy.jpg",
       "imageHint": "parent portrait"
     },
     {
       "id": "testimonial-7",
       "description": "Avatar for a parent.",
-      "imageUrl": "https://images.unsplash.com/photo-1698898404494-f13a839ef4bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwYXJlbnQlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk1OTU0MjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1698898404494-f13a839ef4bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwYXJlbnQlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk1OTU0MjF8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "parent portrait"
     },
     {
