@@ -195,7 +195,6 @@ export default function ContactForm() {
                     <SelectContent>
                     <SelectItem value="Job Opportunity">Job Opportunity</SelectItem>
                     <SelectItem value="Collaboration Request">Collaboration Request</SelectItem>
-                    <SelectItem value="Speaking Engagement">Speaking Engagement</SelectItem>
                     <SelectItem value="Parent / Guardian Inquiry">Parent / Guardian Inquiry</SelectItem>
                     <SelectItem value="Other">Other</SelectItem>
                     </SelectContent>
