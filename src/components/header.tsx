@@ -4,9 +4,10 @@ import Link from "next/link";
 import { navLinks, siteInfo } from "@/lib/data";
 import { useScrollSpy } from "@/hooks/use-scroll-spy";
 import { cn } from "@/lib/utils";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "./ui/sheet";
 import { Button } from "./ui/button";
 import { Menu } from "lucide-react";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 export default function Header() {
   const activeId = useScrollSpy(navLinks.map(link => link.id), { rootMargin: "-100px 0px -40% 0px" });
@@ -49,6 +50,12 @@ export default function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right">
+                <VisuallyHidden>
+                  <SheetTitle>Mobile Navigation Menu</SheetTitle>
+                  <SheetDescription>
+                    A list of links to navigate the site.
+                  </SheetDescription>
+                </VisuallyHidden>
                 <nav className="grid gap-6 text-lg font-medium mt-8">
                   <Link href="/" className="flex items-center gap-2 text-lg font-semibold">
                     <span className="font-bold font-headline">{siteInfo.name}</span>
