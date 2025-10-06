@@ -1,7 +1,7 @@
 import { about, quickFacts, tagDefinitions } from '@/lib/data';
 import { Card, CardContent } from '@/components/ui/card';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { Info, Paintbrush, Music, ChefHat, Scissors, CheckCircle2 } from 'lucide-react';
+import { Info, Paintbrush, Music, ChefHat, Scissors } from 'lucide-react';
 import { Badge } from './ui/badge';
 
 const passions = [
@@ -47,7 +47,7 @@ export default function AboutSection() {
               <ul className="grid gap-4">
                 {passions.map((passion, index) => (
                   <li key={index} className="flex items-start gap-3">
-                     <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                     <passion.icon className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
                      <div>
                         <span className="font-semibold text-foreground">{passion.title}:</span>{' '}
                         <span className="text-muted-foreground">{passion.description}</span>
