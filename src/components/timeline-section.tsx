@@ -89,7 +89,7 @@ const TimelineCard = ({ item }: { item: (typeof educationData[0] | typeof experi
                     </span>
                 )}
 
-                {item.isRankHolder && (
+                {item.isRankHolder && rankImages.length > 0 && (
                      <AlertDialog>
                       <AlertDialogTrigger asChild>
                          <Button variant="outline" size="sm" className="mt-3 gap-2">
@@ -97,20 +97,20 @@ const TimelineCard = ({ item }: { item: (typeof educationData[0] | typeof experi
                             Gallery
                         </Button>
                       </AlertDialogTrigger>
-                      <AlertDialogContent>
+                      <AlertDialogContent className="max-w-4xl">
                         <AlertDialogHeader>
                           <AlertDialogTitle>First Rank - M.Sc. Biotechnology</AlertDialogTitle>
                         </AlertDialogHeader>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose max-h-[60vh] overflow-y-auto">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose max-h-[70vh] overflow-y-auto p-1">
                             {rankImages.map((image) => (
-                                <div key={image.id} className="relative w-full overflow-hidden rounded-lg shadow-lg aspect-auto">
+                                <div key={image.id} className="relative w-full overflow-hidden rounded-lg shadow-md bg-muted/20">
                                     <Image
                                         src={image.imageUrl}
                                         alt={image.description}
                                         data-ai-hint={image.imageHint}
-                                        width={1080}
-                                        height={810}
-                                        className="object-contain w-full h-full"
+                                        width={600}
+                                        height={400}
+                                        className="object-contain w-full h-auto"
                                     />
                                 </div>
                             ))}

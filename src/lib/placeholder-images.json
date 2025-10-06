@@ -263,6 +263,54 @@
       "description": "Classroom activity.",
       "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.46.19_739b4cdb.jpg",
       "imageHint": "classroom activity"
+    },
+    {
+      "id": "rank-holder-1",
+      "description": "Nanda Dev receiving an award.",
+      "imageUrl": "/assets/rank/IMG-20251005-WA0002.jpg",
+      "imageHint": "award ceremony"
+    },
+    {
+      "id": "rank-holder-2",
+      "description": "Nanda Dev receiving an award.",
+      "imageUrl": "/assets/rank/IMG-20251005-WA0003.jpg",
+      "imageHint": "award ceremony"
+    },
+    {
+      "id": "rank-holder-3",
+      "description": "Nanda Dev receiving an award.",
+      "imageUrl": "/assets/rank/IMG-20251005-WA0004.jpg",
+      "imageHint": "award ceremony"
+    },
+    {
+      "id": "rank-holder-4",
+      "description": "Nanda Dev receiving an award.",
+      "imageUrl": "/assets/rank/IMG-20251005-WA0005.jpg",
+      "imageHint": "award ceremony"
+    },
+    {
+      "id": "rank-holder-5",
+      "description": "Nanda Dev receiving an award.",
+      "imageUrl": "/assets/rank/IMG-20251005-WA0006.jpg",
+      "imageHint": "award ceremony"
+    },
+    {
+      "id": "rank-holder-6",
+      "description": "Nanda Dev receiving an award.",
+      "imageUrl": "/assets/rank/IMG-20251005-WA0007.jpg",
+      "imageHint": "award ceremony"
+    },
+    {
+      "id": "rank-holder-7",
+      "description": "Nanda Dev receiving an award.",
+      "imageUrl": "/assets/rank/IMG-20251005-WA0008.jpg",
+      "imageHint": "award ceremony"
+    },
+    {
+      "id": "rank-holder-8",
+      "description": "Nanda Dev receiving an award.",
+      "imageUrl": "/assets/rank/IMG-20251005-WA0009.jpg",
+      "imageHint": "award ceremony"
     }
   ]
 }
