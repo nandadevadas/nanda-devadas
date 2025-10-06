@@ -34,13 +34,14 @@ export default function ClassroomChronicles({ images }: ClassroomChroniclesProps
         </AlertDialogHeader>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 not-prose max-h-[70vh] overflow-y-auto p-1">
           {images.map((image) => (
-            <div key={image.id} className="relative w-full overflow-hidden rounded-lg shadow-md aspect-w-1 aspect-h-1">
+            <div key={image.id} className="relative w-full overflow-hidden rounded-lg shadow-md">
               <Image
                 src={image.imageUrl}
                 alt={image.description}
                 data-ai-hint={image.imageHint}
-                fill
-                className="object-cover"
+                width={600}
+                height={400}
+                className="object-contain w-full h-auto"
               />
             </div>
           ))}
@@ -50,3 +51,5 @@ export default function ClassroomChronicles({ images }: ClassroomChroniclesProps
     </AlertDialog>
   );
 }
+
+    

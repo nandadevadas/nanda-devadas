@@ -170,39 +170,99 @@
     },
     {
       "id": "classroom-1",
-      "description": "A vibrant classroom with students engaged in a group activity.",
-      "imageUrl": "https://images.unsplash.com/photo-1752564291723-bb816a3dfb33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjbGFzc3Jvb20lMjBzdHVkZW50c3xlbnwwfHx8fDE3NTk3MTQ4MjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "classroom students"
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.54.26_109a9d89.jpg",
+      "imageHint": "classroom activity"
     },
     {
       "id": "classroom-2",
-      "description": "A science experiment setup on a classroom table.",
-      "imageUrl": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzY2llbmNlJTIwZXhwZXJpbWVudHxlbnwwfHx8fDE3NTk3MDU5NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "science experiment"
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.53.43_d359f10a.jpg",
+      "imageHint": "classroom activity"
     },
     {
       "id": "classroom-3",
-      "description": "A student presenting their project to the class.",
-      "imageUrl": "https://images.unsplash.com/photo-1712903911017-7c10a3c4b3e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdHVkZW50JTIwcHJlc2VudGF0aW9ufGVufDB8fHx8MTc1OTc0MDkxOXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "student presentation"
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.52.59_fbcb91e2.jpg",
+      "imageHint": "classroom activity"
     },
     {
       "id": "classroom-4",
-      "description": "A bulletin board decorated with student's science artwork.",
-      "imageUrl": "https://images.unsplash.com/photo-1636772523547-5577d04e8dc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjbGFzc3Jvb20lMjBidWxsZXRpbiUyMGJvYXJkfGVufDB8fHx8MTc1OTc3NDAzNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "classroom bulletin board"
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.51.25_2a872a8c.jpg",
+      "imageHint": "classroom activity"
     },
     {
       "id": "classroom-5",
-      "description": "A teacher guiding a student with a microscope.",
-      "imageUrl": "https://images.unsplash.com/photo-1694701478292-3f60eb30c3b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZWFjaGVyJTIwc3R1ZGVudCUyMG1pY3Jvc2NvcGV8ZW58MHx8fHwxNzU5Nzc0MDM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "teacher student microscope"
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.50.42_b198089b.jpg",
+      "imageHint": "classroom activity"
     },
     {
       "id": "classroom-6",
-      "description": "Students collaborating on a project on a whiteboard.",
-      "imageUrl": "https://images.unsplash.com/photo-1758876202507-f789e0ab34e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3R1ZGVudHMlMjBjb2xsYWJvcmF0aW5nJTIwd2hpdGVib2FyZHxlbnwwfHx8fDE3NTk3NzQwMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "students collaborating whiteboard"
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.49.27_362a030f.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-7",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.49.12_81cfe291.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-8",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.49.12_40dbd1c2.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-9",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.47.15_8298df8e.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-10",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.46.19_e1c14f38.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-11",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.46.19_db2f679c.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-12",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.46.19_d46d2e1f.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-13",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.46.19_c5226fdf.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-14",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.46.19_6f41da74.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-15",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.46.19_63fe5ccb.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-16",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.46.19_739b4cdb.jpg",
+      "imageHint": "classroom activity"
     }
   ]
 }
