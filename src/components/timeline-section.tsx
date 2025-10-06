@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { GraduationCap, Briefcase, Trophy } from 'lucide-react';
 import {
@@ -14,6 +15,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { cn } from '@/lib/utils';
+import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area';
 
 
 const educationData = [
@@ -97,24 +99,27 @@ const TimelineCard = ({ item }: { item: (typeof educationData[0] | typeof experi
                             Gallery
                         </Button>
                       </AlertDialogTrigger>
-                      <AlertDialogContent className="max-w-4xl">
+                      <AlertDialogContent className="max-w-6xl w-full">
                         <AlertDialogHeader>
                           <AlertDialogTitle>First Rank - M.Sc. Biotechnology</AlertDialogTitle>
                         </AlertDialogHeader>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose max-h-[70vh] overflow-y-auto p-1">
+                        <ScrollArea className="w-full whitespace-nowrap rounded-md">
+                          <div className="flex w-max space-x-4 p-4 items-center">
                             {rankImages.map((image) => (
-                                <div key={image.id} className="relative w-full overflow-hidden rounded-lg shadow-md bg-muted/20">
-                                    <Image
-                                        src={image.imageUrl}
-                                        alt={image.description}
-                                        data-ai-hint={image.imageHint}
-                                        width={600}
-                                        height={400}
-                                        className="object-contain w-full h-auto"
-                                    />
-                                </div>
+                              <div key={image.id} className="h-72 shrink-0">
+                                <Image
+                                  src={image.imageUrl}
+                                  alt={image.description}
+                                  data-ai-hint={image.imageHint}
+                                  className="h-full w-auto object-contain rounded-lg"
+                                  width={300}
+                                  height={288}
+                                />
+                              </div>
                             ))}
-                        </div>
+                          </div>
+                          <ScrollBar orientation="horizontal" className="h-4" thumbClassName="bg-primary/50" />
+                        </ScrollArea>
                          <AlertDialogCancel>Close</AlertDialogCancel>
                       </AlertDialogContent>
                     </AlertDialog>
