@@ -39,7 +39,7 @@
     {
       "id": "portfolio-4",
       "description": "A sprayer applying pesticide to a field, representing pest control.",
-      "imageUrl": "https://images.unsplash.com/photo-1593999094742-4f5280054b23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZXN0aWNpZGVzfGVufDB8fHx8MTc1OTM0NDIwOXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1593999094742-4f5280054b23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZXN0aWNpZGVzfGVufDB8fHx8MTc1OTM0NDIwOXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "pesticide sprayer"
     },
     {
@@ -62,13 +62,13 @@
     },
     {
       "id": "testimonial-1",
-      "description": "Avatar for a school principal.",
+      "description": "Avatar for Omkara Dantu, a school principal.",
       "imageUrl": "/assets/testimonials_pics/omkara sir.jpeg",
       "imageHint": "professional headshot"
     },
     {
       "id": "testimonial-2",
-      "description": "Avatar for a science department lead.",
+      "description": "Avatar for Alekhya Bellapu, a science department lead.",
       "imageUrl": "/assets/testimonials_pics/alekhya.jpg",
       "imageHint": "educator portrait"
     },
@@ -80,8 +80,8 @@
     },
     {
       "id": "testimonial-4",
-      "description": "Avatar for a high school student.",
-      "imageUrl": "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzdHVkZW50JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzU5NTYxNjAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Avatar for Sana, a Grade 10 student.",
+      "imageUrl": "/assets/testimonials_pics/sana.jpg",
       "imageHint": "student portrait"
     },
     {
@@ -98,7 +98,7 @@
     },
     {
       "id": "testimonial-7",
-      "description": "Avatar for a parent.",
+      "description": "Avatar for Hymavathi, a parent.",
       "imageUrl": "/assets/testimonials_pics/hymamaam.jpg",
       "imageHint": "parent portrait"
     },
