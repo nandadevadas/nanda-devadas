@@ -30,7 +30,7 @@ export default function ClassroomChronicles({ images }: ClassroomChroniclesProps
     <>
       <AlertDialog open={isModalOpen} onOpenChange={setIsModalOpen}>
         <AlertDialogTrigger asChild>
-          <Button variant="secondary" size="lg" onClick={() => setIsModalOpen(true)}>
+          <Button size="lg" onClick={() => setIsModalOpen(true)} className="bg-[#556B2F] text-white hover:bg-[#556B2F]/90">
             <Camera className="mr-2 h-5 w-5" />
             Classroom Chronicles
           </Button>
