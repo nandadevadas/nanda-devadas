@@ -58,14 +58,6 @@ const experienceData = [
     icon: Briefcase,
   },
   {
-    title: "Toward Ontario Classrooms",
-    institution: "On Track: OCT- Licensure",
-    duration: "",
-    status: "",
-    inProgress: true,
-    icon: Briefcase,
-  },
-  {
     title: "Volunteer",
     institution: "Nurture the Nature Forest School, Scarborough ON",
     duration: "August 2025–present",
@@ -73,6 +65,14 @@ const experienceData = [
     inProgress: true,
     icon: HeartHandshake,
     isVolunteer: true,
+  },
+  {
+    title: "Toward Ontario Classrooms",
+    institution: "On Track: OCT- Licensure",
+    duration: "",
+    status: "",
+    inProgress: true,
+    icon: Briefcase,
   },
 ];
 
@@ -105,7 +105,7 @@ const TimelineCard = ({ item }: { item: (typeof educationData[0] | typeof experi
                         <AlertDialog>
                         <AlertDialogTrigger asChild>
                             <Button variant="secondary" size="sm" className="gap-2 bg-purple-600 text-white hover:bg-purple-700">
-                                {item.isRankHolder && <Trophy className="h-4 w-4 animate-wiggle" />}
+                                {item.isRankHolder && <Trophy className="h-4 w-4 text-white" />}
                                 {item.isVolunteer && <HeartHandshake className="h-4 w-4" />}
                                 Gallery
                             </Button>
@@ -137,7 +137,7 @@ const TimelineCard = ({ item }: { item: (typeof educationData[0] | typeof experi
                     )}
 
                     {item.inProgress && !item.isVolunteer && (
-                        <span className="inline-block px-2 py-1 text-xs font-semibold text-primary-foreground bg-primary rounded-full">
+                        <span className="inline-block px-2 py-1 text-xs font-semibold text-purple-600 bg-purple-100 rounded-full">
                             In progress
                         </span>
                     )}
