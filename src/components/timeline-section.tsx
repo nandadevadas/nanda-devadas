@@ -100,51 +100,53 @@ const TimelineCard = ({ item }: { item: (typeof educationData[0] | typeof experi
                 {item.duration && <p className="text-sm text-muted-foreground">{item.duration}</p>}
                 {item.status && <p className="text-sm text-muted-foreground mt-1">{item.status}</p>}
                 
-                {item.inProgress && !item.isVolunteer && (
-                    <span className="mt-2 inline-block px-2 py-1 text-xs font-semibold text-primary-foreground bg-primary rounded-full">
-                        In progress
-                    </span>
-                )}
-                 {item.inProgress && item.isVolunteer && (
-                    <span className="mt-2 inline-block px-2 py-1 text-xs font-semibold text-purple-600 bg-purple-100 rounded-full">
-                        Ongoing
-                    </span>
-                )}
+                <div className="flex items-center gap-3 mt-3">
+                    {showGallery && (
+                        <AlertDialog>
+                        <AlertDialogTrigger asChild>
+                            <Button variant="secondary" size="sm" className="gap-2 bg-purple-600 text-white hover:bg-purple-700">
+                                {item.isRankHolder && <Trophy className="h-4 w-4 text-amber-500 animate-wiggle" />}
+                                {item.isVolunteer && <HeartHandshake className="h-4 w-4" />}
+                                Gallery
+                            </Button>
+                        </AlertDialogTrigger>
+                        <AlertDialogContent className="max-w-6xl w-full">
+                            <AlertDialogHeader>
+                            <AlertDialogTitle>{galleryTitle}</AlertDialogTitle>
+                            </AlertDialogHeader>
+                            <ScrollArea className="w-full whitespace-nowrap rounded-md">
+                            <div className="flex w-max space-x-4 p-4 items-center">
+                                {galleryImages.map((image) => (
+                                <div key={image.id} className="h-72 shrink-0">
+                                    <Image
+                                    src={image.imageUrl}
+                                    alt={image.description}
+                                    data-ai-hint={image.imageHint}
+                                    className="h-full w-auto object-contain rounded-lg"
+                                    width={300}
+                                    height={288}
+                                    />
+                                </div>
+                                ))}
+                            </div>
+                            <ScrollBar orientation="horizontal" className="h-4" thumbClassName="bg-primary/50" />
+                            </ScrollArea>
+                            <AlertDialogCancel>Close</AlertDialogCancel>
+                        </AlertDialogContent>
+                        </AlertDialog>
+                    )}
 
-                {showGallery && (
-                     <AlertDialog>
-                      <AlertDialogTrigger asChild>
-                         <Button variant="secondary" size="sm" className="mt-3 gap-2 bg-purple-600 text-white hover:bg-purple-700">
-                            {item.isRankHolder && <Trophy className="h-4 w-4 text-amber-500 animate-wiggle" />}
-                            {item.isVolunteer && <HeartHandshake className="h-4 w-4" />}
-                            Gallery
-                        </Button>
-                      </AlertDialogTrigger>
-                      <AlertDialogContent className="max-w-6xl w-full">
-                        <AlertDialogHeader>
-                          <AlertDialogTitle>{galleryTitle}</AlertDialogTitle>
-                        </AlertDialogHeader>
-                        <ScrollArea className="w-full whitespace-nowrap rounded-md">
-                          <div className="flex w-max space-x-4 p-4 items-center">
-                            {galleryImages.map((image) => (
-                              <div key={image.id} className="h-72 shrink-0">
-                                <Image
-                                  src={image.imageUrl}
-                                  alt={image.description}
-                                  data-ai-hint={image.imageHint}
-                                  className="h-full w-auto object-contain rounded-lg"
-                                  width={300}
-                                  height={288}
-                                />
-                              </div>
-                            ))}
-                          </div>
-                          <ScrollBar orientation="horizontal" className="h-4" thumbClassName="bg-primary/50" />
-                        </ScrollArea>
-                         <AlertDialogCancel>Close</AlertDialogCancel>
-                      </AlertDialogContent>
-                    </AlertDialog>
-                )}
+                    {item.inProgress && !item.isVolunteer && (
+                        <span className="inline-block px-2 py-1 text-xs font-semibold text-primary-foreground bg-primary rounded-full">
+                            In progress
+                        </span>
+                    )}
+                    {item.inProgress && item.isVolunteer && (
+                        <span className="inline-block px-2 py-1 text-xs font-semibold text-purple-600 bg-purple-100 rounded-full">
+                            Ongoing
+                        </span>
+                    )}
+                </div>
             </div>
         </div>
     </div>
