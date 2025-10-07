@@ -105,7 +105,7 @@ const TimelineCard = ({ item }: { item: (typeof educationData[0] | typeof experi
                         <AlertDialog>
                         <AlertDialogTrigger asChild>
                             <Button variant="secondary" size="sm" className="gap-2 bg-purple-600 text-white hover:bg-purple-700">
-                                {item.isRankHolder && <Trophy className="h-4 w-4 text-amber-500 animate-wiggle" />}
+                                {item.isRankHolder && <Trophy className="h-4 w-4 animate-wiggle" />}
                                 {item.isVolunteer && <HeartHandshake className="h-4 w-4" />}
                                 Gallery
                             </Button>
