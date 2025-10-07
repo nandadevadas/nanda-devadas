@@ -1,7 +1,7 @@
 
 
 import React from 'react';
-import { GraduationCap, Briefcase, Trophy } from 'lucide-react';
+import { GraduationCap, Briefcase, Trophy, HeartHandshake } from 'lucide-react';
 import {
   AlertDialog,
   AlertDialogContent,
@@ -65,11 +65,25 @@ const experienceData = [
     inProgress: true,
     icon: Briefcase,
   },
+  {
+    title: "Volunteer",
+    institution: "Nurture the Nature Forest School, Scarborough ON",
+    duration: "August 2025–present",
+    status: "On-call basis",
+    inProgress: true,
+    icon: HeartHandshake,
+    isVolunteer: true,
+  },
 ];
 
 
-const TimelineCard = ({ item }: { item: (typeof educationData[0] | typeof experienceData[0]) & { isRankHolder?: boolean, years?: string } }) => {
+const TimelineCard = ({ item }: { item: (typeof educationData[0] | typeof experienceData[0]) & { isRankHolder?: boolean, years?: string, isVolunteer?: boolean } }) => {
     const rankImages = PlaceHolderImages.filter(p => p.id.startsWith('rank-holder-'));
+    const volunteerImages = PlaceHolderImages.filter(p => p.id.startsWith('volunteer-'));
+
+    const galleryImages = item.isRankHolder ? rankImages : (item.isVolunteer ? volunteerImages : []);
+    const galleryTitle = item.isRankHolder ? "First Rank - M.Sc. Biotechnology" : (item.isVolunteer ? "Volunteer Experience" : "");
+    const showGallery = (item.isRankHolder && rankImages.length > 0) || (item.isVolunteer && volunteerImages.length > 0);
 
     return (
     <div className="timeline-item">
@@ -86,27 +100,33 @@ const TimelineCard = ({ item }: { item: (typeof educationData[0] | typeof experi
                 {item.duration && <p className="text-sm text-muted-foreground">{item.duration}</p>}
                 {item.status && <p className="text-sm text-muted-foreground mt-1">{item.status}</p>}
                 
-                {item.inProgress && (
+                {item.inProgress && !item.isVolunteer && (
                     <span className="mt-2 inline-block px-2 py-1 text-xs font-semibold text-primary-foreground bg-primary rounded-full">
                         In progress
                     </span>
                 )}
+                 {item.inProgress && item.isVolunteer && (
+                    <span className="mt-2 inline-block px-2 py-1 text-xs font-semibold text-purple-600 bg-purple-100 rounded-full">
+                        Ongoing
+                    </span>
+                )}
 
-                {item.isRankHolder && rankImages.length > 0 && (
+                {showGallery && (
                      <AlertDialog>
                       <AlertDialogTrigger asChild>
                          <Button variant="secondary" size="sm" className="mt-3 gap-2 bg-purple-600 text-white hover:bg-purple-700">
-                            <Trophy className="h-4 w-4 text-amber-500 animate-wiggle" />
+                            {item.isRankHolder && <Trophy className="h-4 w-4 text-amber-500 animate-wiggle" />}
+                            {item.isVolunteer && <HeartHandshake className="h-4 w-4" />}
                             Gallery
                         </Button>
                       </AlertDialogTrigger>
                       <AlertDialogContent className="max-w-6xl w-full">
                         <AlertDialogHeader>
-                          <AlertDialogTitle>First Rank - M.Sc. Biotechnology</AlertDialogTitle>
+                          <AlertDialogTitle>{galleryTitle}</AlertDialogTitle>
                         </AlertDialogHeader>
                         <ScrollArea className="w-full whitespace-nowrap rounded-md">
                           <div className="flex w-max space-x-4 p-4 items-center">
-                            {rankImages.map((image) => (
+                            {galleryImages.map((image) => (
                               <div key={image.id} className="h-72 shrink-0">
                                 <Image
                                   src={image.imageUrl}
