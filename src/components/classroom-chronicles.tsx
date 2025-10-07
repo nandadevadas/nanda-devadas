@@ -6,6 +6,7 @@ import {
   AlertDialogContent,
   AlertDialogHeader,
   AlertDialogTitle,
+  AlertDialogDescription,
   AlertDialogTrigger,
   AlertDialogCancel,
 } from "@/components/ui/alert-dialog";
@@ -14,6 +15,8 @@ import { Button } from "@/components/ui/button";
 import { Camera } from "lucide-react";
 import { ImagePlaceholder } from "@/lib/placeholder-images";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
+
 
 interface ClassroomChroniclesProps {
   images: ImagePlaceholder[];
@@ -40,6 +43,11 @@ export default function ClassroomChronicles({ images }: ClassroomChroniclesProps
             <AlertDialogTitle className="font-headline text-2xl">
               Classroom Chronicles
             </AlertDialogTitle>
+            <VisuallyHidden>
+              <AlertDialogDescription>
+                A scrollable gallery of images from the classroom.
+              </AlertDialogDescription>
+            </VisuallyHidden>
           </AlertDialogHeader>
           
           <ScrollArea className="w-full whitespace-nowrap rounded-md">

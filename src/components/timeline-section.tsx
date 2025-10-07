@@ -7,6 +7,7 @@ import {
   AlertDialogContent,
   AlertDialogHeader,
   AlertDialogTitle,
+  AlertDialogDescription,
   AlertDialogTrigger,
   AlertDialogCancel,
 } from "@/components/ui/alert-dialog"
@@ -17,6 +18,7 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { cn } from '@/lib/utils';
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area';
+import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 
 
 const educationData = [
@@ -66,7 +68,7 @@ const experienceData = [
     icon: HeartHandshake,
     isVolunteer: true,
   },
-  {
+    {
     title: "Toward Ontario Classrooms",
     institution: "On Track: OCT- Licensure",
     duration: "",
@@ -105,7 +107,7 @@ const TimelineCard = ({ item }: { item: (typeof educationData[0] | typeof experi
                         <AlertDialog>
                         <AlertDialogTrigger asChild>
                             <Button variant="secondary" size="sm" className="gap-2 bg-purple-600 text-white hover:bg-purple-700">
-                                {item.isRankHolder && <Trophy className="h-4 w-4 text-white" />}
+                                {item.isRankHolder && <Trophy className="h-4 w-4" />}
                                 {item.isVolunteer && <HeartHandshake className="h-4 w-4" />}
                                 Gallery
                             </Button>
@@ -113,6 +115,11 @@ const TimelineCard = ({ item }: { item: (typeof educationData[0] | typeof experi
                         <AlertDialogContent className="max-w-6xl w-full">
                             <AlertDialogHeader>
                             <AlertDialogTitle>{galleryTitle}</AlertDialogTitle>
+                            <VisuallyHidden>
+                                <AlertDialogDescription>
+                                    A scrollable gallery of images related to {galleryTitle}.
+                                </AlertDialogDescription>
+                            </VisuallyHidden>
                             </AlertDialogHeader>
                             <ScrollArea className="w-full whitespace-nowrap rounded-md">
                             <div className="flex w-max space-x-4 p-4 items-center">
@@ -136,14 +143,9 @@ const TimelineCard = ({ item }: { item: (typeof educationData[0] | typeof experi
                         </AlertDialog>
                     )}
 
-                    {item.inProgress && !item.isVolunteer && (
+                    {item.inProgress && (
                         <span className="inline-block px-2 py-1 text-xs font-semibold text-purple-600 bg-purple-100 rounded-full">
-                            In progress
-                        </span>
-                    )}
-                    {item.inProgress && item.isVolunteer && (
-                        <span className="inline-block px-2 py-1 text-xs font-semibold text-purple-600 bg-purple-100 rounded-full">
-                            Ongoing
+                            {item.isVolunteer ? "Ongoing" : "In progress"}
                         </span>
                     )}
                 </div>
