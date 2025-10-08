@@ -89,25 +89,25 @@ export default function AboutSection() {
                     </CardContent>
                   </Card>
                 ))}
-                 <Card className="bg-card">
-                    <CardHeader className='pb-4'>
-                      <CardTitle className="text-xl font-semibold">Passions Outside the Classroom</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <ul className="grid gap-3">
-                        {passions.map((passion, index) => (
-                          <li key={index} className="flex items-start gap-3">
-                            <passion.icon className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
-                            <div>
-                                <span className="font-semibold text-foreground">{passion.title}:</span>{' '}
-                                <span className="text-muted-foreground">{passion.description}</span>
-                            </div>
-                          </li>
-                        ))}
-                      </ul>
-                    </CardContent>
-                  </Card>
               </div>
+            </div>
+            <div>
+              <h3 className="text-2xl font-headline tracking-tighter sm:text-3xl mb-6">Passions Outside the Classroom</h3>
+               <Card className="bg-card">
+                  <CardContent className="p-6">
+                    <ul className="grid gap-3">
+                      {passions.map((passion, index) => (
+                        <li key={index} className="flex items-start gap-3">
+                          <passion.icon className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                          <div>
+                              <span className="font-semibold text-foreground">{passion.title}:</span>{' '}
+                              <span className="text-muted-foreground">{passion.description}</span>
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
             </div>
           </div>
         </div>
