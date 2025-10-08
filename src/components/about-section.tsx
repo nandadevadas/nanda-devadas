@@ -1,6 +1,6 @@
 
 import { about, quickFacts, tagDefinitions } from '@/lib/data';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Info, Paintbrush, Music, ChefHat, Scissors } from 'lucide-react';
 import { Badge } from './ui/badge';
@@ -48,20 +48,6 @@ export default function AboutSection() {
                 </p>
               </div>
             </div>
-             <div className="space-y-6">
-              <h3 className="text-2xl font-headline tracking-tighter sm:text-3xl">Passions Outside the Classroom</h3>
-              <ul className="grid gap-4">
-                {passions.map((passion, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                     <passion.icon className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
-                     <div>
-                        <span className="font-semibold text-foreground">{passion.title}:</span>{' '}
-                        <span className="text-muted-foreground">{passion.description}</span>
-                     </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
           <div className="flex flex-col gap-8">
             <div>
@@ -103,6 +89,24 @@ export default function AboutSection() {
                     </CardContent>
                   </Card>
                 ))}
+                 <Card className="bg-card">
+                    <CardHeader className='pb-4'>
+                      <CardTitle className="text-xl font-semibold">Passions Outside the Classroom</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="grid gap-3">
+                        {passions.map((passion, index) => (
+                          <li key={index} className="flex items-start gap-3">
+                            <passion.icon className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                            <div>
+                                <span className="font-semibold text-foreground">{passion.title}:</span>{' '}
+                                <span className="text-muted-foreground">{passion.description}</span>
+                            </div>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
               </div>
             </div>
           </div>
