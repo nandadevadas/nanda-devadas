@@ -36,10 +36,10 @@ export default function AboutSection() {
     <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-background">
       <div className="container px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-x-16">
-          <div className="space-y-12">
-            <div className="space-y-4">
+          <div className="flex flex-col space-y-12">
+            <div className="space-y-4 flex flex-col flex-grow">
               <h2 className="text-3xl font-headline tracking-tighter sm:text-4xl md:text-5xl">Know Nanda</h2>
-              <div className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed space-y-4 text-justify">
+              <div className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed space-y-4 text-justify flex-grow flex flex-col justify-around">
                 <p>
                   I’m Nanda—science teacher and steady coach for mixed-readiness classes. I design lessons that start with a real-world spark, then guide students to test ideas, talk like scientists, and reflect on growth. My classroom runs on clarity, care, and routines that make thinking visible.
                 </p>
