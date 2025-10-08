@@ -1,3 +1,4 @@
+
 import { about, quickFacts, tagDefinitions } from '@/lib/data';
 import { Card, CardContent } from '@/components/ui/card';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
@@ -38,9 +39,14 @@ export default function AboutSection() {
           <div className="space-y-12">
             <div className="space-y-4">
               <h2 className="text-3xl font-headline tracking-tighter sm:text-4xl md:text-5xl">Know Nanda</h2>
-              <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                {about.paragraph}
-              </p>
+              <div className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed space-y-4">
+                <p>
+                  I’m Nanda—science teacher and steady coach for mixed-readiness classes. I design lessons that start with a real-world spark, then guide students to test ideas, talk like scientists, and reflect on growth. My classroom runs on clarity, care, and routines that make thinking visible.
+                </p>
+                <p>
+                  I’m a person who believes in growth — both mine and others’. My core values revolve around learning, connection, and purpose. I have a global outlook and genuinely care about the world I live in, yet my heart remains grounded in people and relationships. What makes me a unique teacher is the way I blend vision with compassion — I don’t just teach content; I nurture character, confidence, and curiosity. I see my classroom as a community built on trust and respect, where every learner feels valued and capable. Spirituality, personal growth, and courage keep me centered, while respect, self-confidence, and perseverance shape how I interact with others. I strive to balance mind and body, ambition and humility, independence and belonging. For me, teaching is not just a profession; it’s a calling to inspire growth, encourage resilience, and empower students to see themselves as capable contributors to a better world.
+                </p>
+              </div>
             </div>
              <div className="space-y-6">
               <h3 className="text-2xl font-headline tracking-tighter sm:text-3xl">Passions Outside the Classroom</h3>
