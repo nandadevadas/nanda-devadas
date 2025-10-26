@@ -1,5 +1,6 @@
 
-import { BookOpen, Target, Users, Briefcase, GraduationCap, Trophy, Award, CheckCircle2, FlaskConical, LifeBuoy } from 'lucide-react';
+
+import { BookOpen, Target, Users, Briefcase, GraduationCap, Trophy, Award, CheckCircle2, FlaskConical, LifeBuoy, HelpCircle, Lightbulb, TrendingUp, Map } from 'lucide-react';
 
 export const siteInfo = {
   name: "Nanda Dev",
@@ -8,7 +9,7 @@ export const siteInfo = {
   resumeUrl: "/assets/resume/Resume_Nanda_MyKelly.pdf",
   email: "nandadevadas@gmail.com",
   social: {
-    linkedin: "https://www.linkedin.com/in/nanda-devadas-p",
+    linkedin: "https://www.linkedin.com/in/nanda-devadas",
   }
 };
 
@@ -23,7 +24,7 @@ export const navLinks = [
 ];
 
 export const about = {
-  paragraph: "I’m Nanda—science teacher and steady coach for mixed-readiness classes. I design lessons that start with a real-world spark, then guide students to test ideas, talk like scientists, and reflect on growth. My classroom runs on clarity, care, and routines that make thinking visible.",
+  paragraph: "I design lessons that start with a real-world spark, then guide students to test ideas, talk like scientists, and reflect on growth. My classroom runs on clarity, care, and routines that make thinking visible.",
 };
 
 export type QuickFact = { 
@@ -60,7 +61,7 @@ export const philosophy = [
   },
   {
     title: "The Facilitator - My Role",
-    description: "I believe my role isn’t to dictate but to be a positive catalyst, removing barriers, lighting the path, and beginning every unit with a clear real-world why so no student wonders why they’re learning this.  I design, not deliver, learning, using phenomenon-driven inquiry and differentiated methods so every learner has a way in and a supported path to success.  With clear expectations, timely feedback, and multiple chances to improve, we treat mastery as iterative, and I model curiosity and humility by evolving my practice based on evidence and students’ needs.",
+    description: "I believe my role isn’t to dictate but to be a positive catalyst, removing barriers, lighting the path, and beginning every unit with a clear real-world why so no student wonders why they’re learning this. I design, not deliver, learning, using phenomenon-driven inquiry and differentiated methods so every learner has a way in and a supported path to success. With clear expectations, timely feedback, and multiple chances to improve, we treat mastery as iterative, and I model curiosity and humility by evolving my practice based on evidence and students’ needs.",
     icon: Target,
   },
   {

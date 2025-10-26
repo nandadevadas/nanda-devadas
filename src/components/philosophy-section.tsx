@@ -7,6 +7,38 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { HelpCircle, Lightbulb, TrendingUp, Map } from "lucide-react";
+
+
+const FacilitatorContent = () => (
+  <div className="space-y-4">
+    <p>
+      I believe my role isn’t to dictate but to be a positive catalyst, removing barriers, lighting the path, and beginning every unit with a clear real-world why so no student wonders why they’re learning this. I design, not deliver, learning, using phenomenon-driven inquiry and differentiated methods so every learner has a way in and a supported path to success. With clear expectations, timely feedback, and multiple chances to improve, we treat mastery as iterative, and I model curiosity and humility by evolving my practice based on evidence and students’ needs.
+    </p>
+    <div>
+      <p className="font-semibold text-foreground mb-4">My teaching philosophy revolves around what I call the 4 W’s of learning:</p>
+      <ul className="space-y-3">
+        <li className="flex items-start gap-3">
+          <HelpCircle className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+          <span><b>Why</b> should students listen to me?</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <Lightbulb className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+          <span><b>Why</b> should they learn this concept?</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <TrendingUp className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+          <span><b>What</b> change can it bring to their lives?</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <Map className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+          <span><b>Where</b> can they apply it in the real world?</span>
+        </li>
+      </ul>
+      <p className="mt-4">I believe that when students find relevance, curiosity follows naturally.</p>
+    </div>
+  </div>
+);
 
 export default function PhilosophySection() {
   const philosophyImage = PlaceHolderImages.find(p => p.id === 'philosophy-image');
@@ -51,7 +83,7 @@ export default function PhilosophySection() {
                       </div>
                   </AccordionTrigger>
                   <AccordionContent className="text-base text-muted-foreground text-left pl-16">
-                    {item.description}
+                    {item.title === "The Facilitator - My Role" ? <FacilitatorContent /> : item.description}
                   </AccordionContent>
                 </AccordionItem>
               ))}
