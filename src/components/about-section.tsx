@@ -41,6 +41,9 @@ export default function AboutSection() {
               <h2 className="text-3xl font-headline tracking-tighter sm:text-4xl md:text-5xl">Know Nanda</h2>
               <div className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed space-y-4 text-justify flex-grow flex flex-col justify-around">
                 <p>
+                  Hi, I’m Nanda — a passionate science educator with a strong foundation in biotechnology and a deep belief in making learning meaningful. With over two years of teaching experience in a Cambridge International School, I’ve taught Cambridge Primary Science to Grades 3 and 4 and IGCSE Biology to Grade 10. My academic background includes a B.Sc. and M.Sc. in Biotechnology, followed by a B.Ed., and I’m currently in the process of earning my Ontario College of Teachers (OCT) certification as I continue my teaching journey here in Canada.
+                </p>
+                <p>
                   I’m Nanda—science teacher and steady coach for mixed-readiness classes. I design lessons that start with a real-world spark, then guide students to test ideas, talk like scientists, and reflect on growth. My classroom runs on clarity, care, and routines that make thinking visible.
                 </p>
                 <p>
