@@ -294,7 +294,7 @@ export const testimonials = [
         published: true
     },
     {
-        quote: "Dear Ms. Nanda mam,  I want to express my heartfelt gratitude for everything you’ve done. You have been incredibly supportive and kind, always there to help and encourage me. Your friendly nature and warm approach have made learning so enjoyable. I especially appreciate how you use experiments to make concepts come alive and how you trusted me with the main role in the assembly. That meant a lot to me and showed how much you believe in your students.  Thank you for being such a wonderful teacher and mentor 🫂 😍",
+        quote: "Nanda mam was a biology teacher, it's the subject with an enormous amount of realistic theories and information and she was the right teacher for me to make it in a smoother way, she has made each and every concept so clear for the whole class and gave us practical knowledge. No matter how hard the topic is, she is the excellent teacher to detangle the difficulty and give a nice representation of the respective topic",
         author: "Sana",
         affiliation: "Grade 10 Student",
         order: 4,
