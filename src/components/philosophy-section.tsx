@@ -51,7 +51,7 @@ export default function PhilosophySection() {
               />
             </div>
           )}
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center">
             <Accordion type="single" collapsible className="w-full">
               {philosophy.map((item, index) => (
                 <AccordionItem key={item.title} value={`item-${index + 1}`}>
