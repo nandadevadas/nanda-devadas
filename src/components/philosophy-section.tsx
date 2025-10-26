@@ -38,7 +38,7 @@ export default function PhilosophySection() {
             </div>
           </div>
         </div>
-        <div className="mx-auto grid max-w-6xl items-start gap-12 py-12 lg:grid-cols-2 lg:gap-16">
+        <div className="mx-auto grid max-w-6xl items-center gap-12 py-12 lg:grid-cols-2 lg:gap-16">
           {philosophyImage && (
             <div className="relative flex items-center justify-center">
               <Image  
@@ -51,10 +51,10 @@ export default function PhilosophySection() {
               />
             </div>
           )}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col justify-center h-full">
             <Accordion type="single" collapsible className="w-full">
               {philosophy.map((item, index) => (
-                <AccordionItem key={item.title} value={`item-${index + 1}`}>
+                <AccordionItem key={item.title} value={`item-${index + 1}`} className="py-4">
                   <AccordionTrigger className="text-2xl font-headline hover:no-underline text-left">
                      <div className="flex items-center gap-4">
                         <item.icon className="w-8 h-8 text-primary flex-shrink-0" />
