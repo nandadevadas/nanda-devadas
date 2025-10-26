@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { philosophy } from '@/lib/data';
 import {
@@ -15,7 +16,6 @@ const FacilitatorContent = () => (
     <p>
       I believe my role isn’t to dictate but to be a positive catalyst, removing barriers, lighting the path, and beginning every unit with a clear real-world why so no student wonders why they’re learning this. I design, not deliver, learning, using phenomenon-driven inquiry and differentiated methods so every learner has a way in and a supported path to success. With clear expectations, timely feedback, and multiple chances to improve, we treat mastery as iterative, and I model curiosity and humility by evolving my practice based on evidence and students’ needs.
     </p>
-    <FourWsCards />
   </div>
 );
 
@@ -68,6 +68,9 @@ export default function PhilosophySection() {
               ))}
             </Accordion>
           </div>
+        </div>
+        <div className="max-w-4xl mx-auto pt-12">
+            <FourWsCards />
         </div>
       </div>
     </section>
