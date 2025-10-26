@@ -301,24 +301,31 @@ export const testimonials = [
         published: true
     },
     {
+        quote: "My experience with Ms. Nanda has always been very clear and explanatory. She has an excellent grasp of the sciences, and I consider myself lucky to have learned biology from her for my grade 10 IGCSE examinations. She is very supportive, explains practicals clearly, and dedicates ample time to clarifying doubts. I am always grateful to her, as she is a wonderfully passionate teacher.",
+        author: "Mitravindha",
+        affiliation: "Grade 10 Student",
+        order: 5,
+        published: true
+    },
+    {
         quote: "Dear Ms. Nanda mam,  I want to express my heartfelt gratitude for everything you’ve done. You have been incredibly supportive and kind, always there to help and encourage me. Your friendly nature and warm approach have made learning so enjoyable. I especially appreciate how you use experiments to make concepts come alive and how you trusted me with the main role in the assembly. That meant a lot to me and showed how much you believe in your students.  Thank you for being such a wonderful teacher and mentor 🫂 😍",
         author: "Vihaan",
         affiliation: "Grade 4 Student",
-        order: 5,
+        order: 6,
         published: true
     },
     {
         quote: "Nanda maam, She is the Science teacher for my son Arjun in grade 3 and 4 , she made learning both exciting and meaningful with clear explanations, hands-on activities, she inspire curiosity in every child. Complex concepts are taught in a simple, easy-to-understand way. She used to help students in making projects where students can understand concepts easily. Her patience, dedication, and passion for science have created a love for the subject in young learners. We are truly grateful for the positive impact she has on the students’ academic growth and confidence. Thank you Nanda maam 😍",
         author: "Sindhu Mukkamala",
         affiliation: "Parent (Grade 4)",
-        order: 6,
+        order: 7,
         published: true
     },
     {
         quote: "Dear Nanda Ma'am,  Thank you so much for being an exceptional teacher and guiding star in my child's (Jaya Nandhan) educational,social and emotional journey. Beyond lessons and textbooks, you have nurtured curiosity, confidence and a love for learning in a way that only a passionate teacher can. Your kindness, patience, and inspiration have touched not just my child's education but also his outlook towards knowledge and growth. I will remain deeply grateful. Your lessons are my child's world. Once again thank you so much ma'am for helping my child become a better person and excel in education , especially in Science.  With Warm Regards, Y Hymavathi",
         author: "Hymavathi",
         affiliation: "Parent (Grade 4)",
-        order: 7,
+        order: 8,
         published: true
     }
 ];
