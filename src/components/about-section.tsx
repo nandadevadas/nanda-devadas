@@ -44,7 +44,7 @@ export default function AboutSection() {
                   Hi, I’m Nanda — a passionate science educator with a strong foundation in biotechnology and a deep belief in making learning meaningful. With over two years of teaching experience in a Cambridge International School, I’ve taught Cambridge Primary Science to Grades 3 and 4 and IGCSE Biology to Grade 10. My academic background includes a B.Sc. and M.Sc. in Biotechnology, followed by a B.Ed., and I’m currently in the process of earning my Ontario College of Teachers (OCT) certification as I continue my teaching journey here in Canada.
                 </p>
                 <p>
-                  I’m Nanda—science teacher and steady coach for mixed-readiness classes. I design lessons that start with a real-world spark, then guide students to test ideas, talk like scientists, and reflect on growth. My classroom runs on clarity, care, and routines that make thinking visible.
+                  I design lessons that start with a real-world spark, then guide students to test ideas, talk like scientists, and reflect on growth. My classroom runs on clarity, care, and routines that make thinking visible.
                 </p>
                 <p>
                   I’m a person who believes in growth — both mine and others’. My core values revolve around learning, connection, and purpose. I have a global outlook and genuinely care about the world I live in, yet my heart remains grounded in people and relationships.
