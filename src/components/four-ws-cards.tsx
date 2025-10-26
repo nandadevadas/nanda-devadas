@@ -87,7 +87,7 @@ export default function FourWsCards() {
 
   return (
     <div className="mt-6 space-y-4 text-foreground">
-      <p className="font-semibold">
+      <p className="font-semibold text-center">
         My teaching philosophy revolves around what I call the 4 W’s of learning:
       </p>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
