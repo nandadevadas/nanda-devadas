@@ -89,7 +89,7 @@ export default function FourWsCards() {
     <div className="mt-6 space-y-4 text-foreground">
       <p className="font-semibold text-center">
         My teaching philosophy revolves around what I call the{' '}
-        <span className="font-bold inline-block animate-wiggle">4 W’s</span> of
+        <span className="font-bold">4 W’s</span> of
         learning:
       </p>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
@@ -102,7 +102,7 @@ export default function FourWsCards() {
           />
         ))}
       </div>
-      <p className="pt-4 text-center text-muted-foreground italic">
+      <p className="pt-4 text-center font-bold italic" style={{ color: 'var(--timeline-accent-dark)' }}>
         I believe that when students find relevance, curiosity follows naturally.
       </p>
     </div>
