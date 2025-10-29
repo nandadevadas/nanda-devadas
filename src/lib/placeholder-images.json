@@ -319,7 +319,13 @@
       "imageHint": "award ceremony"
     },
     {
-      "id": "volunteer-6",
+      "id": "volunteer-2",
+      "description": "A group of children and volunteers during an outdoor activity.",
+      "imageUrl": "/assets/Volunteering/IMG-20251029-WA0121.jpg",
+      "imageHint": "children nature"
+    },
+    {
+      "id": "volunteer-7",
       "description": "A volunteer guiding a child in a forest school.",
       "imageUrl": "/assets/Volunteering/IMG-20251006-WA0139.jpg",
       "imageHint": "forest school"
@@ -329,12 +335,6 @@
       "description": "A volunteer interacting with children in a natural setting.",
       "imageUrl": "/assets/Volunteering/IMG-20251029-WA0122.jpg",
       "imageHint": "volunteering outdoors"
-    },
-    {
-      "id": "volunteer-2",
-      "description": "A group of children and volunteers during an outdoor activity.",
-      "imageUrl": "/assets/Volunteering/IMG-20251029-WA0121.jpg",
-      "imageHint": "children nature"
     },
     {
       "id": "volunteer-3",
