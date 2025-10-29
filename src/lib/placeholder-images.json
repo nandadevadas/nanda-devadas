@@ -80,19 +80,19 @@
     },
     {
       "id": "testimonial-4",
-      "description": "Avatar for Sana, a Grade 10 student.",
-      "imageUrl": "/assets/testimonials_pics/sana.jpg",
-      "imageHint": "student portrait"
+      "description": "Avatar for Sana, a Grade 5 student.",
+      "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwaGVhZHNob3R8ZW58MHx8fHwxNzYxNDExNTIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "student headshot"
     },
     {
       "id": "testimonial-5",
-      "description": "Avatar for Mitravindha, a Grade 10 student.",
+      "description": "Avatar for Mitravindha, a Grade 5 student.",
       "imageUrl": "https://images.unsplash.com/photo-1530213786676-41ad9f7736f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdHVkZW50JTIwaGVhZHNob3R8ZW58MHx8fHwxNzYxNDExNTIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "student headshot"
     },
     {
       "id": "testimonial-6",
-      "description": "Avatar for Sanathana, a Grade 10 student.",
+      "description": "Avatar for Sanathana, a Grade 5 student.",
       "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdHVkZW50JTIwaGVhZHNob3R8ZW58MHx8fHwxNzYxNDExNTIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "student headshot"
     },
