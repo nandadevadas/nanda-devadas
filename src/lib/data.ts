@@ -287,13 +287,6 @@ export const testimonials = [
         published: true
     },
     {
-        quote: "Nanda's focus on scientific literacy is outstanding. She collaborates across departments to ensure that students are not just 'doing' science, but also reading, writing, and communicating like scientists. Her students’ lab reports and research proposals show a level of clarity and evidence-based reasoning that is well beyond their years.",
-        author: "Ayna Ismail",
-        affiliation: "English Department Head",
-        order: 3,
-        published: true
-    },
-    {
         quote: "Nanda mam was a biology teacher, it's the subject with an enormous amount of realistic theories and information and she was the right teacher for me to make it in a smoother way, she has made each and every concept so clear for the whole class and gave us practical knowledge. No matter how hard the topic is, she is the excellent teacher to detangle the difficulty and give a nice representation of the respective topic",
         author: "Sana",
         affiliation: "Grade 10 Student",
