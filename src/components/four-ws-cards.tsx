@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { HelpCircle, Lightbulb, TrendingUp, Map } from 'lucide-react';
 
@@ -41,6 +41,15 @@ const FlippingCard = ({
       className="group h-48 w-full cursor-pointer"
       style={{ perspective: '1000px' }}
       onClick={onClick}
+      role="button"
+      aria-pressed={isFlipped}
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onClick();
+        }
+      }}
     >
       <div
         className={cn(
@@ -70,16 +79,6 @@ export default function FourWsCards() {
     3: false,
     4: false,
   });
-
-  useEffect(() => {
-    const timers = cardData.map((card, index) =>
-      setTimeout(() => {
-        setFlippedStates((prev) => ({ ...prev, [card.id]: true }));
-      }, (index + 1) * 700)
-    );
-
-    return () => timers.forEach(clearTimeout);
-  }, []);
 
   const handleFlip = (id: number) => {
     setFlippedStates((prev) => ({ ...prev, [id]: !prev[id] }));
