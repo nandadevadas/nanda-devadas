@@ -99,8 +99,8 @@
     {
       "id": "testimonial-7",
       "description": "Avatar for Vihaan, a Grade 4 student.",
-      "imageUrl": "/assets/testimonials_pics/vihaan.jpg",
-      "imageHint": "student headshot"
+      "imageUrl": "https://images.unsplash.com/photo-1606041008023-472dfb5e530f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmbG93ZXJ8ZW58MHx8fHwxNzYzNDIwMjc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "flower"
     },
     {
       "id": "testimonial-8",
@@ -271,6 +271,12 @@
       "imageHint": "award ceremony"
     },
     {
+      "id": "volunteer-1",
+      "description": "A group photo of volunteers and children at a forest school.",
+      "imageUrl": "/assets/Volunteering/IMG-20251006-WA0142.jpg",
+      "imageHint": "group photo"
+    },
+    {
       "id": "volunteer-5",
       "description": "A volunteer guiding a child in a forest school.",
       "imageUrl": "/assets/Volunteering/IMG-20251006-WA0139.jpg",
@@ -293,12 +299,6 @@
       "description": "A volunteer interacting with children in a natural setting.",
       "imageUrl": "/assets/Volunteering/IMG-20251029-WA0121.jpg",
       "imageHint": "volunteering outdoors"
-    },
-    {
-      "id": "volunteer-1",
-      "description": "A group photo of volunteers and children at a forest school.",
-      "imageUrl": "/assets/Volunteering/IMG-20251006-WA0142.jpg",
-      "imageHint": "group photo"
     },
     {
       "id": "volunteer-3",
