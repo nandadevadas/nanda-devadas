@@ -303,14 +303,14 @@ export const testimonials = [
     {
         quote: "My experience with Ms. Nanda has always been very clear and explanatory. She has an excellent grasp of the sciences, and I consider myself lucky to have learned biology from her for my grade 10 IGCSE examinations. She is very supportive, explains practicals clearly, and dedicates ample time to clarifying doubts. I am always grateful to her, as she is a wonderfully passionate teacher.",
         author: "Mitravindha",
-        affiliation: "Grade 5 Student",
+        affiliation: "Grade 10 Student",
         order: 5,
         published: true
     },
     {
         quote: "You have taught me much more than academics. You explained each topic clearly. Your passion for teaching is contagious and has inspired me to become a better student. I will always remember the lessons you have taught me and our shared memories in your tuition.",
         author: "Sanathana",
-        affiliation: "Grade 10 Student",
+        affiliation: "Grade 5 Student",
         order: 6,
         published: true
     },
