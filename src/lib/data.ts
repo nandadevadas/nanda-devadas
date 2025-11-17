@@ -114,7 +114,12 @@ export const portfolioItems = [
       "Describe the processes of ultrafiltration and selective reabsorption in urine formation.",
       "Analyze the relationship between fluid input and output through quantitative reasoning."
     ],
-    activities: "This lesson followed an Inquiry-based structure, moving students through questioning, exploration, and hands-on investigation.\n\n*   **Inquiry Fun:** Discussions were prompted by questions like, \"Why do birds excrete paste-like urine?\" which bridged a familiar observation to the complex physiology of nitrogenous waste.\n*   **Hands-On Learning:** Students conducted a goat kidney dissection, providing a direct, tactile experience of the organ's structure and function.\n*   **Critical Thinking & Calculation:** Students calculated and analyzed the kidney's efficiency, discovering the massive filtration volume (180L/day) versus the small urine output (1.5L), leading to a deep understanding of selective reabsorption.\n*   **Roleplay as Nephrologists:** The unit culminated in a mock panel discussion where students took on the roles of medical experts to answer public queries about kidney health, transplants, and stones, solidifying their applied knowledge.",
+    activities: [
+        { "title": "Inquiry Fun", "description": "Discussions were prompted by questions like, \"Why do birds excrete paste-like urine?\" which bridged a familiar observation to the complex physiology of nitrogenous waste." },
+        { "title": "Hands-On Learning", "description": "Students conducted a goat kidney dissection, providing a direct, tactile experience of the organ's structure and function." },
+        { "title": "Critical Thinking & Calculation", "description": "Students calculated and analyzed the kidney's efficiency, discovering the massive filtration volume (180L/day) versus the small urine output (1.5L), leading to a deep understanding of selective reabsorption." },
+        { "title": "Roleplay as Nephrologists", "description": "The unit culminated in a mock panel discussion where students took on the roles of medical experts to answer public queries about kidney health, transplants, and stones, solidifying their applied knowledge." }
+    ],
     reflection: "This approach, rooted in the Inquiry and Phenomenon-Driven framework, ensured maximum engagement and mastery. By linking the complex math of fluid dynamics with a hands-on dissection and a final role-play, students achieved advanced scientific literacy and applied IGCSE Biology concepts as practicing scientists. The unit successfully transformed a dry topic into an exciting and memorable journey of discovery.",
     tags: ["Inquiry-based lesson design", "5E model lesson planning"],
     artifacts: [
@@ -393,3 +398,4 @@ export const credentials: CredentialCategory[] = [
         ]
     }
 ];
+
