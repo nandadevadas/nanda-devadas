@@ -16,7 +16,7 @@ export default function ContactSection() {
             </p>
              <p className="text-sm">
                 You can also{" "}
-                <Link href="/assets/resume/Resume_Nanda_Dev.pdf" className="underline" download>
+                <Link href="/assets/resume/0_resume_Nanda_New_Jobfair.pdf" className="underline" download>
                   download my full resume here
                 </Link>.
             </p>
