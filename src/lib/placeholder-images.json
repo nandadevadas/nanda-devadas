@@ -271,30 +271,6 @@
       "imageHint": "award ceremony"
     },
     {
-      "id": "volunteer-1",
-      "description": "A group photo of volunteers and children at a forest school.",
-      "imageUrl": "/assets/Volunteering/IMG-20251006-WA0142.jpg",
-      "imageHint": "group photo"
-    },
-    {
-      "id": "volunteer-2",
-      "description": "Children engaged in a hands-on learning activity outdoors.",
-      "imageUrl": "/assets/Volunteering/IMG-20251029-WA0119.jpg",
-      "imageHint": "outdoor education"
-    },
-    {
-      "id": "volunteer-3",
-      "description": "A volunteer guiding a child in a forest school.",
-      "imageUrl": "/assets/Volunteering/IMG-20251029-WA0120.jpg",
-      "imageHint": "forest school"
-    },
-    {
-      "id": "volunteer-4",
-      "description": "A volunteer interacting with children in a natural setting.",
-      "imageUrl": "/assets/Volunteering/IMG-20251029-WA0121.jpg",
-      "imageHint": "volunteering outdoors"
-    },
-    {
       "id": "volunteer-5",
       "description": "A volunteer guiding a child in a forest school.",
       "imageUrl": "/assets/Volunteering/IMG-20251006-WA0139.jpg",
@@ -305,6 +281,108 @@
       "description": "A volunteer guiding a child in a forest school.",
       "imageUrl": "/assets/Volunteering/IMG-20251029-WA0122.jpg",
       "imageHint": "forest school"
+    },
+    {
+      "id": "volunteer-2",
+      "description": "Children engaged in a hands-on learning activity outdoors.",
+      "imageUrl": "/assets/Volunteering/IMG-20251029-WA0119.jpg",
+      "imageHint": "outdoor education"
+    },
+    {
+      "id": "volunteer-4",
+      "description": "A volunteer interacting with children in a natural setting.",
+      "imageUrl": "/assets/Volunteering/IMG-20251029-WA0121.jpg",
+      "imageHint": "volunteering outdoors"
+    },
+    {
+      "id": "volunteer-1",
+      "description": "A group photo of volunteers and children at a forest school.",
+      "imageUrl": "/assets/Volunteering/IMG-20251006-WA0142.jpg",
+      "imageHint": "group photo"
+    },
+    {
+      "id": "volunteer-3",
+      "description": "A volunteer guiding a child in a forest school.",
+      "imageUrl": "/assets/Volunteering/IMG-20251029-WA0120.jpg",
+      "imageHint": "forest school"
+    },
+    {
+      "id": "classroom-10",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/IMG-20251117-WA0200.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-11",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.46.19_6f41da74.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-12",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.46.19_71c521cd.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-13",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.46.19_739b4cdb.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-14",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.46.19_c5226fdf.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-15",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.46.19_d46d2e1f.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-16",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.46.19_db2f679c.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-17",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.46.19_f35061d0.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-18",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.49.12_40dbd1c2.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-19",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.50.42_b198089b.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-20",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.51.25_2a872a8c.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-21",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.53.43_d359f10a.jpg",
+      "imageHint": "classroom activity"
+    },
+    {
+      "id": "classroom-22",
+      "description": "Classroom activity.",
+      "imageUrl": "/assets/evidence_of_practice/classroom/WhatsApp Image 2025-10-06 at 13.54.26_109a9d89.jpg",
+      "imageHint": "classroom activity"
     }
   ]
 }
