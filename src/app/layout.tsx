@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
+import FeedbackRibbon from '@/components/feedback-ribbon';
 
 export const metadata: Metadata = {
   title: 'Nanda Dev — Secondary Biology Teacher',
@@ -59,6 +60,7 @@ export default function RootLayout({
       <body className="font-body antialiased">
         {children}
         <Toaster />
+        <FeedbackRibbon />
       </body>
     </html>
   );
