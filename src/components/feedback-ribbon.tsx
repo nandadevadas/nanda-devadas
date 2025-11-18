@@ -105,7 +105,7 @@ export default function FeedbackRibbon() {
   return (
     <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
         <SheetTrigger asChild>
-            <Button className="fixed top-1/2 -right-[4.2rem] z-50 w-[11rem] -translate-y-1/2 rotate-[270deg] origin-bottom-right rounded-t-lg rounded-b-none">
+            <Button className="fixed top-1/2 right-0 z-50 w-[11rem] -translate-y-1/2 rotate-[270deg] origin-bottom-right rounded-t-lg rounded-b-none">
                 <MessageSquare className="mr-2 h-4 w-4 -rotate-[270deg]" />
                 Feedback
             </Button>
